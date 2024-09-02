@@ -31,4 +31,4 @@ for cloud in list_of_cloud:
     print(cloud)
 
 for i in range(1,11):
-    print(i)
+    print("Happy Learning")
