@@ -12,3 +12,12 @@ Part 1: Basic Concepts
 
 • Windows: Use ipconfig to check the IP address.
 • Linux: Use ip a to view IP configurations.
+
+2. DNS (Domain Name System)
+
+Concept: DNS translates human-readable domain names (like myapp.com) to IP addresses (like 192.168.0.10).
+
+Real-Time DevOps Example: When deploying microservices, you may need to set up DNS to map your services to specific domains, ensuring easy access and routing.
+
+Windows: Use nslookup myapp.com.
+Linux: Use dig myapp.com.
