@@ -61,3 +61,26 @@ Part 1: Basic Concepts
 • Windows/Linux: ping <IP or domain>
 
 =========================================================================================
+
+6. Traceroute
+
+• Concept: Shows the path packets take to reach a destination.
+
+• Real-Time DevOps Example: Troubleshoot network latency by using traceroute to see where delays are occurring between your service and external clients.
+
+• Windows: Use tracert myapp.com.
+• Linux: Use traceroute myapp.com.
+
+
+=========================================================================================
+
+7. Netstat
+
+• Concept: Displays active network connections and listening ports.
+
+• Real-Time DevOps Example: Check for rogue services or unexpected open ports in your infrastructure, especially during security audits.
+
+• Windows/Linux: netstat -an
+
+
+=========================================================================================
