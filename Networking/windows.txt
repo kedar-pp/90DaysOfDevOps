@@ -1,0 +1,14 @@
+\\*** All Basic concepts Of Networking for DevOps  ***///
+
+Part 1: Basic Concepts
+1. IP Addressing
+
+• Concept: IP addresses are unique identifiers for devices on a network, allowing them to communicate with each other.
+
+•Types:
+    • IPv4: 192.168.0.1 (32-bit address).
+    • IPv6: fe80::1ff:fe23:4567:890a (128-bit address).
+• Real-Time DevOps Example: Assigning static IP addresses to production servers ensures  they always have the same address for consistency in service communication.
+
+• Windows: Use ipconfig to check the IP address.
+• Linux: Use ip a to view IP configurations.
