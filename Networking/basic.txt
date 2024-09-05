@@ -1,6 +1,7 @@
 \\*** All Basic concepts Of Networking for DevOps  ***///
 
 Part 1: Basic Concepts
+
 1. IP Addressing
 
 • Concept: IP addresses are unique identifiers for devices on a network, allowing them to communicate with each other.
@@ -13,6 +14,8 @@ Part 1: Basic Concepts
 • Windows: Use ipconfig to check the IP address.
 • Linux: Use ip a to view IP configurations.
 
+=========================================================================================
+
 2. DNS (Domain Name System)
 
 • Concept: DNS translates human-readable domain names (like myapp.com) to IP addresses (like 192.168.0.10).
@@ -22,6 +25,8 @@ Part 1: Basic Concepts
 • Windows: Use nslookup myapp.com.
 • Linux: Use dig myapp.com.
 
+=========================================================================================
+
 3. MAC Address
 
 • Concept: A unique identifier assigned to each network interface (hardware-based).
@@ -30,3 +35,6 @@ Part 1: Basic Concepts
 
 • Windows: Use getmac to display the MAC address.
 • Linux: Use ifconfig or ip link show.
+
+
+=========================================================================================
