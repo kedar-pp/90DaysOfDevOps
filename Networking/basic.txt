@@ -21,3 +21,12 @@ Part 1: Basic Concepts
 
 • Windows: Use nslookup myapp.com.
 • Linux: Use dig myapp.com.
+
+3. MAC Address
+
+Concept: A unique identifier assigned to each network interface (hardware-based).
+
+Real-Time DevOps Example: In a cloud environment, monitoring MAC addresses helps track devices and prevent unauthorized access.
+
+Windows: Use getmac to display the MAC address.
+Linux: Use ifconfig or ip link show.
