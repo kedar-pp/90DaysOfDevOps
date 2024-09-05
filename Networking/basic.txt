@@ -41,9 +41,9 @@ Part 1: Basic Concepts
 
 4. Subnetting
 
-Concept: Subnetting divides large networks into smaller, more manageable ones.
+• Concept: Subnetting divides large networks into smaller, more manageable ones.
 
-Real-Time DevOps Example: Subnetting can be used to segregate production, development, and testing environments to isolate traffic and increase security.
+• Real-Time DevOps Example: Subnetting can be used to segregate production, development, and testing environments to isolate traffic and increase security.
 
 • Example: A /24 subnet mask (255.255.255.0) provides 256 IP addresses, suitable for a small office or team setup.
 
