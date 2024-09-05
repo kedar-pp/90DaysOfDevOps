@@ -48,3 +48,16 @@ Part 1: Basic Concepts
 • Example: A /24 subnet mask (255.255.255.0) provides 256 IP addresses, suitable for a small office or team setup.
 
 • Windows/Linux: You can calculate and view subnets using various tools like ipconfig or ifconfig.
+
+
+=========================================================================================
+
+5. Ping
+
+• Concept: Ping sends ICMP (Internet Control Message Protocol) packets to a destination to check if it is reachable.
+
+• Real-Time DevOps Example: Use ping to check the availability of a service or server before deploying a new feature.
+
+• Windows/Linux: ping <IP or domain>
+
+=========================================================================================
