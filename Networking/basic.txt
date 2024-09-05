@@ -84,3 +84,12 @@ Part 1: Basic Concepts
 
 
 =========================================================================================
+
+8. SSH (Secure Shell)
+
+• Concept: Securely connects to remote servers over the network.
+
+• Real-Time DevOps Example: Use SSH to manage cloud-based Linux servers, deploy code, or troubleshoot issues on production systems.
+
+• Windows: Use ssh user@hostname in PowerShell or tools like PuTTY.
+• Linux: Use ssh user@hostname in the terminal.
