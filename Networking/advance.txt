@@ -121,3 +121,19 @@ Part 2: Advanced Concepts
 • Linux: Set up load balancing with tools like HAProxy or NGINX.
 
 • Example: Set up HAProxy to balance traffic between two application servers.
+
+
+=========================================================================================
+
+
+9. Proxy Servers
+
+• Concept: Proxy servers act as intermediaries between a client and a server.
+
+• Real-Time DevOps Example: Use a proxy server to route internal traffic through a secure gateway when accessing external APIs or services.
+
+• Windows: Configure proxy settings in Internet Options.
+
+• Linux: Set up a proxy with squid.
+
+• Example: Configure squid to filter and log all HTTP requests from internal users.
