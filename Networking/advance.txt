@@ -27,7 +27,16 @@ Part 2: Advanced Concepts
 
 • Linux: Use ip route to manage routes.
 
-•Example: Route all traffic for 192.168.1.0/24 through a specific gateway 192.168.1.1.
+• Example: Route all traffic for 192.168.1.0/24 through a specific gateway 192.168.1.1.
 
 =========================================================================================
+
+
+3. Network Address Translation (NAT)
+
+• Concept: NAT allows multiple devices on a private network to share a single public IP address.
+• Real-Time DevOps Example: Use NAT to enable internet access for internal services without exposing them directly to the public.
+• Windows: Managed via router settings.
+• Linux: Configure NAT using iptables.
+• Example: iptables -t nat -A POSTROUTING -o eth0 -j MASQUERADE.
 
