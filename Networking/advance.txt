@@ -13,3 +13,6 @@ Part 2: Advanced Concepts
 • Linux: Use iptables, firewalld, or ufw to manage firewall rules.
 
    • Example: Block all incoming traffic except SSH with ufw allow ssh and ufw default  deny incoming.
+
+
+=========================================================================================
