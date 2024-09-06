@@ -74,3 +74,18 @@ Part 2: Advanced Concepts
 • Linux: Use tcpdump or Wireshark.
 
 • Example: Capture traffic on interface eth0 using tcpdump -i eth0.
+
+
+=========================================================================================
+
+6. DHCP (Dynamic Host Configuration Protocol)
+
+Concept: Automatically assigns IP addresses to devices in a network.
+
+Real-Time DevOps Example: Use DHCP in a Kubernetes cluster to dynamically assign IPs to newly spun-up pods and services.
+
+Windows: Configure with netsh dhcp.
+
+Linux: Use dhclient or configure in /etc/network/interfaces.
+
+Example: Set up DHCP for a private network to automatically allocate IPs to VMs.
