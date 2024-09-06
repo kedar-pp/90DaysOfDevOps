@@ -28,3 +28,6 @@ Part 2: Advanced Concepts
 • Linux: Use ip route to manage routes.
 
 •Example: Route all traffic for 192.168.1.0/24 through a specific gateway 192.168.1.1.
+
+=========================================================================================
+
