@@ -90,4 +90,18 @@ Part 2: Advanced Concepts
 
 • Example: Set up DHCP for a private network to automatically allocate IPs to VMs.
 
+
 =========================================================================================
+
+
+7. Port Forwarding
+
+• Concept: Redirect traffic from a public IP/port to a private one.
+
+• Real-Time DevOps Example: Forward port 80 from a public IP to your internal web server’s port 8080 for web traffic.
+
+• Windows: Use netsh interface portproxy.
+
+• Linux: Configure via iptables.
+
+• Example: Forward port 80 to 8080 using iptables -t nat -A PREROUTING -p tcp --dport 80 -j REDIRECT --to-port 8080.
