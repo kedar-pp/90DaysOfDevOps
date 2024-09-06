@@ -1,0 +1,15 @@
+\\*** Advance concepts Of Networking for DevOps  ***///
+
+Part 2: Advanced Concepts
+
+1. Firewall Management
+
+• Concept: A firewall controls incoming and outgoing network traffic based on security rules.
+
+• Real-Time DevOps Example: In a production environment, firewalls restrict access to databases or internal services, allowing only trusted IPs or services to interact.
+
+• Windows: Use netsh advfirewall to configure.
+
+• Linux: Use iptables, firewalld, or ufw to manage firewall rules.
+
+   • Example: Block all incoming traffic except SSH with ufw allow ssh and ufw default  deny incoming.

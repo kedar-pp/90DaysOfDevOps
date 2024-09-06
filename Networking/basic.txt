@@ -1,4 +1,4 @@
-\\*** All Basic concepts Of Networking for DevOps  ***///
+\\*** Basic concepts Of Networking for DevOps  ***///
 
 Part 1: Basic Concepts
 
