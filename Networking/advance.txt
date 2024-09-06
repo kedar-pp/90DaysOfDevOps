@@ -80,12 +80,14 @@ Part 2: Advanced Concepts
 
 6. DHCP (Dynamic Host Configuration Protocol)
 
-Concept: Automatically assigns IP addresses to devices in a network.
+• Concept: Automatically assigns IP addresses to devices in a network.
 
-Real-Time DevOps Example: Use DHCP in a Kubernetes cluster to dynamically assign IPs to newly spun-up pods and services.
+• Real-Time DevOps Example: Use DHCP in a Kubernetes cluster to dynamically assign IPs to newly spun-up pods and services.
 
-Windows: Configure with netsh dhcp.
+• Windows: Configure with netsh dhcp.
 
-Linux: Use dhclient or configure in /etc/network/interfaces.
+• Linux: Use dhclient or configure in /etc/network/interfaces.
 
-Example: Set up DHCP for a private network to automatically allocate IPs to VMs.
+• Example: Set up DHCP for a private network to automatically allocate IPs to VMs.
+
+=========================================================================================
