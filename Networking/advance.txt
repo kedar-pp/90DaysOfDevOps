@@ -137,3 +137,18 @@ Part 2: Advanced Concepts
 • Linux: Set up a proxy with squid.
 
 • Example: Configure squid to filter and log all HTTP requests from internal users.
+
+
+=========================================================================================
+
+
+10. Network Troubleshooting
+
+• Packet Loss: Diagnose using ping and traceroute.
+
+• Latency Issues: Use netstat or Wireshark to monitor network performance.
+
+• DNS Issues: Flush DNS cache using ipconfig /flushdns (Windows) or systemd-resolve --flush-caches (Linux).
+
+• Connection Refused/Timeout: Check firewall, service status, and port connectivity using telnet or nc.
+
