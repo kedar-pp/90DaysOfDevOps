@@ -35,8 +35,27 @@ Part 2: Advanced Concepts
 3. Network Address Translation (NAT)
 
 • Concept: NAT allows multiple devices on a private network to share a single public IP address.
+
 • Real-Time DevOps Example: Use NAT to enable internet access for internal services without exposing them directly to the public.
+
 • Windows: Managed via router settings.
+
 • Linux: Configure NAT using iptables.
+
 • Example: iptables -t nat -A POSTROUTING -o eth0 -j MASQUERADE.
 
+
+=========================================================================================
+
+
+4. VPN (Virtual Private Network)
+
+• Concept: A VPN creates a secure connection between two points over the internet.
+
+• Real-Time DevOps Example: Use VPNs to securely connect on-premise infrastructure with cloud resources for internal communication.
+
+• Windows: Native VPN setup in Network & Internet settings.
+
+• Linux: Use openvpn to set up VPN tunnels.
+
+• Example: Set up a site-to-site VPN to connect two office locations securely.
