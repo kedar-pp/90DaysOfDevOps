@@ -105,3 +105,19 @@ Part 2: Advanced Concepts
 • Linux: Configure via iptables.
 
 • Example: Forward port 80 to 8080 using iptables -t nat -A PREROUTING -p tcp --dport 80 -j REDIRECT --to-port 8080.
+
+
+=========================================================================================
+
+
+8. Load Balancing
+
+• Concept: Distributes network traffic across multiple servers to ensure reliability and availability.
+
+• Real-Time DevOps Example: Use load balancers to distribute incoming traffic between multiple app instances in a Kubernetes cluster to ensure high availability.
+
+• Windows: Use Windows Network Load Balancing (NLB).
+
+• Linux: Set up load balancing with tools like HAProxy or NGINX.
+
+• Example: Set up HAProxy to balance traffic between two application servers.
