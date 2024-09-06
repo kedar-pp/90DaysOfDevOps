@@ -16,3 +16,15 @@ Part 2: Advanced Concepts
 
 
 =========================================================================================
+
+2. Routing
+
+• Concept: Routing is the process of forwarding packets from one network to another.
+
+• Real-Time DevOps Example: In multi-cloud environments, configure routes to direct traffic between services across different networks (e.g., AWS and Azure).
+
+• Windows: Use route print to view routing tables.
+
+• Linux: Use ip route to manage routes.
+
+•Example: Route all traffic for 192.168.1.0/24 through a specific gateway 192.168.1.1.
