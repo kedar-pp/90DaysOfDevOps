@@ -62,3 +62,15 @@ Part 2: Advanced Concepts
 
 
 =========================================================================================
+
+5. Packet Sniffing
+
+• Concept: Packet sniffing captures and analyzes network traffic to monitor and troubleshoot issues.
+
+• Real-Time DevOps Example: During a security breach, packet sniffing can help detect suspicious activity like unauthorized data exfiltration.
+
+• Windows: Use tools like Wireshark.
+
+• Linux: Use tcpdump or Wireshark.
+
+• Example: Capture traffic on interface eth0 using tcpdump -i eth0.
