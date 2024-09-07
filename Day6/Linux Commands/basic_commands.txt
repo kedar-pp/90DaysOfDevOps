@@ -1,0 +1,20 @@
+\\\=== Basic Linux Commands ===///
+
+1. Basic Commands: Navigating the File System
+
+• ls: List directory contents.
+
+    • ls -l: Long listing with permissions, owner, size, etc.
+    • ls -a: Show hidden files.
+
+• cd: Change directory.
+
+    • cd /path/to/directory: Navigate to the directory.
+    • cd ..: Move one level up.
+    • cd ~: Go to the home directory.
+
+• pwd: Print working directory (current location).
+
+    • touch: Create an empty file.
+    • mkdir: Create a directory.
+    • mkdir -p /path/to/dir: Create nested directories.
