@@ -52,4 +52,88 @@
 ==================================================================================================================
 
 
+4. Viewing and Editing Files
 
+• cat: Display file contents.
+    •  cat file: Show the content of the file.
+
+• less: View file content with scrolling.
+    •  less file: Scroll through the file using j/k keys.
+
+• nano: Simple terminal text editor.
+    •  nano file: Open file in Nano for editing.
+
+
+==================================================================================================================
+
+
+5. Searching for Files and Text
+
+• find: Search for files and directories.
+    •  find /path -name "filename": Find files by name.
+    •  find /path -type d: Find only directories.
+
+• grep: Search within file content.
+    •  grep "text" file: Find "text" inside the file.
+    •  grep -r "text" /path: Recursively search "text" in a directory.
+
+
+==================================================================================================================
+
+
+6. Process Management
+
+• ps: View running processes.
+    •  ps aux: View all running processes with details.
+
+• top: Real-time process monitoring (CPU, memory usage).
+
+• kill: Terminate a process by PID.
+    •  kill -9 PID: Force kill a process.
+
+
+==================================================================================================================
+
+
+7. Networking Commands
+
+• ping: Test network connectivity.
+    •  ping google.com: Send packets to test the connection.
+
+• ifconfig: View and configure network interfaces.
+    •  ifconfig: Show the current network interfaces.
+
+• netstat: Show network connections and listening ports.
+    •  netstat -an: Show active network connections.
+
+
+==================================================================================================================
+
+
+8. File Archiving and Compression
+tar: Archive multiple files into one.
+tar -cvf archive.tar file1 file2: Create a tar archive.
+tar -xvf archive.tar: Extract a tar archive.
+gzip: Compress files.
+gzip file: Compress a file into file.gz.
+gunzip file.gz: Decompress the file.
+9. User and Group Management
+useradd: Add a new user.
+useradd -m username: Create a user with a home directory.
+passwd: Change a user's password.
+passwd username: Set a password for a user.
+usermod: Modify user details (add user to a group).
+usermod -aG groupname username: Add a user to a group.
+10. Disk Usage and Management
+df: View disk space usage.
+df -h: Human-readable format of disk usage.
+du: Estimate file or directory space usage.
+du -sh /path/to/dir: Summarize the size of a directory.
+11. Bash Scripting Basics
+Creating a script:
+nano script.sh: Create a shell script file.
+Add a shebang line: #!/bin/bash.
+Making it executable:
+chmod +x script.sh
+Running the script:
+./script.sh
