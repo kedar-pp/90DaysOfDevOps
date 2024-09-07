@@ -18,3 +18,24 @@
     • touch: Create an empty file.
     • mkdir: Create a directory.
     • mkdir -p /path/to/dir: Create nested directories.
+
+
+==================================================================================================================
+
+
+2. File and Directory Manipulation
+
+•  cp: Copy files or directories.
+    •  cp file1 file2: Copy file1 to file2.
+    •  cp -r dir1 dir2: Recursively copy directories.
+
+•  mv: Move/rename files or directories.
+    •  mv file1 file2: Move/rename file1 to file2.
+
+• rm: Remove files or directories.
+    •  rm file: Delete a file.
+    •  rm -r dir: Recursively remove a directory.
+
+
+==================================================================================================================
+
