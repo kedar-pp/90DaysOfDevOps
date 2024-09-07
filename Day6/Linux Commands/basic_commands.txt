@@ -117,6 +117,11 @@ tar -xvf archive.tar: Extract a tar archive.
 gzip: Compress files.
 gzip file: Compress a file into file.gz.
 gunzip file.gz: Decompress the file.
+
+
+==================================================================================================================
+
+
 9. User and Group Management
 useradd: Add a new user.
 useradd -m username: Create a user with a home directory.
@@ -124,11 +129,21 @@ passwd: Change a user's password.
 passwd username: Set a password for a user.
 usermod: Modify user details (add user to a group).
 usermod -aG groupname username: Add a user to a group.
+
+
+==================================================================================================================
+
+
 10. Disk Usage and Management
 df: View disk space usage.
 df -h: Human-readable format of disk usage.
 du: Estimate file or directory space usage.
 du -sh /path/to/dir: Summarize the size of a directory.
+
+
+==================================================================================================================
+
+
 11. Bash Scripting Basics
 Creating a script:
 nano script.sh: Create a shell script file.
@@ -137,3 +152,14 @@ Making it executable:
 chmod +x script.sh
 Running the script:
 ./script.sh
+
+
+==================================================================================================================
+
+
+12. SSH (Secure Shell)
+ssh: Remote login to another system.
+ssh username@hostname: Connect to a remote system.
+Generating SSH keys:
+ssh-keygen -t rsa: Generate SSH key pair.
+ssh-copy-id username@hostname: Copy public key to remote system.
