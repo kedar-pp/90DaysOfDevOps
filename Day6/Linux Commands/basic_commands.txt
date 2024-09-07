@@ -111,24 +111,29 @@
 
 
 8. File Archiving and Compression
-tar: Archive multiple files into one.
-tar -cvf archive.tar file1 file2: Create a tar archive.
-tar -xvf archive.tar: Extract a tar archive.
-gzip: Compress files.
-gzip file: Compress a file into file.gz.
-gunzip file.gz: Decompress the file.
+
+• tar: Archive multiple files into one.
+    •  tar -cvf archive.tar file1 file2: Create a tar archive.
+    •  tar -xvf archive.tar: Extract a tar archive.
+
+• gzip: Compress files.
+    •  gzip file: Compress a file into file.gz.
+    •  gunzip file.gz: Decompress the file.
 
 
 ==================================================================================================================
 
 
 9. User and Group Management
-useradd: Add a new user.
-useradd -m username: Create a user with a home directory.
-passwd: Change a user's password.
-passwd username: Set a password for a user.
-usermod: Modify user details (add user to a group).
-usermod -aG groupname username: Add a user to a group.
+
+• useradd: Add a new user.
+    •  useradd -m username: Create a user with a home directory.
+
+• passwd: Change a user's password.
+    • passwd username: Set a password for a user.
+
+• usermod: Modify user details (add user to a group).
+    • usermod -aG groupname username: Add a user to a group.
 
 
 ==================================================================================================================
