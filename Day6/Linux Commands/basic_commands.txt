@@ -153,21 +153,25 @@
 
 11. Bash Scripting Basics
 
-Creating a script:
-nano script.sh: Create a shell script file.
-Add a shebang line: #!/bin/bash.
-Making it executable:
-chmod +x script.sh
-Running the script:
-./script.sh
+• Creating a script:
+    •  nano script.sh: Create a shell script file.
+    •  Add a shebang line: #!/bin/bash.
+
+• Making it executable:
+    •  chmod +x script.sh
+
+• Running the script:
+    •  ./script.sh
 
 
 ==================================================================================================================
 
 
 12. SSH (Secure Shell)
-ssh: Remote login to another system.
-ssh username@hostname: Connect to a remote system.
-Generating SSH keys:
-ssh-keygen -t rsa: Generate SSH key pair.
-ssh-copy-id username@hostname: Copy public key to remote system.
+
+• ssh: Remote login to another system.
+    •  ssh username@hostname: Connect to a remote system.
+
+• Generating SSH keys:
+    •  ssh-keygen -t rsa: Generate SSH key pair.
+    •  ssh-copy-id username@hostname: Copy public key to remote system.
