@@ -39,3 +39,17 @@
 
 ==================================================================================================================
 
+3. File Permissions and Ownership
+
+• chmod: Change file permissions (read, write, execute).
+    •  chmod 755 file: Set owner to read/write/execute and others to read/execute.
+    •  chmod u+x file: Add execute permission to the owner.
+
+• chown: Change ownership of a file or directory.
+    •  chown user:group file: Change the owner and group.
+
+
+==================================================================================================================
+
+
+
