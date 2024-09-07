@@ -140,16 +140,19 @@
 
 
 10. Disk Usage and Management
-df: View disk space usage.
-df -h: Human-readable format of disk usage.
-du: Estimate file or directory space usage.
-du -sh /path/to/dir: Summarize the size of a directory.
+
+• df: View disk space usage.
+    •  df -h: Human-readable format of disk usage.
+
+• du: Estimate file or directory space usage.
+    • du -sh /path/to/dir: Summarize the size of a directory.
 
 
 ==================================================================================================================
 
 
 11. Bash Scripting Basics
+
 Creating a script:
 nano script.sh: Create a shell script file.
 Add a shebang line: #!/bin/bash.
