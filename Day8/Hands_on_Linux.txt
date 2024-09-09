@@ -1,1 +1,10 @@
 \\\=== Linux Commands ===///
+
+Users in linux 
+
+If their are u1, u2 , u3 ->users
+
+1. Regular user -> home directory (only can work in indivisual directory )
+2. Root User -> has full accses [admin] (cam invoke or accsess the anly user u1,u2,u3 and can work in their directory) 
+
+use of sudo (machine we get known that changes are done by root user)
