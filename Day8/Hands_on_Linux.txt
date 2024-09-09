@@ -45,4 +45,12 @@ eg . -rw-r--r-- 1 kedar kedar   4096 Sep 9 16:46
 1. Permision is for user , he can read and write
 2. Permision is for group , they can only read 
 3. Permision os for others, they can only read
- 
+
+r -> read 
+w -> write 
+x -> execute
+
+chmod : used to change mode , we can calculate it from chmode calculator
+
+
+
