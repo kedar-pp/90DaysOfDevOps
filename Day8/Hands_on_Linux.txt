@@ -31,3 +31,10 @@ cd fo2 --> Relative path
 ==============================================================================
 
 User Permission in linux 
+
+read write (Permision)
+
+User //  Group  // Other (these 3 can accses files if they have permision )
+
+
+eg . -rw-r--r-- 1 kedar kedar   0  
