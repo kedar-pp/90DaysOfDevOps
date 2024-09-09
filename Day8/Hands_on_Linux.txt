@@ -8,3 +8,22 @@ If their are u1, u2 , u3 ->users
 2. Root User -> has full accses [admin] (cam invoke or accsess the anly user u1,u2,u3 and can work in their directory) 
 
 use of sudo (machine we get known that changes are done by root user)
+
+
+3. Service User 
+
+==============================================================================
+
+1. Absolute Path
+Basically used when we go from one folder to another folder 
+eg. cd /bin/fo1  
+
+2. Relative Path
+This path is used when we work in same directory for coping ,moving in same folder .
+eg. cd desktop , cd folder 
+
+Another example:-
+
+cd /bin/fo1 --> Absolute path
+cd fo2 --> Relative path
+
