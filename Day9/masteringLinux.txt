@@ -12,3 +12,16 @@
     - used to get files from server or ec2 instance to local machine and vice-versa
 
 ==================================================================================
+
+Comparison of vi and nano editors :-
+
+vi Editor:-
+    -Available on almost all Unix/Linux systems by default
+    -Has multiple modes (insert, command, etc.) 
+    -Lightweight and fast, ideal for large files
+    -Requires memorization of commands (e.g., :wq, :q!)
+            
+
+
+
+nano Editor
