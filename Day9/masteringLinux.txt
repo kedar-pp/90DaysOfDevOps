@@ -5,4 +5,6 @@
     cmd :-sudo ssh -i <pem.file> username@serveripaddress
 
 2. MAN :-
+    - What is man-db? (manual db) helper database eg. remote-car manual
+
 3. SCP :-
