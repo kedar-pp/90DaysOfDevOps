@@ -1,2 +1,8 @@
 ///===Mastering Linux===\\\
 
+1. SSH :-secured Shell Protocol
+    -PEM File :- used to connect to the server securely
+    cmd :-sudo ssh -i <pem.file> username@serveripaddress
+
+2. MAN :-
+3. SCP :-
