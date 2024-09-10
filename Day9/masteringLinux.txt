@@ -8,3 +8,5 @@
     - What is man-db? (manual db) helper database eg. remote-car manual
 
 3. SCP :-
+    - Always used or execute from local machine
+    - used to get files from server or ec2 instance to local machine 
