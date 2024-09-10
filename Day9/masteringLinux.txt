@@ -20,8 +20,11 @@ vi Editor:-
     -Has multiple modes (insert, command, etc.) 
     -Lightweight and fast, ideal for large files
     -Requires memorization of commands (e.g., :wq, :q!)
-            
+    -Limited undo (one step back with u)
 
-
-
-nano Editor
+nano Editor:-
+    -Not always pre-installed (can be installed via package manager)
+    -Single mode (no need to switch between modes)
+    -Slightly slower with large files
+    -Key shortcuts are displayed (e.g., ^O to save, ^X to exit)
+    -Multiple undo/redo steps (^U for undo, ^R for redo)
