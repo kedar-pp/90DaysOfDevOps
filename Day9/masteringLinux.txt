@@ -9,4 +9,4 @@
 
 3. SCP :-
     - Always used or execute from local machine
-    - used to get files from server or ec2 instance to local machine 
+    - used to get files from server or ec2 instance to local machine and vice-versa
