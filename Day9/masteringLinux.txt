@@ -28,3 +28,5 @@ nano Editor:-
     -Slightly slower with large files
     -Key shortcuts are displayed (e.g., ^O to save, ^X to exit)
     -Multiple undo/redo steps (^U for undo, ^R for redo)
+
+    
