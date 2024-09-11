@@ -24,6 +24,10 @@ Permissions
         ./ --> to make any shell script executable we have to write  ./ 
         eg.   ./devops_first.sh
 
+    -To give Permissions to executable
+     777--> stand for permisiion to write ,read , executable
+     eg. chmod 777 devops_first.sh
+
 ==================================================================================
 Variables
 
