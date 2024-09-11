@@ -47,5 +47,14 @@ User Input and Arguments
         eg .echo "friend: hello,i am $1"
 
 ==================================================================================
-Convo;)
+
+Conversation
+
+        -use of sleep 2 sfter every echo 
+        eg. echo "Sham : hello ram"
+            sleep 2
+            echo "Ram : hello sham"
+
+==================================================================================
 If Else
+
