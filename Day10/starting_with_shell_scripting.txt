@@ -1,6 +1,17 @@
 ///===Starting with Shell Scripting===\\\
 
 1. What is Bash?
+    - script (only cmds)
+    - programming(procedural prog. , object orient prog. )
+    - Bash is known as Bourne again shell (used for automate the tasks in UNIX shell)
+
+    Bash has .sh extenstion 
+    -to edit this devops_first.sh we have use nano
+
+
+
+
+==================================================================================
 Simple Commands
 First Script 
 Permissions
