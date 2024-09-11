@@ -1,0 +1,10 @@
+///===Starting with Shell Scripting===\\\
+
+1. What is Bash?
+Simple Commands
+First Script 
+Permissions
+Variables
+User Input and Arguments
+Convo;)
+If Else
