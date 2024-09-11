@@ -58,3 +58,14 @@ Conversation
 ==================================================================================
 If Else
 
+eg.
+
+#!/bin/bash
+
+if [ "$1" = "Ram" ]
+then
+ echo "hello ram"
+else
+ echo "hello everyone"
+fi
+
