@@ -21,6 +21,8 @@ First Script
 
 ==================================================================================
 Permissions
+        ./ --> to make any shell script executable we have to write  ./ 
+        eg.   ./devops_first.sh
 
 ==================================================================================
 Variables
