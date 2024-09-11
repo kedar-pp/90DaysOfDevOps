@@ -36,5 +36,11 @@ Variables
 
 ==================================================================================
 User Input and Arguments
+
+        -to take user input we have to use read and store it into a Variables
+        eg. read age 
+            echo "My age is ${age}" 
+
+==================================================================================
 Convo;)
 If Else
