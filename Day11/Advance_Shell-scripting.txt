@@ -1,9 +1,27 @@
 ///===Advance Shell_scripting===\\\
 
 1. if elif
+        -same as if else '
+        -used for many conditionals statements
+        eg. a= 1000
+            b= 200
+            c= 300
 
-
-
+            if [[ $a -gt $b && $a -gt $b ]]
+            then
+             echo "A is biggest"
+            elif [[ $b -gt $a && $b -gt $c ]]
+            then
+             echo "B is biggest"
+            else
+             echo "C is biggest"
+            fi
+    -this was the example of if_elif
+    -cmds used 
+        -nano if_elif.sh
+        -written the Script
+        -ctrl + x , yes
+        -
 ==========================================================================================
 
 2. loops
