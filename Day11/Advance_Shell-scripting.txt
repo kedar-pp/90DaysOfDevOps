@@ -24,16 +24,50 @@
         -chmod 777 if_elif.sh (given permission for execution)
         - ./if_elif.sh
 
-        
+
 ==========================================================================================
 
 2. loops
+    -for loop
+        -for ((i=0; i<10 ; i++))
+         do
+          echo "$i"
+         done
 
+    -another example for iterating file with .txt extensiton
+        -
+          for FILE in *.txt
+          do
+           echo $FILE
+          done
+
+    - also learned how to make multiple files from single command
+        - touch file-(1..10).txt
+    it will make 10 txt files
 
 
 ==========================================================================================
 
 3. Funcions
+    -functions are used to automate the tasks
+    -eg for adding user we will not write code every time we will write a function
+        - add_user()
+          {
+            USER=$1
+            PASS=$2
+
+            useradd -m -p $PASS $USER && echo "successfully added user"
+          }
+
+          #MAIN
+
+          add_user kedarP new@123
+
+    -while adding user we need to be a super user  (sudo-->super user do)
+    -so we use below command
+        - sudo ./adding_user.sh
+        
+    -we can 
 
 
 
