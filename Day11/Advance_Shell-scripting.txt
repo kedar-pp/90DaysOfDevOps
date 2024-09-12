@@ -21,7 +21,10 @@
         -nano if_elif.sh
         -written the Script
         -ctrl + x , yes
-        -
+        -chmod 777 if_elif.sh (given permission for execution)
+        - ./if_elif.sh
+
+        
 ==========================================================================================
 
 2. loops
