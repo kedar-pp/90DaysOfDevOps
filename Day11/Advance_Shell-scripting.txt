@@ -66,15 +66,30 @@
     -while adding user we need to be a super user  (sudo-->super user do)
     -so we use below command
         - sudo ./adding_user.sh
-        
-    -we can 
+
+    -we can see the added user in etc folder ,, we can we cmd as below
+        - cat /etc/passwd
 
 
 
 ==========================================================================================
 
 4. Actual Script work of Devops
+    -written Actual script of devops to automate backups
+        - 
+          src_dir=/home/ubuntu/scripts
+          tgt_dir=/home/ubuntu/backups
 
+          curr_timestamp=$(date "+%Y-%m-%d-%H-%M-%S")
+          backup_file=$tgt_dir/$curr_timestamp.tgz
+           
+           echo "$curr_timestamp"
+
+          tar czf $backup_file --absolute-name $src_dir
+
+          echo "bacup complete"
+
+        --absolute-name(added beacuse of warning removing leading '\' from member names)  
 
 
 
