@@ -87,10 +87,14 @@
 
           tar czf $backup_file --absolute-name $src_dir
 
-          echo "bacup complete"
+          echo "backup complete"
 
         --absolute-name(added beacuse of warning removing leading '\' from member names)  
 
-
+    -we find the backups in the destination address in compressed format
+    -for reducning the size we have compressed i.e. tar czf
+        -we extract the files using below command
+            - tar xf filename.tgz
+            -new folder will be their
 
 ==========================================================================================
