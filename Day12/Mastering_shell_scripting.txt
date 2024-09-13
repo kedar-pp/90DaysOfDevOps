@@ -5,6 +5,7 @@
         - free cmd is used for check how much ram is used/free.
     -for Disk
     -for cpu(processes)
+        - top cmd is used for verfiying which processes hold how much % of cpu
 
 ==========================================================================================
 
