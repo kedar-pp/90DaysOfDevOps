@@ -1,6 +1,9 @@
 ///===Mastering the Shell Scripting===\\\
 
 1. Memory commands
+    -for RAM
+    -for Disk
+    -for cpu(processes)
 
 ==========================================================================================
 
