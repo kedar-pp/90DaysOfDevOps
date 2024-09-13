@@ -2,6 +2,7 @@
 
 1. Memory commands
     -for RAM
+        - free cmd is used for check how much ram is used/free.
     -for Disk
     -for cpu(processes)
 
