@@ -13,7 +13,7 @@
     - awk cmd is used in disk management processe
     -if we want the info. of specific column for eg. file system , it will the info related to file system columns only
     -Written a script which tells us the disk usages
-    
+
 
 
 ==========================================================================================
@@ -24,17 +24,38 @@
 ==========================================================================================
 
 4. cut command
-
+    -in checking disk space script we want on percentage so we use cmd
+    - cut -d'%' -f1
+    
 
 ==========================================================================================
 
 5. vim
 
+    -vim check_disk.sh
+    -to write in vim editor 'i'
+    -to save the file 'esc , :wq'
+    -:wq :- --> write&quit
+
 
 ==========================================================================================
 
 6. Disk check script
+        -#!/bi/bash
+         
+         df -H | awk '{print $5 " " $1}' | while read output;
+         do
+          echo "Disk Detail : $output"
+          usage=$(echo $output | awk '{print $1}' | cut -d'%' -f1)
+          file_sys=$(echo $output | awk '{print $2}')
+          #echo $usage
+          if [ $usage -ge 90 ]
+          then 
+                echo "CRITICAL for $file_sys"
+          fi
+          done 
 
+        -cmd to run this ./check_disk.sh
 
 
 ==========================================================================================
