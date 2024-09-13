@@ -29,6 +29,9 @@ Permissions
      777--> stand for permisiion to write ,read , executable
      eg. chmod 777 devops_first.sh
 
+    -if we need to check which permisiion are given to file we have to use below cmd
+        - ls -l
+
 ==================================================================================
 Variables
         - Variables in bash are represented by $
