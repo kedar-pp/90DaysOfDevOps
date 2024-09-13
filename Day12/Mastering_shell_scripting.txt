@@ -12,6 +12,7 @@
 2. AWK command
     - awk cmd is used in disk management processe
     -if we want the info. of specific column for eg. file system , it will the info related to file system columns only
+    -Written a script which tells us the disk usages
     
 
 
