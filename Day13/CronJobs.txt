@@ -1,12 +1,15 @@
 ///===Cron In Shell Scripting ===\\\
 
 1. What is Cron?
+    -we need to autpmate any task,then we have to schedule it
+    - so cron helps to schedule the tasks which runs in background automatically
+
 
 
 =========================================================================================
 
 2. What is Crontab?
-
+    -Crontab is a file , wwhich includes the commands , and the specific inforation about that task , i.e when will this cron execute , what time it will execute , etc.
 
 =========================================================================================
 
