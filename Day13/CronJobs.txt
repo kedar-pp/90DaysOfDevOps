@@ -14,7 +14,11 @@
 =========================================================================================
 
 3. Creating first Crontab.
+        - Min  Hour  Day_of-Month  Month   Day_of_week  [command]
+        -logic
+        -  *     *        1,5        9        *           echo"hi"
 
+        - the above logic is for the cron job will run every min , every hr,of 1st and 5th day of sep month .
 
 =========================================================================================
 
@@ -22,3 +26,5 @@
 
 
 =========================================================================================
+
+///===Imp Commands For Cron ===\\\
