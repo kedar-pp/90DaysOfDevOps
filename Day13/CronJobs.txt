@@ -24,6 +24,8 @@
 
 4. Executing shell scripts using Cron for Disk space and backup
 
+* 4 * * * bash /home/ubuntu/scripts/check_disk.sh >> /home/ubuntu/check_disk_logs.txt
+
 
 =========================================================================================
 
