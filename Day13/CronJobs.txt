@@ -31,3 +31,6 @@
 
 1. crontab -l
     - to list the crontabs which are active 
+
+2. crontab -e
+    -
