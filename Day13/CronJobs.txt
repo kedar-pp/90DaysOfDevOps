@@ -22,7 +22,7 @@
 
 =========================================================================================
 
-4. Executing shell scripts using Cron for Disk sppace and backup
+4. Executing shell scripts using Cron for Disk space and backup
 
 
 =========================================================================================
@@ -33,4 +33,8 @@
     - to list the crontabs which are active 
 
 2. crontab -e
-    -
+    - to edit or create crontab.
+
+3. > used in crontab to write in following file
+
+4. >> used in crontab to append the output iin that file.
