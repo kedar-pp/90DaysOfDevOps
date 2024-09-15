@@ -51,3 +51,12 @@ Basic Git Commands:
     -git branch: Lists all branches or creates a new one (git branch <branch-name>).
 
     -git checkout <branch>: Switches to the specified branch.
+
+=========================================================================================
+
+
+What is GitHub?
+
+    -GitHub is a cloud-based platform that hosts Git repositories. It enables you to share code, collaborate with others, and contribute to open-source projects.
+
+    -GitHub adds a social layer to Git with features like pull requests, issues, and discussions.
