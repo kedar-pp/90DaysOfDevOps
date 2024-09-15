@@ -16,6 +16,11 @@
 
     they all used for CODE Management , these all vary in industries according to companies
 
+    -Difference between file system and VCS(Version Control System)
+        -In filesystem, we cannot recover the deleted stuff .
+        -In Git VCS , we have option to recover or their is option to Rollback to older versions
+        
+
 
 
 =========================================================================================
