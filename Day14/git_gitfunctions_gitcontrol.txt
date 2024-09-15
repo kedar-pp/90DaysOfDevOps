@@ -60,3 +60,22 @@ What is GitHub?
     -GitHub is a cloud-based platform that hosts Git repositories. It enables you to share code, collaborate with others, and contribute to open-source projects.
 
     -GitHub adds a social layer to Git with features like pull requests, issues, and discussions.
+
+=========================================================================================
+
+
+Key GitHub Concepts:
+
+    -Repository (Repo): A project with its code and version history.
+
+    -Forking: Creating a copy of someone else's repository to make changes or contributions.
+
+    -Pull Request (PR): A method of submitting contributions to a project. A PR allows you to propose changes that can be reviewed and merged.
+
+    -Issues: A way to track bugs, features, or tasks related to the project.
+
+    -Stars: A way to bookmark or show appreciation for a repository.
+
+    -Actions: Automating tasks like running tests, deploying code, etc.
+
+=========================================================================================
