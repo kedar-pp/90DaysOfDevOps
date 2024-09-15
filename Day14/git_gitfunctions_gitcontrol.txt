@@ -22,5 +22,11 @@
 
 
 
-
 =========================================================================================
+
+Git:
+    -What is Git?
+
+    -Git is a distributed version control system that tracks changes to files and allows multiple people to collaborate on a project efficiently.
+
+    -It helps in keeping a history of code changes, making it easy to revert, branch, or merge code.
