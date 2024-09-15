@@ -19,22 +19,8 @@
     -Difference between file system and VCS(Version Control System)
         -In filesystem, we cannot recover the deleted stuff .
         -In Git VCS , we have option to recover or their is option to Rollback to older versions
-        
 
 
-
-=========================================================================================
-
-2. PR merging ,Branching Strategies for DevOps
-
-
-=========================================================================================
-
-3. Hooks (pre-commit Hooks)
-
-=========================================================================================
-
-4. Repo setup end to end(GitHub Actions CI/CD )
 
 
 =========================================================================================
