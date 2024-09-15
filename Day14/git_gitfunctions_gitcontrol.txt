@@ -2,7 +2,20 @@
 
 1. Git & Github Basics
     -Git is VCS --> Version Control System
-    -
+    -In Project their should be a record of Time,Author, commit , date of modidification ,etc
+    -By using git we can go to previous versions
+
+
+    -GitHub is a platform where it gives VCS similar to git
+
+    -Gitlab is also platform used VCS 
+
+    -BitBucket is also same as both 
+
+    these uses git only in bacground (or we can say the working is similar to git) 
+
+    they all used for CODE Management , these all vary in industries according to companies
+
 
 
 =========================================================================================
