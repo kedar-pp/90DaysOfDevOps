@@ -1,6 +1,8 @@
 ///===Git & GitHub For DevOps===\\\
 
 1. Git & Github Basics
+    -Git is VCS --> Version Control System
+    -
 
 
 =========================================================================================
