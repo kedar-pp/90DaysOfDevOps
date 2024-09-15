@@ -32,3 +32,22 @@ Git:
     -It helps in keeping a history of code changes, making it easy to revert, branch, or merge code.
 
 =========================================================================================
+
+Basic Git Commands:
+    -git init: Initializes a new Git repository.
+
+    -git clone <URL>: Clones (copies) a repository from GitHub or another remote location.
+
+    -git add <file>: Stages changes (adds files to be tracked).
+
+    -git commit -m "message": Saves your changes with a message describing what was done.
+
+    -git status: Shows the status of your working directory (staged, modified, or untracked files).
+
+    -git push: Pushes the committed changes to the remote repository (e.g., GitHub).
+
+    -git pull: Pulls the latest changes from the remote repository to your local machine.
+
+    -git branch: Lists all branches or creates a new one (git branch <branch-name>).
+
+    -git checkout <branch>: Switches to the specified branch.
