@@ -1,2 +1,8 @@
 ///==== RedHat Enterprise Linux ====\\\
 
+1. Mukti User & multi Tasking
+
+2. Open-source
+
+3. Security
+
