@@ -29,3 +29,17 @@ Hands-on 5 options where we can say..
     -RedHat interactive lab
     -VitualBox
     -Vagrant
+
+
+=================================================================================
+
+To install any files in Redhat 
+    - yum install <filename>
+    - for latest Redhat --> dnf install <filename>
+
+    -as we have to be super user to install things on os 
+
+    -so cmd will be --> sudo dnf install <filename>
+
+
+=================================================================================
