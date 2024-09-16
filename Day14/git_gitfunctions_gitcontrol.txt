@@ -95,7 +95,15 @@ Key GitHub Concepts:
 
 ========================================================================================
 
-1. to restore the delected file 
+1. git init
+
+2. git status
+
+3. git add --> Untracked to stage
+
+4. git commit -m "" --> Staged to tracked
+
+5. to restore the delected file 
     -git status
     -git restore <filename>
 
