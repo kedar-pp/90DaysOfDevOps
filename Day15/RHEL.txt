@@ -1,8 +1,31 @@
 ///==== RedHat Enterprise Linux ====\\\
 
+Features of Linux 
+
 1. Mukti User & multi Tasking
 
 2. Open-source
 
 3. Security
 
+==========================================================================================
+
+Flavours of Linux
+
+-Fedora
+-Centos 
+-RedHat
+-Ubuntu
+-Kali
+-Parrot
+_alpine
+etc
+
+==========================================================================================
+
+Hands-on 5 options where we can say..
+
+    -AWS
+    -RedHat interactive lab
+    -VitualBox
+    -Vagrant
