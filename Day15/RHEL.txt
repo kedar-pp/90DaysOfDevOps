@@ -43,3 +43,12 @@ To install any files in Redhat
 
 
 =================================================================================
+
+Tool httpd (performs service --> RHEL)
+
+    -we can see status using systemctl
+        - start ,status ,stop , restart
+
+    -to install it 
+        -sudo dnf -y install httpd
+
