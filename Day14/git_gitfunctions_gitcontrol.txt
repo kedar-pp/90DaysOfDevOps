@@ -79,3 +79,18 @@ Key GitHub Concepts:
     -Actions: Automating tasks like running tests, deploying code, etc.
 
 =========================================================================================
+
+3 stages in file management system to VCS
+
+    - Utracked   --->        Staged                 ----->   tracked
+
+    -  git add .  -->     git commit -m ""          -----> git push
+                            (if we want to 
+                              track it)
+                              OR 
+                            git rm --cached <filename>
+                              (to unstage)
+                        
+    - red color               - green color           
+
+========================================================================================
