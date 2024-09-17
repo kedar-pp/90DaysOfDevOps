@@ -1,1 +1,7 @@
 ///====Practicing Scripts in RedHat===\\\
+
+1.Shell Scripting:
+
+    -Automates repetitive tasks in Red Hat.
+    
+    -Example: A script to add users using user input:
