@@ -34,7 +34,7 @@
 
 ========================================================================================
 
-4.Important Commands:
+4. Important Commands:
 
     -   whoami: Shows the current user.
 
@@ -48,4 +48,14 @@
 
 ========================================================================================
 
-5.
+5. User Input in Scripts:
+
+    - You can ask for user input in a script to make it interactive.
+
+    - Example: Adding a user with a password.
+
+            -read username
+             sudo useradd $username
+             sudo passwd $username
+
+========================================================================================
