@@ -10,3 +10,14 @@
             read username
             sudo useradd $username
 
+========================================================================================
+
+2. Adding New Users:
+
+    - Use the useradd command to create new users.
+
+    - Combine with passwd to set a password for the new user:
+
+        -   sudo passwd username
+
+========================================================================================
