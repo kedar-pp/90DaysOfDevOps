@@ -21,3 +21,23 @@
         -   sudo passwd username
 
 ========================================================================================
+
+3. Editing Files with Vim:
+
+    - Vim is a text editor used for editing files in Linux.
+
+    - Important commands:
+
+        -   i to enter insert mode.
+        -   :w to save changes.
+        -   :q to quit
+
+========================================================================================
+
+4.Important Commands:
+
+whoami: Shows the current user.
+chmod: Changes file permissions.
+ls -l: Lists files with details (including permissions).
+passwd: Changes the password of a user.
+exit: Closes the terminal session.
