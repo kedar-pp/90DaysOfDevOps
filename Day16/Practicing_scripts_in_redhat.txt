@@ -36,8 +36,16 @@
 
 4.Important Commands:
 
-whoami: Shows the current user.
-chmod: Changes file permissions.
-ls -l: Lists files with details (including permissions).
-passwd: Changes the password of a user.
-exit: Closes the terminal session.
+    -   whoami: Shows the current user.
+
+    -   chmod: Changes file permissions.
+
+    -   ls -l: Lists files with details (including permissions).
+
+    -   passwd: Changes the password of a user.
+
+    -   exit: Closes the terminal session.
+
+========================================================================================
+
+5.
