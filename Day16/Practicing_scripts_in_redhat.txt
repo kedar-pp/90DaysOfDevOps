@@ -3,5 +3,10 @@
 1.Shell Scripting:
 
     -Automates repetitive tasks in Red Hat.
-    
+
     -Example: A script to add users using user input:
+
+        -   echo "Enter username:"
+            read username
+            sudo useradd $username
+
