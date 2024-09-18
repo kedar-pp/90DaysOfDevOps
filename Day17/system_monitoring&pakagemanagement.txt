@@ -53,6 +53,7 @@ Key Takeaways:
 
     - Security: SELinux and FirewallD help secure systems by controlling access and limiting services.
 
+
     - Package Management: Use YUM/DNF to easily install, update, and remove software.
 
 ========================================================================================
