@@ -44,3 +44,15 @@
 
         - RPM: Tool to query packages directly.
             - rpm -q httpd: Check the version of the httpd package.
+
+========================================================================================
+
+Key Takeaways:
+
+    - Monitoring: Tools like top and htop help you monitor and manage system performance.
+
+    - Security: SELinux and FirewallD help secure systems by controlling access and limiting services.
+
+    - Package Management: Use YUM/DNF to easily install, update, and remove software.
+
+========================================================================================
