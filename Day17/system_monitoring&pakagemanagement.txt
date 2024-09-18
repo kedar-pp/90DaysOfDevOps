@@ -32,3 +32,15 @@
 
 
 ========================================================================================
+
+3.  Package Management
+
+        - YUM: Used for installing and managing packages.
+            - sudo yum install httpd: Install Apache web server.
+            - sudo yum list installed: List all installed packages.
+
+        - DNF: Advanced package manager (similar to YUM).
+            - sudo dnf remove nginx: Remove a package.
+
+        - RPM: Tool to query packages directly.
+            - rpm -q httpd: Check the version of the httpd package.
