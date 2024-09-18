@@ -15,3 +15,20 @@
 
 
 ========================================================================================
+
+2. Security and User Access Control
+
+        - SELinux: Security feature to control access.
+            - sestatus: Check the status of SELinux.
+            - sudo setenforce 0: Temporarily set SELinux to permissive mode (for testing).
+            - sudo setenforce 1: Set it back to enforcing mode.
+
+        -FirewallD: Manages firewall rules.
+            - sudo firewall-cmd --state: Check if FirewallD is running.
+            - sudo firewall-cmd --list-all: List active firewall rules.
+
+        -sudoers File: Controls which users can run commands as root.
+            - sudo visudo: Edit the sudoers file to manage user permissions.
+
+
+========================================================================================
