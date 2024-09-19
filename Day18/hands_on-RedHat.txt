@@ -1,8 +1,14 @@
 ///====Red Hat User Management, Permissions, and Automation===\\\
 
 1. User Management in Red Hat
-        - Adding a New User:
+    - Adding a New User:
         - To create a new user on the system
 
             -sudo useradd username
             -sudo passwd username
+
+        - This adds a new user and sets their password.
+        - Used when onboarding new employees or adding service accounts.
+
+    - Modifying a User:
+        -To change a user's details, like adding them to a group:
