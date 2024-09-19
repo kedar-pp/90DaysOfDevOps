@@ -70,3 +70,7 @@
         -Ensures users update passwords as required.
 
 ========================================================================================
+
+ Important Commands
+        -whoami:
+            Shows which user is currently logged in.
