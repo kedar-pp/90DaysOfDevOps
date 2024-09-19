@@ -48,3 +48,25 @@
         - Displays permissions, ownership, and more info about the file.
 
 ==========================================================================================
+
+3. Automating with Shell Scripts
+    - Creating Users with a Script:
+        - Automate adding multiple users:
+
+            - #!/bin/bash
+              echo "Enter username:"
+              read username
+              sudo useradd $username
+              sudo passwd $username
+              echo "User $username added!"
+
+        - Saves time when adding many users by automating the process.
+
+    - Changing User Passwords:
+        -To update or set a password:
+
+            -sudo passwd username
+
+        -Ensures users update passwords as required.
+
+========================================================================================
