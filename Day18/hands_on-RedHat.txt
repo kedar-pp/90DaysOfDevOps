@@ -12,3 +12,17 @@
 
     - Modifying a User:
         -To change a user's details, like adding them to a group:
+
+            - sudo usermod -aG groupname username
+
+        -This adds the user to a specific group, giving them extra privileges (e.g., admin rights).
+
+    - Deleting a User:
+        - To remove a user from the system:
+
+            - sudo userdel username
+
+        - Used when someone leaves the company, removing their access.
+
+==========================================================================================
+
