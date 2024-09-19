@@ -87,3 +87,12 @@
 
             - ls -l /home
 
+        -passwd:
+            Changes a user’s password.
+
+            - sudo passwd username
+
+        - exit:
+            Logs out of the current session.
+
+            - exit
