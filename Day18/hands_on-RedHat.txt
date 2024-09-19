@@ -1,2 +1,8 @@
 ///====Red Hat User Management, Permissions, and Automation===\\\
 
+1. User Management in Red Hat
+        - Adding a New User:
+        - To create a new user on the system
+
+            -sudo useradd username
+            -sudo passwd username
