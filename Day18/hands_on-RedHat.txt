@@ -46,3 +46,5 @@
         - To see the current permissions of files:
             - ls -l /path/to/file
         - Displays permissions, ownership, and more info about the file.
+
+==========================================================================================
