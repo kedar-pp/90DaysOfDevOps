@@ -74,3 +74,16 @@
  Important Commands
         -whoami:
             Shows which user is currently logged in.
+
+            -whoami
+
+        - chmod:
+            Changes file permissions.
+
+            -chmod 755 filename
+
+        -ls -l:
+            Lists files with detailed information like permissions and ownership.
+
+            - ls -l /home
+
