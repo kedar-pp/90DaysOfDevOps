@@ -42,3 +42,14 @@
         - Example:
 
             - sudo firewall-cmd --list-all
+
+======================================================================
+
+3. SELinux (Security-Enhanced Linux)
+    - Check SELinux Status:
+
+        - Use the sestatus command to check whether SELinux is enabled and what mode it’s in.
+
+        - Example:
+            
+            - sestatus
