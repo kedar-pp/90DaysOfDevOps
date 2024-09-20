@@ -1,0 +1,42 @@
+///====Networking, Firewalls and SELinux ====\\\
+
+1. Networking in Red Hat
+    - View Network Interfaces:
+    - Use the ip a command to list all network interfaces and see their IP addresses.
+    - Example:
+        - ip a
+
+    - Configure Network Interfaces:
+        Edit the network configuration file (/etc/sysconfig/network-scripts/ifcfg-eth0) to manually set a static IP address.
+
+    - Test Network Connectivity:
+        Use ping to check if your server can communicate with another machine or website.
+
+        - Example:
+            - ping google.com
+
+
+======================================================================
+
+2. Firewall Management with firewalld
+
+    - Start and Enable Firewall:
+        - Start the firewall and ensure it’s enabled to run at boot using systemctl.
+
+        - Example:
+
+            - sudo systemctl start firewalld
+              sudo systemctl enable firewalld
+
+    - Open Ports for Specific Services:
+        - Use firewall-cmd to open ports like 80 (HTTP) or 443 (HTTPS) for web traffic.
+
+        - Example:
+
+            - sudo firewall-cmd --add-port=80/tcp --permanent
+              sudo firewall-cmd --reload
+
+    -Check Firewall Status:
+        - List all open ports and active rules using firewall-cmd.
+
+        - Example:
