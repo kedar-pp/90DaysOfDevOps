@@ -62,3 +62,13 @@
 
             - sudo setenforce 0   # Permissive
               sudo setenforce 1   # Enforcing
+
+    - View and Modify SELinux Contexts:
+
+        - Check and change SELinux security labels on files to control access.
+
+        - Example:
+
+            - ls -Z /path/to/file   # View context
+              
+            - sudo chcon -t httpd_sys_content_t /var/www/html   # Change context
