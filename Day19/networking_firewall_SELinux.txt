@@ -40,3 +40,5 @@
         - List all open ports and active rules using firewall-cmd.
 
         - Example:
+
+            - sudo firewall-cmd --list-all
