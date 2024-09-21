@@ -34,15 +34,21 @@
 
 
 3. Rebasing
-•	Scenario: Your feature branch is behind the main branch, and instead of merging, you want to apply your changes on top of the latest version.
-o	Solution: Rebase your branch to avoid cluttering the history with merge commits.
-o	Example:
-bash
-Copy code
-git checkout feature-login
-git fetch origin
-git rebase origin/main
-•	Use case: Rebasing helps in keeping your commit history linear and clean, especially useful for big projects.
+
+    •	Scenario: Your feature branch is behind the main branch, and instead of merging, you want to apply your changes on top of the latest version.
+        
+        o	Solution: Rebase your branch to avoid cluttering the history with merge commits.
+
+        o	Example:
+
+            git checkout feature-login
+            git fetch origin
+            git rebase origin/main
+    •	Use case: Rebasing helps in keeping your commit history linear and clean, especially useful for big projects.
+
+==========================================================================================
+
+
 4. Cherry-Pick
 •	Scenario: A specific bug fix from another branch needs to be applied to your current branch, but you don’t want the other changes from that branch.
 o	Solution: Use git cherry-pick to apply only the needed commit(s).
