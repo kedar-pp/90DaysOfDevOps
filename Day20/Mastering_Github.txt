@@ -1,6 +1,7 @@
 ///====Mastering Github====\\\
 
 1. Git Branching and Workflows
+
     •	Scenario: You’re working on a new feature for a project, but the main branch is being used by another developer for hotfixes.
 
         o	Solution: Use git branch to create a feature branch and work independently without affecting the main branch.
@@ -16,14 +17,22 @@
 
 
 2. Pull Requests and Code Reviews
-•	Scenario: You’ve completed the feature and want another team member to review your code before it’s merged.
-o	Solution: Open a pull request on GitHub, allowing others to review and suggest changes before merging into the main branch.
-o	Example: After pushing your code to GitHub:
-bash
-Copy code
-git push origin feature-login
-•	Then, on GitHub, create a pull request from feature-login to main.
-•	Use case: When working in a team, every feature/bug fix goes through a pull request for quality assurance.
+
+    •	Scenario: You’ve completed the feature and want another team member to review your code before it’s merged.
+
+        o	Solution: Open a pull request on GitHub, allowing others to review and suggest changes before merging into the main branch.
+
+        o	Example: After pushing your code to GitHub:
+            
+            git push origin feature-login
+
+    •	Then, on GitHub, create a pull request from feature-login to main.
+
+    •	Use case: When working in a team, every feature/bug fix goes through a pull request for quality assurance.
+
+==========================================================================================
+
+
 3. Rebasing
 •	Scenario: Your feature branch is behind the main branch, and instead of merging, you want to apply your changes on top of the latest version.
 o	Solution: Rebase your branch to avoid cluttering the history with merge commits.
