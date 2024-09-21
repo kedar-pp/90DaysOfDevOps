@@ -1,14 +1,20 @@
 ///====Mastering Github====\\\
 
 1. Git Branching and Workflows
-•	Scenario: You’re working on a new feature for a project, but the main branch is being used by another developer for hotfixes.
-o	Solution: Use git branch to create a feature branch and work independently without affecting the main branch.
-o	Example:
-bash
-Copy code
-git branch feature-login
-git checkout feature-login
-•	Use case: You’ll use this when working on separate features that shouldn’t interfere with the main codebase.
+    •	Scenario: You’re working on a new feature for a project, but the main branch is being used by another developer for hotfixes.
+
+        o	Solution: Use git branch to create a feature branch and work independently without affecting the main branch.
+
+        o	Example:
+
+            git branch feature-login
+            git checkout feature-login
+
+    •	Use case: You’ll use this when working on separate features that shouldn’t interfere with the main codebase.
+
+==========================================================================================
+
+
 2. Pull Requests and Code Reviews
 •	Scenario: You’ve completed the feature and want another team member to review your code before it’s merged.
 o	Solution: Open a pull request on GitHub, allowing others to review and suggest changes before merging into the main branch.
