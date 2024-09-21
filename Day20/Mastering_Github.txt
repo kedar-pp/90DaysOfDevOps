@@ -50,50 +50,60 @@
 
 
 4. Cherry-Pick
-•	Scenario: A specific bug fix from another branch needs to be applied to your current branch, but you don’t want the other changes from that branch.
-o	Solution: Use git cherry-pick to apply only the needed commit(s).
-o	Example:
-bash
-Copy code
-git cherry-pick <commit-hash>
-•	Use case: Use this when you need to pull in a specific change from another branch without merging the whole branch.
+    
+    •	Scenario: A specific bug fix from another branch needs to be applied to your current branch, but you don’t want the other changes from that branch.
+        
+        o	Solution: Use git cherry-pick to apply only the needed commit(s).
+
+        o	Example:
+
+            git cherry-pick <commit-hash>
+
+    •	Use case: Use this when you need to pull in a specific change from another branch without merging the whole branch.
 
 ==========================================================================================
 
 
 5. Squashing Commits
-•	Scenario: You have multiple commits for a feature, but you want to combine them into one before merging to keep history clean.
-o	Solution: Use interactive rebase to squash commits.
-o	Example:
-bash
-Copy code
-git rebase -i HEAD~3
-•	Use case: This is useful when you want a clean history before merging your feature branch into the main branch.
+
+    •	Scenario: You have multiple commits for a feature, but you want to combine them into one before merging to keep history clean.
+
+        o	Solution: Use interactive rebase to squash commits.
+
+        o	Example:
+
+            git rebase -i HEAD~3
+
+    •	Use case: This is useful when you want a clean history before merging your feature branch into the main branch.
 
 
 ==========================================================================================
 
 
 6. GitHub Actions for CI/CD
-•	Scenario: You want to automatically run tests and deploy your app whenever code is pushed to the repository.
-o	Solution: Create a GitHub Actions workflow to automate this process.
-o	Example: In your .github/workflows/main.yml file:
-yaml
-Copy code
-name: CI/CD Pipeline
+    
+    •	Scenario: You want to automatically run tests and deploy your app whenever code is pushed to the repository.
 
-on: [push]
+        o	Solution: Create a GitHub Actions workflow to automate this process.
+        o	Example: In your .github/workflows/main.yml file:
 
-jobs:
-  build:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v2
-      - name: Install dependencies
-        run: npm install
-      - name: Run tests
-        run: npm test
-•	Use case: This will help automate builds, tests, and deployments whenever you push new code.
+            yaml
+
+            name: CI/CD Pipeline
+
+            on: [push]
+
+            jobs:
+              build:
+                runs-on: ubuntu-latest
+                steps:
+                    - uses: actions/checkout@v2
+                    - name: Install dependencies
+                    -run: npm install
+                    - name: Run tests
+                      run: npm test
+
+    •	Use case: This will help automate builds, tests, and deployments whenever you push new code.
 
 
 ==========================================================================================
