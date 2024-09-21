@@ -146,21 +146,33 @@
 
 
 9. Versioning Releases
-•	Scenario: You’ve completed a major feature and want to create a versioned release for deployment.
-o	Solution: Use GitHub’s release feature to tag the version and share it with stakeholders.
-o	Example:
-git tag -a v1.0.0 -m "First major release"
-git push origin v1.0.0
-•	Use case: Use this for versioning software releases, making it easy to track and deploy specific versions.
+
+    •	Scenario: You’ve completed a major feature and want to create a versioned release for deployment.
+
+        o	Solution: Use GitHub’s release feature to tag the version and share it with stakeholders.
+        
+        o	Example:
+
+            git tag -a v1.0.0 -m "First major release"
+            git push origin v1.0.0
+
+    •	Use case: Use this for versioning software releases, making it easy to track and deploy specific versions.
 
 
 ==========================================================================================
 
 
 10. Hosting GitHub Pages
-•	Scenario: You want to host documentation for your open-source project.
-o	Solution: Use GitHub Pages to publish your website or project documentation.
-o	Example: Push an index.html file to the gh-pages branch to deploy your site.
-•	Use case: Ideal for hosting project documentation, personal blogs, or landing pages directly from a GitHub repository.
+
+    •	Scenario: You want to host documentation for your open-source project.
+
+        o	Solution: Use GitHub Pages to publish your website or project documentation.
+
+        o	Example: Push an index.html file to the gh-pages branch to deploy your site.
+
+    •	Use case: Ideal for hosting project documentation, personal blogs, or landing pages directly from a GitHub repository.
+
 These real-time scenarios and commands will help you leverage the full power of GitHub in day-to-day software development and DevOps workflows!
 
+
+==========================================================================================
