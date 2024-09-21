@@ -57,6 +57,10 @@ bash
 Copy code
 git cherry-pick <commit-hash>
 •	Use case: Use this when you need to pull in a specific change from another branch without merging the whole branch.
+
+==========================================================================================
+
+
 5. Squashing Commits
 •	Scenario: You have multiple commits for a feature, but you want to combine them into one before merging to keep history clean.
 o	Solution: Use interactive rebase to squash commits.
@@ -65,6 +69,11 @@ bash
 Copy code
 git rebase -i HEAD~3
 •	Use case: This is useful when you want a clean history before merging your feature branch into the main branch.
+
+
+==========================================================================================
+
+
 6. GitHub Actions for CI/CD
 •	Scenario: You want to automatically run tests and deploy your app whenever code is pushed to the repository.
 o	Solution: Create a GitHub Actions workflow to automate this process.
@@ -85,11 +94,21 @@ jobs:
       - name: Run tests
         run: npm test
 •	Use case: This will help automate builds, tests, and deployments whenever you push new code.
+
+
+==========================================================================================
+
+
 7. Branch Protection
 •	Scenario: You want to enforce rules like requiring code reviews and passing tests before code is merged into the main branch.
 o	Solution: Set branch protection rules on GitHub.
 o	Example: On GitHub, enable "Require status checks to pass before merging" in branch settings.
 •	Use case: Protect critical branches like main to maintain the stability and quality of your production code.
+
+
+==========================================================================================
+
+
 8. Using GitHub Secrets
 •	Scenario: You need to store API keys, passwords, or other sensitive information securely in your repository.
 o	Solution: Store these in GitHub Secrets and access them in your workflows.
@@ -101,6 +120,11 @@ jobs:
       - name: Use API key
         run: echo ${{ secrets.API_KEY }}
 •	Use case: Use GitHub Secrets to manage sensitive information securely during deployments.
+
+
+==========================================================================================
+
+
 9. Versioning Releases
 •	Scenario: You’ve completed a major feature and want to create a versioned release for deployment.
 o	Solution: Use GitHub’s release feature to tag the version and share it with stakeholders.
@@ -108,6 +132,11 @@ o	Example:
 git tag -a v1.0.0 -m "First major release"
 git push origin v1.0.0
 •	Use case: Use this for versioning software releases, making it easy to track and deploy specific versions.
+
+
+==========================================================================================
+
+
 10. Hosting GitHub Pages
 •	Scenario: You want to host documentation for your open-source project.
 o	Solution: Use GitHub Pages to publish your website or project documentation.
