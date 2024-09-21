@@ -110,26 +110,36 @@
 
 
 7. Branch Protection
-•	Scenario: You want to enforce rules like requiring code reviews and passing tests before code is merged into the main branch.
-o	Solution: Set branch protection rules on GitHub.
-o	Example: On GitHub, enable "Require status checks to pass before merging" in branch settings.
-•	Use case: Protect critical branches like main to maintain the stability and quality of your production code.
+
+    •	Scenario: You want to enforce rules like requiring code reviews and passing tests before code is merged into the main branch.
+    
+        o	Solution: Set branch protection rules on GitHub.
+    
+        o	Example: On GitHub, enable "Require status checks to pass before merging" in branch settings.
+
+    •	Use case: Protect critical branches like main to maintain the stability and quality of your production code.
 
 
 ==========================================================================================
 
 
 8. Using GitHub Secrets
-•	Scenario: You need to store API keys, passwords, or other sensitive information securely in your repository.
-o	Solution: Store these in GitHub Secrets and access them in your workflows.
-o	Example: In your GitHub Action workflow:
-yaml
-jobs:
-  build:
-    steps:
-      - name: Use API key
-        run: echo ${{ secrets.API_KEY }}
-•	Use case: Use GitHub Secrets to manage sensitive information securely during deployments.
+    
+    •	Scenario: You need to store API keys, passwords, or other sensitive information securely in your repository.
+
+        o	Solution: Store these in GitHub Secrets and access them in your workflows.
+        
+        o	Example: In your GitHub Action workflow:
+
+        yaml
+
+        jobs:
+          build:
+            steps:
+                - name: Use API key
+                  run: echo ${{ secrets.API_KEY }}
+
+    •	Use case: Use GitHub Secrets to manage sensitive information securely during deployments.
 
 
 ==========================================================================================
