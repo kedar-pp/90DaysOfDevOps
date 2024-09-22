@@ -104,9 +104,10 @@
 
             - Example: Taking snapshots of VMs regularly to restore to a previous state in case of a failure.
 
-Cloud Services:
+    - Cloud Services:
 
-Scenario: Organizations leverage virtualization for scalable cloud services, allowing them to deploy applications on-demand.
-Example: Using AWS EC2 instances to run VMs for different applications, adjusting resources based on demand.
+        - Scenario: Organizations leverage virtualization for scalable cloud services, allowing them to deploy applications on-demand.
+        
+            - Example: Using AWS EC2 instances to run VMs for different applications, adjusting resources based on demand.
 
 ======================================================================
