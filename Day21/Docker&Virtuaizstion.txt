@@ -85,18 +85,25 @@
 
 
 7. Real-Time Scenarios for Virtualization and Docker
-Server Consolidation:
 
-Scenario: A company with multiple underutilized servers can consolidate them into fewer physical machines using VMs to save costs.
-Example: Migrating legacy applications to VMs for better resource management.
-Testing and Development Environments:
+    - Server Consolidation:
 
-Scenario: Developers can create isolated environments using Docker containers to test applications without affecting production.
-Example: A developer can spin up a MySQL container to test database connections while keeping the production database secure.
-Disaster Recovery:
+        - Scenario: A company with multiple underutilized servers can consolidate them into fewer physical machines using VMs to save costs.
+        
+            - Example: Migrating legacy applications to VMs for better resource management.
 
-Scenario: Virtualization allows quick recovery from hardware failures by replicating VMs to disaster recovery sites.
-Example: Taking snapshots of VMs regularly to restore to a previous state in case of a failure.
+    - Testing and Development Environments:
+
+        - Scenario: Developers can create isolated environments using Docker containers to test applications without affecting production.
+
+            - Example: A developer can spin up a MySQL container to test database connections while keeping the production database secure.
+
+    - Disaster Recovery:
+
+        - Scenario: Virtualization allows quick recovery from hardware failures by replicating VMs to disaster recovery sites.
+
+            - Example: Taking snapshots of VMs regularly to restore to a previous state in case of a failure.
+
 Cloud Services:
 
 Scenario: Organizations leverage virtualization for scalable cloud services, allowing them to deploy applications on-demand.
