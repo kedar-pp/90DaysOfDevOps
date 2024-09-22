@@ -65,13 +65,20 @@
 
 
 6. Advantages and Limitations of Docker
-Advantages:
-Speed: Faster deployment and scaling of applications.
-Consistency: Ensures applications run the same in development and production.
-Resource Efficiency: Containers use less memory compared to VMs.
-Limitations:
-Security: Shared kernel can pose security risks.
-Learning Curve: Requires understanding of containerization concepts.
+
+    - Advantages:
+
+        - Speed: Faster deployment and scaling of applications.
+
+        - Consistency: Ensures applications run the same in development and production.
+
+        - Resource Efficiency: Containers use less memory compared to VMs.
+
+    - Limitations:
+
+        - Security: Shared kernel can pose security risks.
+        
+        - Learning Curve: Requires understanding of containerization concepts.
 
 
 ======================================================================
