@@ -29,6 +29,15 @@
 
 
 3. Docker vs Virtual Machines
-Docker: Utilizes OS-level virtualization, sharing the host OS kernel, leading to lightweight and faster deployment.
-Virtual Machines: Each VM runs a full OS, making them heavier and slower to start.
-Example: Deploying a web application in Docker containers is faster and uses less memory than deploying the same application in multiple VMs.
+
+    - Docker: Utilizes OS-level virtualization, sharing the host OS kernel, leading to lightweight and faster deployment.
+
+    - Virtual Machines: Each VM runs a full OS, making them heavier and slower to start.
+
+    - Example: Deploying a web application in Docker containers is faster and uses less memory than deploying the same application in multiple VMs.
+
+
+======================================================================
+
+
+4. 
