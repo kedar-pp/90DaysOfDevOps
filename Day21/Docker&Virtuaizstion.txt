@@ -41,18 +41,24 @@
 
 
 4. What is Docker and Its History?
-Definition: Docker is a platform that automates the deployment of applications in lightweight containers.
-History: Introduced in 2013, it changed how developers build, ship, and run applications, allowing for consistent environments across different stages of development.
+
+    - Definition: Docker is a platform that automates the deployment of applications in lightweight containers.
+
+    - History: Introduced in 2013, it changed how developers build, ship, and run applications, allowing for consistent environments across different stages of development.
 
 
 ======================================================================
 
 
 5. Docker Architecture
-Components:
-Docker Daemon: Runs on the host and manages containers.
-Docker Client: The command-line interface for interacting with the Docker daemon.
-Docker Registry: Stores Docker images (e.g., Docker Hub).
+
+    - Components:
+
+        - Docker Daemon: Runs on the host and manages containers.
+
+        - Docker Client: The command-line interface for interacting with the Docker daemon.
+        
+        - Docker Registry: Stores Docker images (e.g., Docker Hub).
 
 
 ======================================================================
