@@ -6,4 +6,29 @@
 
     - Purpose: Enables efficient resource utilization and flexibility in managing IT environments.
 
+
 ======================================================================
+
+
+2. Types of Virtualization
+
+    - Hardware Virtualization:
+
+        - Uses a hypervisor to create and manage virtual machines (VMs).
+
+        - Example: Running multiple Windows and Linux VMs on a single physical server to maximize resource usage.
+
+    - OS-Level Virtualization:
+
+        - Allows multiple isolated user-space instances (containers) to run on a single operating system.
+
+        - Example: Using Docker to deploy microservices in containers, each running different applications without interference.
+
+
+======================================================================
+
+
+3. Docker vs Virtual Machines
+Docker: Utilizes OS-level virtualization, sharing the host OS kernel, leading to lightweight and faster deployment.
+Virtual Machines: Each VM runs a full OS, making them heavier and slower to start.
+Example: Deploying a web application in Docker containers is faster and uses less memory than deploying the same application in multiple VMs.
