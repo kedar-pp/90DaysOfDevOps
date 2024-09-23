@@ -1,0 +1,8 @@
+///====Starting with docker ====\\\
+
+1. Docker :- 
+        Docker is a platform that f=helps devlopers build , share ,run applications with container
+
+    -real time Scenario to use docker (Use case)
+        - Dev1- Started project
+          Dev2- Join after 2 years
