@@ -51,3 +51,7 @@
                           |
                           V
                         Container
+
+        - The container is process that runs application with Images
+        - Container is an isolated process
+        - Means Container run independently on computer
