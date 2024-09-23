@@ -12,3 +12,11 @@
         ***Then their comes a solution :-
 
             - A docker container has everything about a project like code, runtime , sytem tools , system libraries and settings with specific version.
+
+                -eg . for project we need :-
+                        - Node js 16 
+                          NPM 7.2
+                          React 16.3
+                          Webpack 4
+                          jest 23.1.0
+                      we have to put this in docker,After 10 years we will get the same versions and the project will run 
