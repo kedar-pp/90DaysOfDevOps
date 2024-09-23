@@ -20,3 +20,27 @@
                           Webpack 4
                           jest 23.1.0
                       we have to put this in docker,After 10 years we will get the same versions and the project will run 
+
+
+=====================================================================
+
+
+2. -Images : They are templates of project
+        - It is a kind of ready-to-use software read-only template
+        - Images are made with source codes,libraries,external dependencies and tools
+        - Images can not be updated
+        - If you want to make change in image you have to create new image.
+        - Images can not run directly
+
+            - eg.
+                 -Images include:- 
+                   Nodejs setup
+                   React setup
+                   Code of application
+                   Dependencies
+                   Any other supporting tool
+                   docker file tool
+            We can say that image is a template of project       
+
+
+   -Container : The Running Instance of Image.
