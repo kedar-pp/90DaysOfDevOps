@@ -6,3 +6,9 @@
     -real time Scenario to use docker (Use case)
         - Dev1- Started project
           Dev2- Join after 2 years
+
+          Now frameworks and library version has updated & some library or code not working properly 
+        
+        ***Then their comes a solution :-
+
+            - A docker container has everything about a project like code, runtime , sytem tools , system libraries and settings with specific version.
