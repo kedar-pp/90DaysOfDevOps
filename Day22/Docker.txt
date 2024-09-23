@@ -44,3 +44,10 @@
 
 
    -Container : The Running Instance of Image.
+        - Runnable Instance of Image.
+                    Project Image
+                          |
+                          |   Run
+                          |
+                          V
+                        Container
