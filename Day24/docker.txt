@@ -13,15 +13,23 @@
     - Pause a container temporarily without stopping it using docker container pause <container_id>.
 
     - Unpause the container to resume with docker container unpause <container_id>.
-    
-Killing and Stopping Containers
 
-Force-stop a container immediately with docker container kill <container_id>.
-List all running and stopped containers with docker ps -a.
-Cleaning Up Stopped Containers
+4. Killing and Stopping Containers
 
-Free up system resources by removing stopped containers using docker container prune -f.
+    - Force-stop a container immediately with docker container kill <container_id>.
+  
+    - List all running and stopped containers with docker ps -a.
+
+5. Cleaning Up Stopped Containers
+
+    - Free up system resources by removing stopped containers using docker container prune -f.
+
+
+=============================================================================
+
+
 Hands-On Tasks
+
 Task 1: Creating a Container and Installing Tools
 
 Create a container and install tree and git tools.
