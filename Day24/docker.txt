@@ -1,15 +1,19 @@
 ///====Moving More into Docker====\\\
 
-Accessing a Running Container
+1. Accessing a Running Container
 
-Use docker container exec -it <container_id> /bin/bash to open the shell inside a running container, allowing you to interact directly with it.
-Checking Network Connectivity
+    - Use docker container exec -it <container_id> /bin/bash to open the shell inside a running container, allowing you to interact directly with it.
 
-Use curl <ip_address> to check if a container’s IP address is accessible and verify network connections.
-Pausing and Unpausing Containers
+2. Checking Network Connectivity
 
-Pause a container temporarily without stopping it using docker container pause <container_id>.
-Unpause the container to resume with docker container unpause <container_id>.
+    - Use curl <ip_address> to check if a container’s IP address is accessible and verify network connections.
+
+3. Pausing and Unpausing Containers
+
+    - Pause a container temporarily without stopping it using docker container pause <container_id>.
+
+    - Unpause the container to resume with docker container unpause <container_id>.
+    
 Killing and Stopping Containers
 
 Force-stop a container immediately with docker container kill <container_id>.
