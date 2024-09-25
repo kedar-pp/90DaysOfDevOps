@@ -1,2 +1,43 @@
 ///====Moving More into Docker====\\\
 
+Accessing a Running Container
+
+Use docker container exec -it <container_id> /bin/bash to open the shell inside a running container, allowing you to interact directly with it.
+Checking Network Connectivity
+
+Use curl <ip_address> to check if a container’s IP address is accessible and verify network connections.
+Pausing and Unpausing Containers
+
+Pause a container temporarily without stopping it using docker container pause <container_id>.
+Unpause the container to resume with docker container unpause <container_id>.
+Killing and Stopping Containers
+
+Force-stop a container immediately with docker container kill <container_id>.
+List all running and stopped containers with docker ps -a.
+Cleaning Up Stopped Containers
+
+Free up system resources by removing stopped containers using docker container prune -f.
+Hands-On Tasks
+Task 1: Creating a Container and Installing Tools
+
+Create a container and install tree and git tools.
+Run a container: docker container run -itd ubuntu:18.04
+Access the container: docker container exec -it <container_id> /bin/bash
+Install tools: apt-get update -y && apt-get install tree git -y
+Task 2: Exporting the Container to a .tar File
+
+Save the customized container to a .tar file for backup:
+Save container state: docker container commit <container_id> files:v1
+Export to .tar: docker save files:v1 -o my_container_backup.tar
+Task 3: Importing the Image from the .tar File
+
+Restore the saved container image:
+Load the .tar file: docker load -i my_container_backup.tar
+Task 4: Creating a New Container from the Imported Image
+
+Run a container using the restored image:
+docker container run -itd files:v1
+Key Takeaways
+Interactive Management: You can interact with a running container for live troubleshooting or updates.
+Exporting and Importing: Docker allows you to save the container’s state and easily restore it, making backups portable.
+Pausing: Temporarily halt a container without stopping it, saving resources.
