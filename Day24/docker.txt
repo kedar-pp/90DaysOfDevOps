@@ -68,4 +68,5 @@ Key Takeaways
 
     - Exporting and Importing: Docker allows you to save the container’s state and easily restore it, making backups portable.
 
-Pausing: Temporarily halt a container without stopping it, saving resources.
+    - Pausing: Temporarily halt a container without stopping it, saving resources.
+
