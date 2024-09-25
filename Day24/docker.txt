@@ -50,12 +50,15 @@ Hands-On Tasks
 
     - Task 3: Importing the Image from the .tar File
 
-Restore the saved container image:
-Load the .tar file: docker load -i my_container_backup.tar
-Task 4: Creating a New Container from the Imported Image
+        - Restore the saved container image:
 
-Run a container using the restored image:
-docker container run -itd files:v1
+            - Load the .tar file: docker load -i my_container_backup.tar
+        
+    - Task 4: Creating a New Container from the Imported Image
+
+        - Run a container using the restored image:
+
+            - docker container run -itd files:v1
 Key Takeaways
 Interactive Management: You can interact with a running container for live troubleshooting or updates.
 Exporting and Importing: Docker allows you to save the container’s state and easily restore it, making backups portable.
