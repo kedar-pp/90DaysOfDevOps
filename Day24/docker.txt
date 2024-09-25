@@ -66,5 +66,6 @@ Key Takeaways
 
     - Interactive Management: You can interact with a running container for live troubleshooting or updates.
 
-Exporting and Importing: Docker allows you to save the container’s state and easily restore it, making backups portable.
+    - Exporting and Importing: Docker allows you to save the container’s state and easily restore it, making backups portable.
+
 Pausing: Temporarily halt a container without stopping it, saving resources.
