@@ -30,18 +30,25 @@
 
 Hands-On Tasks
 
-Task 1: Creating a Container and Installing Tools
+    - Task 1: Creating a Container and Installing Tools
 
-Create a container and install tree and git tools.
-Run a container: docker container run -itd ubuntu:18.04
-Access the container: docker container exec -it <container_id> /bin/bash
-Install tools: apt-get update -y && apt-get install tree git -y
-Task 2: Exporting the Container to a .tar File
+        - Create a container and install tree and git tools.
 
-Save the customized container to a .tar file for backup:
-Save container state: docker container commit <container_id> files:v1
-Export to .tar: docker save files:v1 -o my_container_backup.tar
-Task 3: Importing the Image from the .tar File
+            -Run a container: docker container run -itd ubuntu:18.04
+            
+            - Access the container: docker container exec -it <container_id> /bin/bash
+            
+            - Install tools: apt-get update -y && apt-get install tree git -y
+
+    - Task 2: Exporting the Container to a .tar File
+
+        - Save the customized container to a .tar file for backup:
+
+            -Save container state: docker container commit <container_id> files:v1
+
+            - Export to .tar: docker save files:v1 -o my_container_backup.tar
+
+    - Task 3: Importing the Image from the .tar File
 
 Restore the saved container image:
 Load the .tar file: docker load -i my_container_backup.tar
