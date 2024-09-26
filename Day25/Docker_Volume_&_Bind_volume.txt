@@ -1,0 +1,18 @@
+///====Volume & Bind Volume ====\\\
+
+1. Docker Volume
+
+    - 
+
+Task 1 : 
+        - Pulling image of mysql , adding some data ,delteing the container , creating new container & then checkout ould data
+
+
+============================================================================
+
+2. Bind Volume / Bind Mount
+
+    - 
+
+Task 2 :
+        - 
