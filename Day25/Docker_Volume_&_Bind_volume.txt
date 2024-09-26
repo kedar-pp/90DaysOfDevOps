@@ -14,7 +14,9 @@ Task 1 :
 
 2. Bind Volume / Bind Mount
 
-  
+    - Purpose: Bind mounts are used to mount a file or directory from the host machine into a container, allowing real-time synchronization between the host and container files.
+
+    -How it works: Changes made inside the container immediately reflect on the host system and vice versa, making it useful for development environments where real-time feedback is crucial.
 
 Task 2 :
         - Adding directory in container in syncronhus way
