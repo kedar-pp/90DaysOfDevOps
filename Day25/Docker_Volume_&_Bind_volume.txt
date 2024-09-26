@@ -2,7 +2,9 @@
 
 1. Docker Volume
 
-    - 
+    - Purpose: Docker volumes are used to persist data generated and used by Docker containers, so even if the container is deleted, the data is retained.
+
+    - How it works: Volumes are stored outside the container’s filesystem and managed by Docker itself, making them ideal for sharing data between multiple containers.
 
 Task 1 : 
         - Pulling image of mysql , adding some data ,delteing the container , creating new container & then checkout ould data
@@ -12,7 +14,7 @@ Task 1 :
 
 2. Bind Volume / Bind Mount
 
-    - 
+  
 
 Task 2 :
         - Adding directory in container in syncronhus way
