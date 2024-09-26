@@ -24,3 +24,8 @@ Task 2 :
 
 ============================================================================
 
+Differences:
+
+Volumes: Fully managed by Docker, best for container data persistence, and not tied to specific directories on the host.
+Bind Mounts: Directly link a directory from the host to the container, providing real-time synchronization, but managed manually by the user.
+Both approaches ensure efficient data management in containerized applications.
