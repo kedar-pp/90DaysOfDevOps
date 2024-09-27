@@ -2,6 +2,12 @@
 
 1. Docker Registry
 
+    - A centralized place to store and manage Docker images. It's like a repository for all your containerized applications.
+
+    - Public Registry: Docker Hub is a common public registry.
+
+    - Private Registry: Companies often use private registries for internal image storage.
+
 
 
 =========================================================================
