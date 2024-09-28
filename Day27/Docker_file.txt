@@ -35,3 +35,11 @@
     - Install dependencies: RUN npm install
 
     - Define app start command: CMD ["npm", "start"]
+
+        -- docker build -t node-app .
+           docker run -p 3000:3000 node-app
+
+
+========================================================================================
+
+
