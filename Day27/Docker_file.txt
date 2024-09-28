@@ -1,2 +1,7 @@
 ///===Docker File===\\\
 
+What is Dockerfile?
+
+    - A text file containing instructions to build a Docker image.
+
+    - Helps automate creating consistent environments across dev, testing, and production.
