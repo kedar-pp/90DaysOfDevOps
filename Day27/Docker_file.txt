@@ -26,8 +26,12 @@
 
 3. Example: Dockerizing a Node.js Web App
 
-Start with a base image: FROM node:16
-Set working directory: WORKDIR /app
-Copy application files: COPY . /app
-Install dependencies: RUN npm install
-Define app start command: CMD ["npm", "start"]
+    - Start with a base image: FROM node:16
+
+    - Set working directory: WORKDIR /app
+
+    - Copy application files: COPY . /app
+    
+    - Install dependencies: RUN npm install
+
+    - Define app start command: CMD ["npm", "start"]
