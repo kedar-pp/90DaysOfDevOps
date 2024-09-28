@@ -43,19 +43,26 @@
 ========================================================================================
 4. Real-World Use Case: Handling Version Mismatches
 
-Dockerfile locks the environment with specific versions (Node.js, Redis, Python, etc.), preventing issues due to library updates.
+    - Dockerfile locks the environment with specific versions (Node.js, Redis, Python, etc.), preventing issues due to library updates.
 
+========================================================================================
 
 5. Advanced Example: Python Flask App with Redis
 
-Start with a base image: FROM python:3.9
-Set working directory and copy files: WORKDIR /app, COPY . /app
-Install dependencies: RUN pip install flask redis
-Run the Flask app: CMD ["python", "app.py"]
-Dockerfile Benefits:
+    - Start with a base image: FROM python:3.9
 
-6. Pros
+    - Set working directory and copy files: WORKDIR /app, COPY . /app
 
-Ensures consistency across multiple machines.
-Automates environment setup and reduces human errors.
+    - Install dependencies: RUN pip install flask redis
 
+    - Run the Flask app: CMD ["python", "app.py"]
+
+========================================================================================
+
+6. Dockerfile Benefits:
+
+    - Ensures consistency across multiple machines.
+
+    - Automates environment setup and reduces human errors.
+
+========================================================================================
