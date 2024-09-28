@@ -11,8 +11,12 @@
 
 2. Basic Dockerfile Instructions:
 
-FROM: Specifies the base image (e.g., FROM ubuntu:latest).
-COPY: Copies files from the host to the container (e.g., COPY . /app).
-RUN: Executes commands inside the container during image build (e.g., RUN apt-get install -y nodejs).
-CMD: Sets the default command to run when the container starts (e.g., CMD ["node", "app.js"]).
-EXPOSE: Defines the port the container will listen on (e.g., EXPOSE 8080).
+    - FROM: Specifies the base image (e.g., FROM ubuntu:latest).
+
+    - COPY: Copies files from the host to the container (e.g., COPY . /app).
+
+    - RUN: Executes commands inside the container during image build (e.g., RUN apt-get install -y nodejs).
+
+    - CMD: Sets the default command to run when the container starts (e.g., CMD ["node", "app.js"]).
+
+    - EXPOSE: Defines the port the container will listen on (e.g., EXPOSE 8080).
