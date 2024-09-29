@@ -3,10 +3,16 @@
 Docker Compose helps run multi-container applications using a simple configuration file (YAML).
 It manages services, networks, and volumes required for an application.
 
+=================================================================================================================================
+
 2. Why use Docker Compose?
 
 Simplifies managing complex applications by defining them in one file.
 Useful for development, testing, and CI/CD workflows.
+
+
+=================================================================================================================================
+
 
 3. Core Concepts:
 
