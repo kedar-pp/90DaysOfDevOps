@@ -32,6 +32,10 @@ docker-compose build – Builds the images defined in the YAML file.
 docker-compose ps – Lists running containers.
 docker-compose logs – Shows container logs.
 
+
+=================================================================================================================================
+
+
 5. YAML for Docker Compose:
 
 YAML is used to define services, volumes, and networks.
@@ -47,6 +51,10 @@ Example structure:
             environment:
                 MYSQL_ROOT_PASSWORD: password
 
+
+=================================================================================================================================
+
+
 6. Real-World Scenario Example:
 
     - Deploying a full-stack app with Docker Compose:
@@ -54,6 +62,10 @@ Example structure:
           Backend: Node.js
           Database: MySQL
           NGINX: As a reverse proxy
+
+
+=================================================================================================================================
+
 
 7. Advanced Features:
 
