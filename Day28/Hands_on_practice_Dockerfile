@@ -73,10 +73,18 @@ Scaling: docker-compose up --scale web=3 to run multiple instances.
 Environment Variables: Define different settings for dev and prod environments.
 Multi-stage builds: Optimize images by reducing size in final stages.
 
+
+=================================================================================================================================
+
+
 8. Docker Compose in CI/CD Pipelines:
 
 Automated testing and deployments can be integrated with CI tools like Jenkins or GitLab.
 Simplifies testing multiple containers and services at once.
+
+
+=================================================================================================================================
+
 
 9. Scaling Applications with Docker Compose:
 
