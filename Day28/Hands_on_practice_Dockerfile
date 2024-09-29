@@ -1,0 +1,34 @@
+What is Docker Compose?
+
+Docker Compose helps run multi-container applications using a simple configuration file (YAML).
+It manages services, networks, and volumes required for an application.
+Why use Docker Compose?
+
+Simplifies managing complex applications by defining them in one file.
+Useful for development, testing, and CI/CD workflows.
+Core Concepts:
+
+Services: Individual containers (like web, database) in an app.
+Networks: Links containers to allow communication.
+Volumes: Stores data outside the container, enabling persistence.
+Basic Docker Compose Commands:
+
+docker-compose up – Starts all services.
+docker-compose down – Stops and removes containers, networks, and volumes.
+docker-compose build – Builds the images defined in the YAML file.
+docker-compose ps – Lists running containers.
+docker-compose logs – Shows container logs.
+YAML for Docker Compose:
+
+YAML is used to define services, volumes, and networks.
+Example structure:
+    - version: '3'
+      services:
+        web:
+            image: nginx
+            ports:
+              - "80:80"
+        db:
+            image: mysql
+            environment:
+                MYSQL_ROOT_PASSWORD: password
