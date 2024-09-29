@@ -91,8 +91,15 @@ Simplifies testing multiple containers and services at once.
 Manage multiple instances of services and handle scaling in production.
 Load balancing can be set up to distribute traffic across containers.
 
+
+=================================================================================================================================
+
+
 10. Practical Use Cases:
 
 Set up complex testing environments.
 Replicate production environments locally for testing.
 Efficiently deploy microservices architecture.
+
+
+=================================================================================================================================
