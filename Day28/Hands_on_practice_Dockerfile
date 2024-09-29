@@ -20,6 +20,10 @@ Services: Individual containers (like web, database) in an app.
 Networks: Links containers to allow communication.
 Volumes: Stores data outside the container, enabling persistence.
 
+
+=================================================================================================================================
+
+
 4. Basic Docker Compose Commands:
 
 docker-compose up – Starts all services.
