@@ -43,28 +43,37 @@
 
 
 5. Rolling Updates
-This feature allows you to update services without shutting them down.
-You can specify a new version of a service and Swarm will update containers one by one.
-If an issue occurs, you can roll back to the previous version.
+
+    - This feature allows you to update services without shutting them down.
+
+    - You can specify a new version of a service and Swarm will update containers one by one.
+
+    - If an issue occurs, you can roll back to the previous version.
 
 
 ===================================================================================================================================
 
 
 6. Docker Swarm vs Kubernetes
-Docker Swarm: Easier to set up, best for small to medium-sized applications.
-Kubernetes: More complex, but highly scalable and offers advanced features for larger, more complex applications.
+
+    - Docker Swarm: Easier to set up, best for small to medium-sized applications.
+
+    - Kubernetes: More complex, but highly scalable and offers advanced features for larger, more complex applications.
 
 
 ===================================================================================================================================
 
 
 7. Key Commands
-Initialize Swarm: docker swarm init
-Create a Service: docker service create --name my-service -p 8080:80 --replicas 3 nginx
-Scale a Service: docker service scale my-service=5
-Update a Service: docker service update --image nginx:latest my-service
-Inspect a Service: docker service ps my-service
+        - Initialize Swarm: docker swarm init
+
+        - Create a Service: docker service create --name my-service -p 8080:80 --replicas 3 nginx
+
+        - Scale a Service: docker service scale my-service=5
+        
+        - Update a Service: docker service update --image nginx:latest my-service
+
+        - Inspect a Service: docker service ps my-service
 
 
 ===================================================================================================================================
