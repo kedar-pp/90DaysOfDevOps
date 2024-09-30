@@ -33,8 +33,10 @@
 
 
 4. Load Balancing
-Docker Swarm automatically distributes incoming traffic across the replicas of a service.
-This ensures efficient load distribution and fault tolerance.
+
+    - Docker Swarm automatically distributes incoming traffic across the replicas of a service.
+    
+    - This ensures efficient load distribution and fault tolerance.
 
 
 ===================================================================================================================================
