@@ -12,9 +12,19 @@ It helps to deploy, manage, and scale containers in a cluster easily.
 A Docker service is how you run and define containers in Docker Swarm.
 You can specify how many replicas (instances) of a container you want to run.
 Services manage container scaling, networking, and updates.
+
+
+===================================================================================================================================
+
+
 3. Scaling Services
 Scaling means increasing or decreasing the number of container instances (replicas).
 Command: docker service scale my-service=5 (scales your service to 5 instances).
+
+
+===================================================================================================================================
+
+
 4. Load Balancing
 Docker Swarm automatically distributes incoming traffic across the replicas of a service.
 This ensures efficient load distribution and fault tolerance.
