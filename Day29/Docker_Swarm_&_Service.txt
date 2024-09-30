@@ -82,8 +82,10 @@
 8. Real-World Example
 
     - You run a web app on Nginx, and suddenly traffic spikes.
-With Docker Swarm, you quickly scale your Nginx service from 3 to 10 replicas using a single command.
-Swarm balances traffic across all instances, ensuring your app handles the traffic smoothly without downtime.
+
+    - With Docker Swarm, you quickly scale your Nginx service from 3 to 10 replicas using a single command.
+
+    - Swarm balances traffic across all instances, ensuring your app handles the traffic smoothly without downtime.
 
 
 ===================================================================================================================================
