@@ -69,9 +69,9 @@ Example structure:
 
 7. Advanced Features:
 
-Scaling: docker-compose up --scale web=3 to run multiple instances.
-Environment Variables: Define different settings for dev and prod environments.
-Multi-stage builds: Optimize images by reducing size in final stages.
+  - Scaling: docker-compose up --scale web=3 to run multiple instances.
+  - Environment Variables: Define different settings for dev and prod environments.
+  - Multi-stage builds: Optimize images by reducing size in final stages.
 
 
 =================================================================================================================================
@@ -79,8 +79,8 @@ Multi-stage builds: Optimize images by reducing size in final stages.
 
 8. Docker Compose in CI/CD Pipelines:
 
-Automated testing and deployments can be integrated with CI tools like Jenkins or GitLab.
-Simplifies testing multiple containers and services at once.
+  - Automated testing and deployments can be integrated with CI tools like Jenkins or GitLab.
+  - Simplifies testing multiple containers and services at once.
 
 
 =================================================================================================================================
@@ -88,8 +88,8 @@ Simplifies testing multiple containers and services at once.
 
 9. Scaling Applications with Docker Compose:
 
-Manage multiple instances of services and handle scaling in production.
-Load balancing can be set up to distribute traffic across containers.
+  - Manage multiple instances of services and handle scaling in production.
+  - Load balancing can be set up to distribute traffic across containers.
 
 
 =================================================================================================================================
@@ -97,9 +97,11 @@ Load balancing can be set up to distribute traffic across containers.
 
 10. Practical Use Cases:
 
-Set up complex testing environments.
-Replicate production environments locally for testing.
-Efficiently deploy microservices architecture.
+  - Set up complex testing environments.
+
+  - Replicate production environments locally for testing.
+  
+  - Efficiently deploy microservices architecture.
 
 
 =================================================================================================================================
