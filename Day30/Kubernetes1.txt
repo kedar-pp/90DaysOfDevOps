@@ -1,3 +1,45 @@
 ///====Starting With Kubernetes====\\\
 
+What is Kubernetes?
 
+Kubernetes (K8s) is an open-source platform for managing containerized applications across multiple hosts, providing scaling, load balancing, and automation.
+Why Kubernetes over Docker?
+
+Docker is great for running containers on a single host, but Kubernetes allows you to manage containers across a cluster of machines, with features like auto-scaling and auto-healing.
+Problems with Docker:
+
+Limited to single host operations.
+No built-in auto-scaling or auto-healing.
+Lacks advanced networking like firewalls, API gateways.
+Enterprise-level support and features are not fully robust.
+Kubernetes Architecture:
+
+Master-Slave Architecture:
+Control Plane (Master):
+API Server: Central point for communication.
+etcd: Stores the cluster data.
+Scheduler: Allocates resources to containers.
+Controller Manager: Manages the lifecycle of pods.
+CCM (Cloud Controller Manager): Integrates with cloud providers.
+Data Plane (Workers):
+Kubelet: Runs on each worker node, responsible for running containers.
+Kube Proxy: Handles networking between pods.
+Container Runtime: Executes the containers (like Docker, containerd).
+Pods vs Containers:
+
+In Kubernetes, Pods are the smallest deployable units and can contain one or more containers, making them more flexible than a single Docker container.
+Key Features of Kubernetes:
+
+Auto-Scaling: Adjusts the number of running containers based on demand.
+Auto-Healing: Restarts failed containers automatically.
+Load Balancing: Distributes traffic between containers.
+Service Discovery: Makes services available and discoverable by name.
+Real-World Example:
+
+For an e-commerce platform, Kubernetes can scale up the number of web servers during high traffic (e.g., holiday season) and automatically distribute the load.
+Useful Commands:
+
+Initialize a Kubernetes cluster: kubeadm init
+Check running Pods and Nodes: kubectl get pods, kubectl get nodes
+Rolling updates for apps: kubectl rollout
+Deploying a service: kubectl expose
