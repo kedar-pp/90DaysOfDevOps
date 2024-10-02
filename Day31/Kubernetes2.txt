@@ -21,7 +21,11 @@ Important Commands:
 ==============================================================================================================================
 
 Key Concepts to Remember:
-Control Plane: Manages the Kubernetes cluster.
-Worker Node: Where the containers (applications) run.
-Pod Network: Ensures all pods can communicate within the cluster.
-Kubeadm: Tool to set up the Kubernetes cluster.
+
+    - Control Plane: Manages the Kubernetes cluster.
+
+    - Worker Node: Where the containers (applications) run.
+
+    - Pod Network: Ensures all pods can communicate within the cluster.
+
+    - Kubeadm: Tool to set up the Kubernetes cluster.
