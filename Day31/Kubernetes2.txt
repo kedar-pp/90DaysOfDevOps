@@ -1,1 +1,9 @@
 ///===Creating Single node cluster \\\===
+
+1. What is a Single Node Kubernetes Cluster?
+
+    - A Kubernetes cluster that runs both the control plane and worker node on a single machine.
+    
+    - Useful for learning, testing, and small development environments.
+
+==============================================================================================================================
