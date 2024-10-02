@@ -9,10 +9,13 @@
 ==============================================================================================================================
 
 Important Commands:
-View network config: cat /etc/sysconfig/network-scripts/ifcfg-ens33
-Disable firewall: systemctl stop firewalld
-Initialize Kubernetes: kubeadm init --pod-network-cidr=192.168.0.0/16
-Check nodes: kubectl get nodes
+    - View network config: cat /etc/sysconfig/network-scripts/ifcfg-ens33
+
+    - Disable firewall: systemctl stop firewalld
+    
+    - Initialize Kubernetes: kubeadm init --pod-network-cidr=192.168.0.0/16
+
+    - Check nodes: kubectl get nodes
 
 
 ==============================================================================================================================
