@@ -7,3 +7,18 @@
     - Useful for learning, testing, and small development environments.
 
 ==============================================================================================================================
+
+Important Commands:
+View network config: cat /etc/sysconfig/network-scripts/ifcfg-ens33
+Disable firewall: systemctl stop firewalld
+Initialize Kubernetes: kubeadm init --pod-network-cidr=192.168.0.0/16
+Check nodes: kubectl get nodes
+
+
+==============================================================================================================================
+
+Key Concepts to Remember:
+Control Plane: Manages the Kubernetes cluster.
+Worker Node: Where the containers (applications) run.
+Pod Network: Ensures all pods can communicate within the cluster.
+Kubeadm: Tool to set up the Kubernetes cluster.
