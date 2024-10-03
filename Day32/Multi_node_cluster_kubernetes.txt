@@ -15,3 +15,6 @@
         - Install CentOS on all VMs.
     
         - Ensure they all have unique hostnames and static IPs.
+
+
+=============================================================================================================================
