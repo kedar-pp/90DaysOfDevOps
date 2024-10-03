@@ -1,1 +1,17 @@
 ///=== Multi Node Cluster Kubernetes ===\\\
+
+1. Set Up Virtual Machines on VMware
+
+    - You need to create multiple virtual machines (VMs) to simulate a real-world Kubernetes cluster:
+
+        - Master Node: Controls the cluster.
+
+        - Worker Nodes: Execute the applications (pods) and handle workloads.
+
+    - Steps:
+
+        - Open VMware and create VMs for both the master and worker nodes.
+
+        - Install CentOS on all VMs.
+    
+        - Ensure they all have unique hostnames and static IPs.
