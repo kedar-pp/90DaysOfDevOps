@@ -18,3 +18,13 @@
 
 
 =============================================================================================================================
+
+2. Prepare the Nodes
+
+    - Before installing Kubernetes, some configurations need to be done to make sure Kubernetes runs smoothly:
+
+    - Commands:
+
+        - Disable Swap (swap must be disabled for Kubernetes to run):
+
+            - swapoff -a
