@@ -88,3 +88,25 @@ You need a network add-on to allow Kubernetes to communicate between nodes. We'l
 
 
 =============================================================================================================================
+
+
+6. Join Worker Nodes to the Cluster
+Once the master node is set up, you can join the worker nodes to the cluster. On the master node, after initialization, you’ll get a kubeadm join command:
+
+=============================================================================================================================
+
+
+7. Verifying the Cluster
+After joining the nodes, check the status of the cluster to ensure everything is working properly:
+
+
+
+============================================================================================================================
+
+8. Real-World Use Case
+A multi-node Kubernetes cluster is vital in real-world scenarios for handling production workloads. It allows:
+
+Scalability: You can add more worker nodes as needed.
+High Availability: Workloads are distributed, ensuring continuous service even if one node fails.
+Load Balancing: It balances the load across different nodes to ensure efficient resource usage.
+Example: A large-scale web application can deploy web servers on multiple worker nodes, ensuring uninterrupted service even if one node goes down. Kubernetes automatically handles load balancing and recovery.
