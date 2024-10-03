@@ -28,3 +28,16 @@
         - Disable Swap (swap must be disabled for Kubernetes to run):
 
             - swapoff -a
+
+        - Also, make this permanent by commenting out the swap line in the /etc/fstab file.
+
+        - Stop and Disable Firewall:
+
+            - systemctl stop firewalld
+            
+              systemctl disable firewalld
+
+        - Enable IP Forwarding: This is required for proper network routing within the cluster.
+
+            - echo "net.ipv4.ip_forward = 1" >> /etc/sysctl.conf
+              sysctl -p
