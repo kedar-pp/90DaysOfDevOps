@@ -49,6 +49,11 @@ Access Pod with Pod IP: Use curl <pod_ip> to access the application running in t
 6. Delete Pod
 By Name: kubectl delete pods pod1 (delete the pod by name).
 By YAML: kubectl delete -f pod1.yaml (delete the pod using the YAML file).
+
+
+==========================================================================================================================================
+
+
 7. Environment Variables in Pods
 Created a new pod with environment variables (myname & city) using pod2.yaml.
 Access Pod Shell: kubectl exec -it pod2 -- bash (open shell inside the pod).
