@@ -14,6 +14,11 @@ Shared Storage: Allows containers in the pod to share data.
 Create → Pod is scheduled.
 Run → Containers in the pod start running.
 Terminate → Pod is terminated when no longer needed or after the task is completed.
+
+
+==========================================================================================================================================
+
+
 3. Use Cases for Pods
 Microservices: Each service can run inside its own pod.
 Stateful Applications: Pods can manage stateful apps with persistent storage.
