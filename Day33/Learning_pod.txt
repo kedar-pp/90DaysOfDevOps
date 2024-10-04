@@ -66,5 +66,10 @@ View Env Variables: printenv | egrep -i 'city || myname' (print the environment 
 8. Multi-Container Pods
 Created a pod with two containers.
 Added a file (etc.txt) inside the first container to demonstrate how containers in the same pod can interact.
+
+
+==========================================================================================================================================
+
+
 9. Clean-Up
 Always clean up your pods and resources after finishing the tasks to free up resources using kubectl delete -f pod.yaml.
