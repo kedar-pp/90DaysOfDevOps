@@ -22,6 +22,11 @@ Terminate → Pod is terminated when no longer needed or after the task is compl
 3. Use Cases for Pods
 Microservices: Each service can run inside its own pod.
 Stateful Applications: Pods can manage stateful apps with persistent storage.
+
+
+==========================================================================================================================================
+
+
 4. Basic Pod Commands
 Create Pod YAML: Define the pod configuration, such as labels, spec (container details), and environment variables.
 Example: vim pod1.yaml (to create the YAML file).
