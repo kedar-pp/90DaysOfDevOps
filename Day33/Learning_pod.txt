@@ -5,6 +5,11 @@ Key components:
 Container: Runs the application inside the pod.
 Pod IP: Assigned to each pod to communicate within the cluster.
 Shared Storage: Allows containers in the pod to share data.
+
+
+==========================================================================================================================================
+
+
 2. Pod Lifecycle
 Create → Pod is scheduled.
 Run → Containers in the pod start running.
