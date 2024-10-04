@@ -41,6 +41,11 @@ Detailed Pod Info: kubectl describe pods pod1 (to view pod details).
 5. Viewing Pod IP & Labels
 Get Pod Details: kubectl get pods -o wide --show-labels (shows pod IP, labels, and more).
 Access Pod with Pod IP: Use curl <pod_ip> to access the application running in the pod.
+
+
+==========================================================================================================================================
+
+
 6. Delete Pod
 By Name: kubectl delete pods pod1 (delete the pod by name).
 By YAML: kubectl delete -f pod1.yaml (delete the pod using the YAML file).
