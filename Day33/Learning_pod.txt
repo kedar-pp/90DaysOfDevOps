@@ -1,0 +1,35 @@
+1. What is a Pod?
+A Pod is the smallest and simplest Kubernetes object.
+It consists of one or more containers that share the same network and storage.
+Key components:
+Container: Runs the application inside the pod.
+Pod IP: Assigned to each pod to communicate within the cluster.
+Shared Storage: Allows containers in the pod to share data.
+2. Pod Lifecycle
+Create → Pod is scheduled.
+Run → Containers in the pod start running.
+Terminate → Pod is terminated when no longer needed or after the task is completed.
+3. Use Cases for Pods
+Microservices: Each service can run inside its own pod.
+Stateful Applications: Pods can manage stateful apps with persistent storage.
+4. Basic Pod Commands
+Create Pod YAML: Define the pod configuration, such as labels, spec (container details), and environment variables.
+Example: vim pod1.yaml (to create the YAML file).
+Deploy Pod: kubectl apply -f pod1.yaml (to create the pod from the YAML file).
+Check Pod Status: kubectl get pods (to list all running pods).
+Detailed Pod Info: kubectl describe pods pod1 (to view pod details).
+5. Viewing Pod IP & Labels
+Get Pod Details: kubectl get pods -o wide --show-labels (shows pod IP, labels, and more).
+Access Pod with Pod IP: Use curl <pod_ip> to access the application running in the pod.
+6. Delete Pod
+By Name: kubectl delete pods pod1 (delete the pod by name).
+By YAML: kubectl delete -f pod1.yaml (delete the pod using the YAML file).
+7. Environment Variables in Pods
+Created a new pod with environment variables (myname & city) using pod2.yaml.
+Access Pod Shell: kubectl exec -it pod2 -- bash (open shell inside the pod).
+View Env Variables: printenv | egrep -i 'city || myname' (print the environment variables).
+8. Multi-Container Pods
+Created a pod with two containers.
+Added a file (etc.txt) inside the first container to demonstrate how containers in the same pod can interact.
+9. Clean-Up
+Always clean up your pods and resources after finishing the tasks to free up resources using kubectl delete -f pod.yaml.
