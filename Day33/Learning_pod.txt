@@ -1,27 +1,38 @@
 1. What is a Pod?
-A Pod is the smallest and simplest Kubernetes object.
-It consists of one or more containers that share the same network and storage.
-Key components:
-Container: Runs the application inside the pod.
-Pod IP: Assigned to each pod to communicate within the cluster.
-Shared Storage: Allows containers in the pod to share data.
+
+    - A Pod is the smallest and simplest Kubernetes object.
+
+    - It consists of one or more containers that share the same network and storage.
+
+    - Key components:
+
+        - Container: Runs the application inside the pod.
+
+        - Pod IP: Assigned to each pod to communicate within the cluster.
+
+        - Shared Storage: Allows containers in the pod to share data.
 
 
 ==========================================================================================================================================
 
 
 2. Pod Lifecycle
-Create → Pod is scheduled.
-Run → Containers in the pod start running.
-Terminate → Pod is terminated when no longer needed or after the task is completed.
+
+    - Create → Pod is scheduled.
+
+    - Run → Containers in the pod start running.
+
+    - Terminate → Pod is terminated when no longer needed or after the task is completed.
 
 
 ==========================================================================================================================================
 
 
 3. Use Cases for Pods
-Microservices: Each service can run inside its own pod.
-Stateful Applications: Pods can manage stateful apps with persistent storage.
+
+    - Microservices: Each service can run inside its own pod.
+
+    - Stateful Applications: Pods can manage stateful apps with persistent storage.
 
 
 ==========================================================================================================================================
