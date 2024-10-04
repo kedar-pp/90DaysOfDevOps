@@ -58,6 +58,11 @@ By YAML: kubectl delete -f pod1.yaml (delete the pod using the YAML file).
 Created a new pod with environment variables (myname & city) using pod2.yaml.
 Access Pod Shell: kubectl exec -it pod2 -- bash (open shell inside the pod).
 View Env Variables: printenv | egrep -i 'city || myname' (print the environment variables).
+
+
+==========================================================================================================================================
+
+
 8. Multi-Container Pods
 Created a pod with two containers.
 Added a file (etc.txt) inside the first container to demonstrate how containers in the same pod can interact.
