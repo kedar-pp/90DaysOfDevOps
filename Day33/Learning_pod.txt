@@ -73,3 +73,8 @@ Added a file (etc.txt) inside the first container to demonstrate how containers 
 
 9. Clean-Up
 Always clean up your pods and resources after finishing the tasks to free up resources using kubectl delete -f pod.yaml.
+
+
+==========================================================================================================================================
+
+
