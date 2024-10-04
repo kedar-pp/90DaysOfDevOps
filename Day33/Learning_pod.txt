@@ -97,7 +97,8 @@
 
 
 9. Clean-Up
-Always clean up your pods and resources after finishing the tasks to free up resources using kubectl delete -f pod.yaml.
+
+    - Always clean up your pods and resources after finishing the tasks to free up resources using kubectl delete -f pod.yaml.
 
 
 ==========================================================================================================================================
