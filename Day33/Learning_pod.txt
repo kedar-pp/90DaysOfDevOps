@@ -39,19 +39,26 @@
 
 
 4. Basic Pod Commands
-Create Pod YAML: Define the pod configuration, such as labels, spec (container details), and environment variables.
-Example: vim pod1.yaml (to create the YAML file).
-Deploy Pod: kubectl apply -f pod1.yaml (to create the pod from the YAML file).
-Check Pod Status: kubectl get pods (to list all running pods).
-Detailed Pod Info: kubectl describe pods pod1 (to view pod details).
+
+    - Create Pod YAML: Define the pod configuration, such as labels, spec (container details), and environment variables.
+
+        - Example: vim pod1.yaml (to create the YAML file).
+
+    - Deploy Pod: kubectl apply -f pod1.yaml (to create the pod from the YAML file).
+
+    - Check Pod Status: kubectl get pods (to list all running pods).
+
+    - Detailed Pod Info: kubectl describe pods pod1 (to view pod details).
 
 
 ==========================================================================================================================================
 
 
 5. Viewing Pod IP & Labels
-Get Pod Details: kubectl get pods -o wide --show-labels (shows pod IP, labels, and more).
-Access Pod with Pod IP: Use curl <pod_ip> to access the application running in the pod.
+
+    - Get Pod Details: kubectl get pods -o wide --show-labels (shows pod IP, labels, and more).
+
+    - Access Pod with Pod IP: Use curl <pod_ip> to access the application running in the pod.
 
 
 ==========================================================================================================================================
