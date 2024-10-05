@@ -66,3 +66,5 @@ Label a Node: kubectl label nodes <node-name> nodetype=production
 Delete a Pod: kubectl delete pod <pod-name>
 Get Replica Sets: kubectl get rs
 
+
+=============================================================================================
