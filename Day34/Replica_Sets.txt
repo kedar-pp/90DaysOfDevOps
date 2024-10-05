@@ -40,13 +40,11 @@ kubectl get pods
 Task 2: Scale the Replica Set
 Scale up or down by increasing or decreasing the number of replicas.
 Command:
-bash
-Copy code
+
 kubectl scale rs my-replicaset --replicas=5
 Task 3: Assign Pods to Specific Nodes (Node Selector)
 Label a node:
-bash
-Copy code
+
 kubectl label nodes worker2.example.com nodetype=production
 Modify the Replica Set YAML to specify the node selector and apply the changes.
 
