@@ -4,10 +4,16 @@
 Replica Set ensures a certain number of pod replicas are always running.
 It provides self-healing by recreating failed pods automatically.
 Helps maintain high availability and allows for scaling up or down.
+
+=============================================================================================
+
 2. Why Use Replica Sets?
 Ensure your application has the required number of pods.
 Scale applications easily to meet traffic demand.
 Automatically recreates pods if they fail.
+
+=============================================================================================
+
 3. Components of a Replica Set
 Selector: Filters the pods based on labels to manage them.
 Replicas: Defines how many pod copies you want to run.
