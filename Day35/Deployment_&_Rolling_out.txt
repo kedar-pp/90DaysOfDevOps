@@ -6,9 +6,19 @@ Components:
 Pod Template: Defines the container image and settings for Pods.
 Replicas: Specifies the number of Pods you want to run simultaneously.
 Update Strategy: Defines how Pods are updated (like rolling updates).
+
+
+============================================================================================================================================
+
+
 2. Key Commands for Deployment:
 To create a deployment using nginx:latest, you use kubectl create deployment.
 You can check the status or view details of the deployment using kubectl get deployments.
+
+
+============================================================================================================================================
+
+
 3. Deployment Using YAML File:
 You can manage deployments via YAML files. The YAML includes:
 apiVersion: Identifies the API version (apps/v1).
