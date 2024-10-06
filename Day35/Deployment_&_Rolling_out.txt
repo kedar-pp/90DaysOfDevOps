@@ -39,45 +39,61 @@
 
 
 4. What is a Rollout?
-A rollout is the process of updating a Kubernetes application with no downtime.
-Why are rollouts used?
-Ensure the application can be updated without taking it offline.
-Rollouts help gradually update Pods (like updating some Pods to a new version while others keep running).
-You can rollback to a previous version if the new update has issues.
+
+    - A rollout is the process of updating a Kubernetes application with no downtime.
+
+    - Why are rollouts used?
+
+        - Ensure the application can be updated without taking it offline.
+
+        - Rollouts help gradually update Pods (like updating some Pods to a new version while others keep running).
+
+        - You can rollback to a previous version if the new update has issues.
 
 
 ============================================================================================================================================
 
 
 5. Rollout Commands:
-Rollout Status: Use this command to check the status of your rollout. It ensures that everything is working as expected.
-Rollout Undo: This lets you roll back your deployment to a previous version if there’s a problem with the update.
+
+    - Rollout Status: Use this command to check the status of your rollout. It ensures that everything is working as expected.
+
+    - Rollout Undo: This lets you roll back your deployment to a previous version if there’s a problem with the update.
 
 
 ============================================================================================================================================
 
 
 6. Hands-On Example:
-You can create a deployment for nginx, then change the image version to initiate a rolling update.
-Use the rollout command to check progress or undo if needed.
+
+    - You can create a deployment for nginx, then change the image version to initiate a rolling update.
+
+    - Use the rollout command to check progress or undo if needed.
 
 
 ============================================================================================================================================
 
 
 7. Real-World Scenario:
-Rolling Update with Zero Downtime: This is commonly used in web applications. Imagine updating your web servers (from nginx:1.17 to nginx:1.18) without any downtime for users. With rollouts, some Pods will be updated, while others remain live, ensuring smooth transitions.
+
+    - Rolling Update with Zero Downtime: This is commonly used in web applications. 
+    - Imagine updating your web servers (from nginx:1.17 to nginx:1.18) without any downtime for users. 
+      With rollouts,some Pods will be updated, while others remain live, ensuring smooth transitions.
 
 
 ============================================================================================================================================
 
 
-Important Commands:
+8. Important Commands:
 
-kubectl create deployment: For creating deployments.
-kubectl apply -f <file>: To apply changes via a YAML file.
-kubectl rollout status: To monitor a rollout.
-kubectl rollout undo: To undo a rollout and revert to a previous revision.
+    - kubectl create deployment: For creating deployments.
+
+    - kubectl apply -f <file>: To apply changes via a YAML file.
+
+    - kubectl rollout status: To monitor a rollout.
+
+    - kubectl rollout undo: To undo a rollout and revert to a previous revision.
+
 These concepts are essential for managing deployments and updates in a Kubernetes production environment!
 
 
