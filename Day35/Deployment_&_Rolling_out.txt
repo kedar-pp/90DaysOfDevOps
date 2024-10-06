@@ -25,12 +25,22 @@ apiVersion: Identifies the API version (apps/v1).
 Metadata: Contains the deployment name.
 Spec: Includes replicas, template, and container settings.
 You define the container, its image, and any ports in the spec section.
+
+
+============================================================================================================================================
+
+
 4. What is a Rollout?
 A rollout is the process of updating a Kubernetes application with no downtime.
 Why are rollouts used?
 Ensure the application can be updated without taking it offline.
 Rollouts help gradually update Pods (like updating some Pods to a new version while others keep running).
 You can rollback to a previous version if the new update has issues.
+
+
+============================================================================================================================================
+
+
 5. Rollout Commands:
 Rollout Status: Use this command to check the status of your rollout. It ensures that everything is working as expected.
 Rollout Undo: This lets you roll back your deployment to a previous version if there’s a problem with the update.
