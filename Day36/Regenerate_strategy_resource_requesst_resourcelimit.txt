@@ -1,3 +1,20 @@
 ///====Regenerate Strategy , Resource Request and Limit====\\\
 
+1. Regenerate Strategy in Kubernetes:
+What is it?
+A strategy used by Kubernetes to manage how updates to your application are applied.
+Types:
+Rolling Update: Gradually replaces old pods with new ones to avoid downtime.
+Recreate: Deletes all current pods first, then creates new ones, causing temporary downtime.
+Why it matters: Ensures smooth updates with minimal service interruption.
+2. Resource Requests:
+What is it?
+It defines the minimum CPU and memory a container needs to run.
+Why it's important: Helps Kubernetes efficiently assign containers to nodes that have the required resources.
+Example:
+
+    resources:
+        requests:
+            memory: "256Mi"
+            cpu: "500m"
 
