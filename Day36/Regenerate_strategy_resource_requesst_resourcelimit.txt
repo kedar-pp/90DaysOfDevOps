@@ -7,6 +7,11 @@ Types:
 Rolling Update: Gradually replaces old pods with new ones to avoid downtime.
 Recreate: Deletes all current pods first, then creates new ones, causing temporary downtime.
 Why it matters: Ensures smooth updates with minimal service interruption.
+
+
+=====================================================================================================================================================
+
+
 2. Resource Requests:
 What is it?
 It defines the minimum CPU and memory a container needs to run.
@@ -19,6 +24,11 @@ Example:
             cpu: "500m"
 
 Usage Scenario: Ensures that critical services get enough resources, preventing performance degradation.
+
+
+=====================================================================================================================================================
+
+
 3. Resource Limits:
 What is it?
 It defines the maximum CPU and memory a container can use.
@@ -31,6 +41,11 @@ Example:
             cpu: "1000m"
 
 Usage Scenario: Prevents one service from monopolizing resources and affecting other services.
+
+
+=====================================================================================================================================================
+
+
 4. Real-Time Example:
 Microservices: When deploying multiple services (e.g., front-end, back-end), using rolling updates ensures one service can be updated without taking the entire system offline.
 Stateful Applications: Databases and stateful apps benefit from precise resource allocation through resource requests and limits.
