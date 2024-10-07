@@ -49,6 +49,11 @@ Usage Scenario: Prevents one service from monopolizing resources and affecting o
 4. Real-Time Example:
 Microservices: When deploying multiple services (e.g., front-end, back-end), using rolling updates ensures one service can be updated without taking the entire system offline.
 Stateful Applications: Databases and stateful apps benefit from precise resource allocation through resource requests and limits.
+
+
+=====================================================================================================================================================
+
+
 5. Key Commands:
 Create Deployment:
 kubectl apply -f deployment.yaml
@@ -62,8 +67,16 @@ kubectl rollout history deployment/nginx-deployment
 Undo Rollout (Rollback):
 kubectl rollout undo deployment/apache-deployment --to-revision=1
 
+
+=====================================================================================================================================================
+
+
 6. Key Takeaways:
 Use Rolling Updates for zero-downtime updates.
 Set Resource Requests to ensure your app always gets the minimum resources it needs.
 Set Resource Limits to prevent a single app from using too many resources.
 Monitor your rollout status to catch any issues during deployment updates.
+
+
+=====================================================================================================================================================
+
