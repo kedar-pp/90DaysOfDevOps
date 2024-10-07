@@ -1,39 +1,52 @@
 ///====Regenerate Strategy , Resource Request and Limit====\\\
 
 1. Regenerate Strategy in Kubernetes:
-What is it?
-A strategy used by Kubernetes to manage how updates to your application are applied.
-Types:
-Rolling Update: Gradually replaces old pods with new ones to avoid downtime.
-Recreate: Deletes all current pods first, then creates new ones, causing temporary downtime.
-Why it matters: Ensures smooth updates with minimal service interruption.
+    - What is it?
+    
+        - A strategy used by Kubernetes to manage how updates to your application are applied.
+
+    - Types:
+    
+        - Rolling Update: Gradually replaces old pods with new ones to avoid downtime.
+
+        - Recreate: Deletes all current pods first, then creates new ones, causing temporary downtime.
+        
+        - Why it matters: Ensures smooth updates with minimal service interruption.
 
 
 =====================================================================================================================================================
 
 
 2. Resource Requests:
-What is it?
-It defines the minimum CPU and memory a container needs to run.
-Why it's important: Helps Kubernetes efficiently assign containers to nodes that have the required resources.
-Example:
+
+    - What is it?
+
+        - It defines the minimum CPU and memory a container needs to run.
+
+    - Why it's important: Helps Kubernetes efficiently assign containers to nodes that have the required resources.
+
+    - Example:
 
     resources:
         requests:
             memory: "256Mi"
             cpu: "500m"
 
-Usage Scenario: Ensures that critical services get enough resources, preventing performance degradation.
+    - Usage Scenario: Ensures that critical services get enough resources, preventing performance degradation.
 
 
 =====================================================================================================================================================
 
 
 3. Resource Limits:
-What is it?
-It defines the maximum CPU and memory a container can use.
-Why it's important: Protects the system by stopping any container from consuming too many resources.
-Example:
+    
+    - What is it?
+
+        - It defines the maximum CPU and memory a container can use.
+
+    - Why it's important: Protects the system by stopping any container from consuming too many resources.
+
+    -Example:
 
     resources:
         limits:
@@ -47,35 +60,41 @@ Usage Scenario: Prevents one service from monopolizing resources and affecting o
 
 
 4. Real-Time Example:
-Microservices: When deploying multiple services (e.g., front-end, back-end), using rolling updates ensures one service can be updated without taking the entire system offline.
-Stateful Applications: Databases and stateful apps benefit from precise resource allocation through resource requests and limits.
+    
+    - Microservices: When deploying multiple services (e.g., front-end, back-end), using rolling updates ensures one service can be updated without taking the entire system offline.
+
+    - Stateful Applications: Databases and stateful apps benefit from precise resource allocation through resource requests and limits.
 
 
 =====================================================================================================================================================
 
 
 5. Key Commands:
-Create Deployment:
-kubectl apply -f deployment.yaml
+   - Create Deployment:
+    kubectl apply -f deployment.yaml
 
-Check Rollout Status:
-kubectl rollout status deployment/nginx-deployment
+    - Check Rollout Status:
+    kubectl rollout status deployment/nginx-deployment
 
-View Rollout History:
-kubectl rollout history deployment/nginx-deployment
+    - View Rollout History:
+    kubectl rollout history deployment/nginx-deployment
 
-Undo Rollout (Rollback):
-kubectl rollout undo deployment/apache-deployment --to-revision=1
+    - Undo Rollout (Rollback):
+    kubectl rollout undo deployment/apache-deployment --to-revision=1
 
 
 =====================================================================================================================================================
 
 
 6. Key Takeaways:
-Use Rolling Updates for zero-downtime updates.
-Set Resource Requests to ensure your app always gets the minimum resources it needs.
-Set Resource Limits to prevent a single app from using too many resources.
-Monitor your rollout status to catch any issues during deployment updates.
+    
+    - Use Rolling Updates for zero-downtime updates.
+    
+    - Set Resource Requests to ensure your app always gets the minimum resources it needs.
+    
+    - Set Resource Limits to prevent a single app from using too many resources.
+    
+    - Monitor your rollout status to catch any issues during deployment updates.
 
 
 =====================================================================================================================================================
