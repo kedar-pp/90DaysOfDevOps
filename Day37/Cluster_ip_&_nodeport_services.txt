@@ -7,6 +7,11 @@ How it works: Assigns a virtual IP address that is accessible only within the cl
 Commands:
 kubectl expose deployment <deployment-name> --type=ClusterIP --port=<port-number>
 kubectl get services → to check the service details.
+
+
+==========================================================================================================================================
+
+
 2. NodePort Service
 What it is: A service type used to expose applications to the external network, outside the Kubernetes cluster.
 Use Case: When you need access to an application from outside the cluster.
@@ -14,6 +19,11 @@ How it works: Opens a specific port on all nodes (called a NodePort) and routes 
 Commands:
 kubectl expose deployment <deployment-name> --type=NodePort --port=<port-number> --target-port=<target-port>
 kubectl get services → shows you the external IP and port to access the app.
+
+
+==========================================================================================================================================
+
+
 3. Real-World Example
 You deploy a web app and use ClusterIP to communicate internally with a database.
 Then, you expose the web app to external users using NodePort, allowing anyone to access it via the node’s IP address and the allocated port.
