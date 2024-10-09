@@ -1,2 +1,33 @@
 ///===NamwSpace in Kubernetes===\\\
 
+What is a Namespace?
+Definition: A namespace in Kubernetes is a way to organize and manage resources in a cluster. It provides a mechanism for isolating groups of resources.
+Purpose: Helps to manage resources and access control within the same cluster, allowing for multi-tenancy.
+Key Concepts:
+Isolation: Each namespace has its own set of resources, ensuring that they do not interfere with each other.
+Resource Quotas: You can set limits on how much of a resource can be consumed within a namespace.
+Network Policies: Namespaces can have policies that control the traffic flow to and from the resources within them.
+Real-Time Scenario:
+Multi-Tenant Applications: A company may have multiple teams (e.g., development, testing, production) using the same cluster. Each team can have its own namespace to manage its resources independently.
+Common Commands:
+Creating a Namespace:
+
+Command: kubectl create namespace <namespace-name>
+Example: kubectl create namespace dev
+Listing Namespaces:
+
+Command: kubectl get namespaces
+This command shows all the namespaces in the cluster.
+Using a Namespace:
+
+Command: kubectl get pods --namespace=<namespace-name>
+Example: kubectl get pods --namespace=dev
+Deleting a Namespace:
+
+Command: kubectl delete namespace <namespace-name>
+Example: kubectl delete namespace dev
+Tasks Related to Namespaces:
+Task 1: Create and Manage Resources in a Namespace:
+
+Create a namespace: kubectl create namespace test
+Deploy a pod in the namespace:
