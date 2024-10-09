@@ -31,3 +31,31 @@ Task 1: Create and Manage Resources in a Namespace:
 
 Create a namespace: kubectl create namespace test
 Deploy a pod in the namespace:
+        apiVersion: v1
+        kind: Pod
+        metadata:
+            name: mypod
+            namespace: test
+        spec:
+            containers:
+            - name: mycontainer
+                image: nginx
+
+Command: kubectl apply -f pod.yaml
+Task 2: Resource Quotas in a Namespace:
+
+Create a resource quota:
+
+        apiVersion: v1
+        kind: ResourceQuota
+        metadata:
+            name: myquota
+            namespace: test
+        spec:
+            hard:
+                requests.cpu: "1"
+                requests.memory: "1Gi"
+                limits.cpu: "2"
+                limits.memory: "2Gi"
+
+Command: kubectl apply -f quota.yaml
