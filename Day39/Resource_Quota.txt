@@ -1,2 +1,49 @@
 ///===Resource Quota in Kubernetes====\\\
 
+What is a Resource Quota?
+
+Resource Quotas in Kubernetes help manage and limit the resources (like CPU, memory, and object counts) used by different namespaces. They ensure that resources are not over-allocated in multi-tenant environments.
+Components of Resource Quotas:
+Object Count:
+
+Limits the number of Kubernetes objects (e.g., Pods) that can be created in a namespace.
+Example: Limit the number of pods to 2 in a specific namespace.
+Compute Resources:
+
+Controls the CPU and memory that can be requested and used by Pods in a namespace.
+Example: Set limits for CPU (0.5 CPU) and memory (500Mi).
+Task 1: Object Count Quota
+Create a namespace (sit), and apply a quota allowing only 2 Pods.
+
+Commands:
+
+kubectl create ns sit – Create namespace sit.
+vim object_count_quota.yaml – Define the quota for Pods (max 2).
+kubectl apply -f object_count_quota.yaml – Apply the quota.
+kubectl describe ns sit – Check the applied quota.
+When trying to create a 3rd pod, you'll see an error indicating that the limit has been exceeded.
+
+Task 2: Compute Resources Quota
+Define limits for CPU and memory usage in a namespace.
+
+Example limits:
+
+Request: CPU (0.5), Memory (500Mi)
+Limits: CPU (1), Memory (1Gi)
+Commands:
+
+vim object_count_quota.yaml – Set compute resource limits.
+kubectl apply --dry-run=client -f object_count_quota.yaml – Test the configuration.
+Create pods with CPU and memory requests & limits within the specified quotas.
+Exceeding the limits during pod creation will result in an error.
+
+Why Use Resource Quotas?
+
+Prevent resource hogging: Ensures no single namespace uses too many resources.
+Efficient resource management: Allocates resources fairly among multiple users.
+Key Commands:
+
+kubectl create ns <namespace> – Create a namespace.
+kubectl apply -f <quota.yaml> – Apply quota configuration.
+kubectl get pods -n <namespace> – View pods in a specific namespace.
+kubectl describe ns <namespace> – Check namespace quota details.
