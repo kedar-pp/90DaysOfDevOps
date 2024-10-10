@@ -33,6 +33,10 @@ kubectl apply -f object_count_quota.yaml – Apply the quota.
 kubectl describe ns sit – Check the applied quota.
 When trying to create a 3rd pod, you'll see an error indicating that the limit has been exceeded.
 
+
+==========================================================================================================================================
+
+
 Task 2: Compute Resources Quota
 Define limits for CPU and memory usage in a namespace.
 
@@ -47,10 +51,19 @@ kubectl apply --dry-run=client -f object_count_quota.yaml – Test the configura
 Create pods with CPU and memory requests & limits within the specified quotas.
 Exceeding the limits during pod creation will result in an error.
 
+
+==========================================================================================================================================
+
+
 Why Use Resource Quotas?
 
 Prevent resource hogging: Ensures no single namespace uses too many resources.
 Efficient resource management: Allocates resources fairly among multiple users.
+
+
+==========================================================================================================================================
+
+
 Key Commands:
 
 kubectl create ns <namespace> – Create a namespace.
