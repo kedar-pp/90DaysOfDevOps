@@ -70,3 +70,7 @@ kubectl create ns <namespace> – Create a namespace.
 kubectl apply -f <quota.yaml> – Apply quota configuration.
 kubectl get pods -n <namespace> – View pods in a specific namespace.
 kubectl describe ns <namespace> – Check namespace quota details.
+
+
+==========================================================================================================================================
+
