@@ -1,8 +1,13 @@
 ///===Resource Quota in Kubernetes====\\\
 
-What is a Resource Quota?
+1. What is a Resource Quota?
 
 Resource Quotas in Kubernetes help manage and limit the resources (like CPU, memory, and object counts) used by different namespaces. They ensure that resources are not over-allocated in multi-tenant environments.
+
+
+==========================================================================================================================================
+
+
 Components of Resource Quotas:
 Object Count:
 
@@ -12,6 +17,11 @@ Compute Resources:
 
 Controls the CPU and memory that can be requested and used by Pods in a namespace.
 Example: Set limits for CPU (0.5 CPU) and memory (500Mi).
+
+
+==========================================================================================================================================
+
+
 Task 1: Object Count Quota
 Create a namespace (sit), and apply a quota allowing only 2 Pods.
 
