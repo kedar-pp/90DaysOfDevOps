@@ -22,3 +22,11 @@ After Pod stops and restarts: Files are gone, but the /data directory remains in
 Purpose: Maps a directory on the host node into the Pod, allowing persistence across Pod restarts.
 Use Case: Useful for situations where you need to store logs, database files, or configurations that should persist even if a Pod is restarted or replaced.
 Example: Storing log files or shared resources that should survive across container or Pod lifecycles.
+
+        volumes:
+        - name: hostpathvolume
+        hostPath:
+            path: /data/host
+        volumeMounts:
+        - mountPath: /data
+        name: hostpathvolume
