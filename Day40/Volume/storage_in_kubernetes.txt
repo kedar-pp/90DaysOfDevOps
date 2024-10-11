@@ -37,7 +37,8 @@
     - Purpose: Maps a directory on the host node into the Pod, allowing persistence across Pod restarts.
 
     - Use Case: Useful for situations where you need to store logs, database files, or configurations that should persist even if a Pod is restarted or replaced.
-Example: Storing log files or shared resources that should survive across container or Pod lifecycles.
+
+    - Example: Storing log files or shared resources that should survive across container or Pod lifecycles.
 
         volumes:
         - name: hostpathvolume
@@ -47,12 +48,14 @@ Example: Storing log files or shared resources that should survive across contai
         - mountPath: /data
         name: hostpathvolume
 
-Real-Time Scenario: When running applications that need to persist logs, or database storage, using hostPath ensures the data remains on the host node even if the container crashes.
+    - Real-Time Scenario: When running applications that need to persist logs, or database storage, using hostPath ensures the data remains on the host node even if the container crashes.
 
 ================================================================================================================================================================================================================================================================================================================================================================================
 
 4. Real-World Scenarios:
-emptyDir: Ideal for scenarios like a build system where data is only required temporarily and can be discarded after completion.
-hostPath: Used in production environments to store critical data like logs, backups, or database snapshots on the Node's disk.
+
+    - emptyDir: Ideal for scenarios like a build system where data is only required temporarily and can be discarded after completion.
+
+    - hostPath: Used in production environments to store critical data like logs, backups, or database snapshots on the Node's disk.
 
 ================================================================================================================================================================================================================================================================================================================================================================================
