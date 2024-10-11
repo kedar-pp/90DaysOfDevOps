@@ -1,0 +1,8 @@
+1. What are Volumes in Kubernetes?
+Volumes allow containers within Pods to access and share data.
+They are decoupled from the container's lifecycle, meaning data can persist even if a container restarts.
+2. emptyDir Volume:
+Purpose: Temporary storage that lasts as long as the Pod is running.
+Lifecycle: Data in an emptyDir is deleted when the Pod is deleted.
+Use Case: Good for temporary storage like caching, intermediate data, or processing tasks that don't need to be saved after the Pod's lifecycle.
+Example: When you need fast, temporary storage for operations within a Pod, like running a web server where cache files can be regenerated if lost.
