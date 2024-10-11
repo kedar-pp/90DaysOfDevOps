@@ -14,3 +14,11 @@ Example: When you need fast, temporary storage for operations within a Pod, like
         - mountPath: /data
         name: emptydirvolume
 
+Key Commands:
+
+Created files in the volume: touch /data/file{1..5}.txt
+After Pod stops and restarts: Files are gone, but the /data directory remains intact because it’s part of the emptyDir.
+3. hostPath Volume:
+Purpose: Maps a directory on the host node into the Pod, allowing persistence across Pod restarts.
+Use Case: Useful for situations where you need to store logs, database files, or configurations that should persist even if a Pod is restarted or replaced.
+Example: Storing log files or shared resources that should survive across container or Pod lifecycles.
