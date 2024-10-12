@@ -25,13 +25,13 @@
 
 
 3. How to Create a ConfigMap?
-Using kubectl Command:
+    - Using kubectl Command:
 
-To create a ConfigMap from literal values:
-kubectl create configmap my-config --from-literal=APP_NAME=MyApp --from-literal=APP_ENV=production
+    - To create a ConfigMap from literal values:
+        - kubectl create configmap my-config --from-literal=APP_NAME=MyApp --from-literal=APP_ENV=production
 
-To create a ConfigMap from a file:
-kubectl create configmap my-config-from-file --from-file=app.properties
+    - To create a ConfigMap from a file:
+        - kubectl create configmap my-config-from-file --from-file=app.properties
 
 
 ================================================================================================================================================================================================================================================================================================================================================================================
@@ -39,41 +39,42 @@ kubectl create configmap my-config-from-file --from-file=app.properties
 
 4. Using a YAML File:
 
-Create a YAML file named configmap.yaml:
-apiVersion: v1
-kind: ConfigMap
-metadata:
-name: my-config
-data:
-APP_NAME: MyApp
-APP_ENV: production
-DATABASE_URL: "mongodb://db.example.com:27017"
+    - Create a YAML file named configmap.yaml:
+        apiVersion: v1
+        kind: ConfigMap
+            metadata:
+                name: my-config
+                data:
+                APP_NAME: MyApp
+                APP_ENV: production
+                DATABASE_URL: "mongodb://db.example.com:27017"
 
-Apply the YAML file using the command:
-kubectl apply -f configmap.yaml
+    - Apply the YAML file using the command:
+        kubectl apply -f configmap.yaml
 
 
 ================================================================================================================================================================================================================================================================================================================================================================================
 
 
 5. How to Use ConfigMap in a Pod?
-Set Environment Variables in the Pod:
 
-Create a YAML file named pod-config.yaml:
-apiVersion: v1
-kind: Pod
-metadata:
-name: my-pod
-spec:
-containers:
-- name: my-container
-image: nginx:1.23
-envFrom:
-- configMapRef:
-name: my-config
+    - Set Environment Variables in the Pod:
 
-Apply the file with:
-kubectl apply -f pod-config.yaml
+    - Create a YAML file named pod-config.yaml:
+        apiVersion: v1
+        kind: Pod
+        metadata:
+        name: my-pod
+        spec:
+        containers:
+        - name: my-container
+        image: nginx:1.23
+        envFrom:
+        - configMapRef:
+        name: my-config
+
+    - Apply the file with:
+        kubectl apply -f pod-config.yaml
 
 
 ================================================================================================================================================================================================================================================================================================================================================================================
