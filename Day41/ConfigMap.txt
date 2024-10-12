@@ -12,10 +12,13 @@
 ================================================================================================================================================================================================================================================================================================================================================================================
 
 
-Why Use ConfigMap?
-Centralized Configuration Management: Helps manage configurations across different environments (Dev, Staging, Production).
-Portability: Makes applications portable and adaptable to different settings without changing the container image.
-Dynamic Updates: Allows you to update configuration settings without restarting your application.
+2. Why Use ConfigMap?
+    
+    - Centralized Configuration Management: Helps manage configurations across different environments (Dev, Staging, Production).
+    
+    - Portability: Makes applications portable and adaptable to different settings without changing the container image.
+    
+    - Dynamic Updates: Allows you to update configuration settings without restarting your application.
 
 
 ================================================================================================================================================================================================================================================================================================================================================================================
