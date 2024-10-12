@@ -1,7 +1,12 @@
-What is ConfigMap?
-ConfigMap is a Kubernetes object that allows you to store non-confidential data in key-value pairs.
-It helps separate configuration from the containerized application, making the configuration externalized and dynamic.
-Commonly used to manage environment-specific settings like database URLs, API endpoints, or environment variables.
+///====ConfigMap in Kubernetes====\\\
+
+1. What is ConfigMap?
+    
+    - ConfigMap is a Kubernetes object that allows you to store non-confidential data in key-value pairs.
+    
+    - It helps separate configuration from the containerized application, making the configuration externalized and dynamic.
+    
+    - Commonly used to manage environment-specific settings like database URLs, API endpoints, or environment variables.
 
 
 ================================================================================================================================================================================================================================================================================================================================================================================
