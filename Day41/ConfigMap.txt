@@ -1,0 +1,128 @@
+What is ConfigMap?
+ConfigMap is a Kubernetes object that allows you to store non-confidential data in key-value pairs.
+It helps separate configuration from the containerized application, making the configuration externalized and dynamic.
+Commonly used to manage environment-specific settings like database URLs, API endpoints, or environment variables.
+
+
+================================================================================================================================================================================================================================================================================================================================================================================
+
+
+Why Use ConfigMap?
+Centralized Configuration Management: Helps manage configurations across different environments (Dev, Staging, Production).
+Portability: Makes applications portable and adaptable to different settings without changing the container image.
+Dynamic Updates: Allows you to update configuration settings without restarting your application.
+
+
+================================================================================================================================================================================================================================================================================================================================================================================
+
+
+How to Create a ConfigMap?
+Using kubectl Command:
+
+To create a ConfigMap from literal values:
+kubectl create configmap my-config --from-literal=APP_NAME=MyApp --from-literal=APP_ENV=production
+
+To create a ConfigMap from a file:
+kubectl create configmap my-config-from-file --from-file=app.properties
+
+
+================================================================================================================================================================================================================================================================================================================================================================================
+
+
+Using a YAML File:
+
+Create a YAML file named configmap.yaml:
+apiVersion: v1
+kind: ConfigMap
+metadata:
+name: my-config
+data:
+APP_NAME: MyApp
+APP_ENV: production
+DATABASE_URL: "mongodb://db.example.com:27017"
+
+Apply the YAML file using the command:
+kubectl apply -f configmap.yaml
+
+
+================================================================================================================================================================================================================================================================================================================================================================================
+
+
+How to Use ConfigMap in a Pod?
+Set Environment Variables in the Pod:
+
+Create a YAML file named pod-config.yaml:
+apiVersion: v1
+kind: Pod
+metadata:
+name: my-pod
+spec:
+containers:
+- name: my-container
+image: nginx:1.23
+envFrom:
+- configMapRef:
+name: my-config
+
+Apply the file with:
+kubectl apply -f pod-config.yaml
+
+
+================================================================================================================================================================================================================================================================================================================================================================================
+
+
+Using ConfigMap as a Volume:
+
+Create a YAML file named pod-with-volume.yaml:
+apiVersion: v1
+kind: Pod
+metadata:
+name: my-pod-with-volume
+spec:
+containers:
+- name: my-container
+image: nginx:1.23
+volumeMounts:
+- name: config-volume
+mountPath: /etc/config
+volumes:
+
+name: config-volume
+configMap:
+name: my-config
+Apply the file with:
+kubectl apply -f pod-with-volume.yaml
+
+
+================================================================================================================================================================================================================================================================================================================================================================================
+
+
+Real-Time Scenario for Using ConfigMap
+Multi-Environment Configuration: When deploying an application in different environments (Development, Staging, Production), you can create separate ConfigMaps for each environment, containing specific configuration details.
+Centralized Configuration Management: Instead of hardcoding configurations in the code, you can manage configurations in ConfigMaps and update them easily across multiple environments.
+Feature Flags: Use ConfigMap to enable or disable specific features without redeploying the application.
+
+
+================================================================================================================================================================================================================================================================================================================================================================================
+
+
+Commands for Working with ConfigMap
+List ConfigMaps: kubectl get configmaps
+Describe a ConfigMap: kubectl describe configmap my-config
+Delete a ConfigMap: kubectl delete configmap my-config
+Update a ConfigMap (Recreate):
+kubectl create configmap my-config --from-literal=NEW_KEY=new_value --dry-run=client -o yaml | kubectl apply -f -
+
+
+================================================================================================================================================================================================================================================================================================================================================================================
+
+
+Summary
+ConfigMap in Kubernetes is used to store configuration data separately from application code, making it easier to manage environment-specific configurations.
+It can be created using kubectl commands or YAML files.
+ConfigMap can be used in Pods as environment variables or mounted as volumes.
+Real-time use cases include multi-environment configuration, centralized configuration management, and feature flagging.
+
+
+================================================================================================================================================================================================================================================================================================================================================================================
+
