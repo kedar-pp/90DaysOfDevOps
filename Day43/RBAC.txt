@@ -56,3 +56,34 @@ Certificates ensure that data exchanged between components is encrypted and auth
 Generating Keys and Certificates Using OpenSSL:
 
 Step 1: Generate a private key.
+
+    openssl genrsa -out my-key.key 2048
+
+Step 2: Create a Certificate Signing Request (CSR).
+
+    openssl req -new -key my-key.key -out my-csr.csr
+
+Step 3: Sign the CSR to create a certificate.
+
+    openssl x509 -req -in my-csr.csr -signkey my-key.key -out my-cert.crt
+
+Real-Time Scenario:
+
+Use keys and certificates to establish secure communication between the Kubernetes API server and worker nodes.
+
+4. Tasks Performed
+Task 1: Setting Up RBAC
+
+Created roles and role bindings to allow a developer user to access specific resources in a development namespace.
+Configured cluster-wide access using ClusterRoles and ClusterRoleBindings.
+Task 2: Generating Keys and Certificates
+
+Practiced creating private keys and signing certificates using OpenSSL.
+Applied certificates to secure communications in the Kubernetes cluster.
+5. Additional Points and Real-Time Examples
+Follow the Principle of Least Privilege:
+Grant only the minimum permissions necessary to users and applications.
+Use Service Accounts for Automation:
+For automated tasks, create service accounts with the appropriate RBAC permissions to avoid using administrative credentials.
+Regularly Audit RBAC Policies:
+Review RBAC settings periodically to ensure that only necessary permissions are in place.
