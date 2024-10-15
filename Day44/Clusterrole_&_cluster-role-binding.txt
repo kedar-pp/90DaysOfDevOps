@@ -1,64 +1,87 @@
 ///====Cluster Role & Cluster Role Binding====\\\
 
-What are ClusterRole & ClusterRoleBinding?
-ClusterRole: Defines rules and permissions for accessing cluster-wide resources.
-Used for resources that are not namespace-specific (e.g., nodes, persistent volumes).
-Can also be used within a specific namespace.
-ClusterRoleBinding: Connects a ClusterRole to users, groups, or service accounts.
-Allows you to grant the permissions defined in a ClusterRole to specific entities across the entire cluster.
+1. What are ClusterRole & ClusterRoleBinding?
+
+    - ClusterRole: Defines rules and permissions for accessing cluster-wide resources.
+
+        - Used for resources that are not namespace-specific (e.g., nodes, persistent volumes).
+
+        - Can also be used within a specific namespace.
+
+    - ClusterRoleBinding: Connects a ClusterRole to users, groups, or service accounts.
+
+        - Allows you to grant the permissions defined in a ClusterRole to specific entities across the entire cluster.
 
 
 ==========================================================================================================================================
 
 
-Why Use ClusterRole & ClusterRoleBinding?
-To manage access control across multiple namespaces.
-Ideal for centralized management of cluster-wide operations (monitoring, logging, CI/CD pipelines).
-Helps secure Kubernetes environments by controlling who can perform specific actions.
+2. Why Use ClusterRole & ClusterRoleBinding?
+
+    - To manage access control across multiple namespaces.
+
+    - Ideal for centralized management of cluster-wide operations (monitoring, logging, CI/CD pipelines).
+
+    - Helps secure Kubernetes environments by controlling who can perform specific actions.
 
 
 ==========================================================================================================================================
 
 
-Real-Time Scenarios & Examples
-DevOps Teams: Allow team members to access multiple namespaces without defining separate roles for each.
-Automated CI/CD Pipelines: Grant pipelines the ability to deploy across different namespaces.
-Monitoring Tools (e.g., Prometheus): Assign read-only access to monitor various cluster components.
+3. Real-Time Scenarios & Examples
+
+    - DevOps Teams: Allow team members to access multiple namespaces without defining separate roles for each.
+
+    - Automated CI/CD Pipelines: Grant pipelines the ability to deploy across different namespaces.
+
+    - Monitoring Tools (e.g., Prometheus): Assign read-only access to monitor various cluster components.
 
 
 ==========================================================================================================================================
 
 
-Hands-On Practice
-Create a ClusterRole:
-Includes permissions for actions like create, read, update, and delete on cluster resources.
-Bind the ClusterRole using ClusterRoleBinding:
-Assigns the role to a user, group, or service account for cluster-wide access.
-Perform CRUD Operations:
-Experiment with creating, reading, updating, and deleting resources to understand access control.
+4. Hands-On Practice
+
+    - Create a ClusterRole:
+
+        - Includes permissions for actions like create, read, update, and delete on cluster resources.
+
+    - Bind the ClusterRole using ClusterRoleBinding:
+
+        - Assigns the role to a user, group, or service account for cluster-wide access.
+
+    - Perform CRUD Operations:
+
+        - Experiment with creating, reading, updating, and deleting resources to understand access control.
 
 
 ==========================================================================================================================================
 
 
-Key Commands
-Creating a ClusterRole:
+5. Key Commands
 
-    kubectl create clusterrole <name> --verb=<actions> --resource=<resource>
+    - Creating a ClusterRole:
 
-Creating a ClusterRoleBinding:
+        kubectl create clusterrole <name> --verb=<actions> --resource=<resource>
 
-    kubectl create clusterrolebinding <name> --clusterrole=<role> --user=<username>
+    - Creating a ClusterRoleBinding:
 
-Verifying Permissions:
+        kubectl create clusterrolebinding <name> --clusterrole=<role> --user=<username>
 
-    kubectl auth can-i <action> <resource>
+    - Verifying Permissions:
+
+        kubectl auth can-i <action> <resource>
 
 
 ==========================================================================================================================================
 
 
-Key Takeaways
-ClusterRole & ClusterRoleBinding are crucial for scaling access control in Kubernetes.
-They help in granting permissions securely while maintaining a centralized management system.
-Ideal for multi-team environments, automation, and monitoring setups.
+6. Key Takeaways
+
+    - ClusterRole & ClusterRoleBinding are crucial for scaling access control in Kubernetes.
+
+    - They help in granting permissions securely while maintaining a centralized management system.
+
+    - Ideal for multi-team environments, automation, and monitoring setups.
+
+==========================================================================================================================================
