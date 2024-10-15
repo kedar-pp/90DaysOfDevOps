@@ -20,6 +20,11 @@ Bind the ClusterRole using ClusterRoleBinding:
 Assigns the role to a user, group, or service account for cluster-wide access.
 Perform CRUD Operations:
 Experiment with creating, reading, updating, and deleting resources to understand access control.
+
+
+==========================================================================================================================================
+
+
 Key Commands
 Creating a ClusterRole:
 
@@ -32,6 +37,9 @@ Creating a ClusterRoleBinding:
 Verifying Permissions:
 
     kubectl auth can-i <action> <resource>
+
+
+==========================================================================================================================================
 
 
 Key Takeaways
