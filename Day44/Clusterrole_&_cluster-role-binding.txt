@@ -30,3 +30,5 @@ Creating a ClusterRoleBinding:
     kubectl create clusterrolebinding <name> --clusterrole=<role> --user=<username>
 
 Verifying Permissions:
+
+    kubectl auth can-i <action> <resource>
