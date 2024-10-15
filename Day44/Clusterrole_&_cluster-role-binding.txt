@@ -24,3 +24,9 @@ Key Commands
 Creating a ClusterRole:
 
     kubectl create clusterrole <name> --verb=<actions> --resource=<resource>
+
+Creating a ClusterRoleBinding:
+
+    kubectl create clusterrolebinding <name> --clusterrole=<role> --user=<username>
+
+Verifying Permissions:
