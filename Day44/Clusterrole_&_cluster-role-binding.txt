@@ -32,3 +32,9 @@ Creating a ClusterRoleBinding:
 Verifying Permissions:
 
     kubectl auth can-i <action> <resource>
+
+
+Key Takeaways
+ClusterRole & ClusterRoleBinding are crucial for scaling access control in Kubernetes.
+They help in granting permissions securely while maintaining a centralized management system.
+Ideal for multi-team environments, automation, and monitoring setups.
