@@ -11,19 +11,26 @@ This is particularly useful for applications with fluctuating traffic, ensuring 
 
 
 2. Why Use HPA?
-To automatically handle changes in application load.
-Prevent over-provisioning or under-provisioning of resources.
-Improve cost-efficiency by scaling down resources when demand is low.
-Enhance application performance during traffic spikes.
+
+    - To automatically handle changes in application load.
+
+    - Prevent over-provisioning or under-provisioning of resources.
+
+    - Improve cost-efficiency by scaling down resources when demand is low.
+
+    - Enhance application performance during traffic spikes.
 
 
 ==========================================================================================================================================
 
 
 3. Key Components of HPA
-Metrics Server: Collects metrics data like CPU usage to make scaling decisions.
-Deployment Configuration: Defines how the application should be deployed, including replicas, CPU thresholds, and scaling rules.
-Autoscaler Rules: Specify the minimum and maximum number of replicas, along with the target CPU utilization.
+    
+    - Metrics Server: Collects metrics data like CPU usage to make scaling decisions.
+    
+    - Deployment Configuration: Defines how the application should be deployed, including replicas, CPU thresholds, and scaling rules.
+    
+    - Autoscaler Rules: Specify the minimum and maximum number of replicas, along with the target CPU utilization.
 
 
 ==========================================================================================================================================
