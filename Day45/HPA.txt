@@ -2,9 +2,12 @@
 
 
 1. What is Horizontal Pod Autoscaler (HPA)?
-HPA is a Kubernetes feature that automatically adjusts the number of pods in a deployment based on the current CPU utilization or other select metrics.
-It helps manage workloads efficiently by scaling the application up or down based on demand.
-This is particularly useful for applications with fluctuating traffic, ensuring optimal resource usage and performance.
+    
+    - HPA is a Kubernetes feature that automatically adjusts the number of pods in a deployment based on the current CPU utilization or other select metrics.
+    
+    - It helps manage workloads efficiently by scaling the application up or down based on demand.
+    
+    - This is particularly useful for applications with fluctuating traffic, ensuring optimal resource usage and performance.
 
 
 ==========================================================================================================================================
