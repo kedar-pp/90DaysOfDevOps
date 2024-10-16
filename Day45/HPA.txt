@@ -90,3 +90,7 @@ Using HPA improves performance and cost optimization by adjusting resources dyna
 Additional Points
 Always ensure the Metrics Server is correctly configured before setting up HPA.
 Monitor the pods and HPA continuously during the load testing to observe how scaling occurs in real-time.
+
+
+==========================================================================================================================================
+
