@@ -30,9 +30,12 @@ Autoscaler Rules: Specify the minimum and maximum number of replicas, along with
 
 
 4. Real-World Use Cases
-E-commerce Websites: Automatically scale up during peak sales periods and scale down during off-hours.
-Streaming Services: Adjust resources based on the number of active users.
-SaaS Applications: Handle varying user activity levels with dynamic scaling.
+    
+    - E-commerce Websites: Automatically scale up during peak sales periods and scale down during off-hours.
+    
+    - Streaming Services: Adjust resources based on the number of active users.
+    
+    - SaaS Applications: Handle varying user activity levels with dynamic scaling.
 
 
 ==========================================================================================================================================
@@ -42,14 +45,17 @@ SaaS Applications: Handle varying user activity levels with dynamic scaling.
 
     1. Set Up the Environment
 
-Start by checking the Kubernetes cluster with: kubectl get nodes
-Install and configure the Metrics Server to collect CPU usage data.
+        - Start by checking the Kubernetes cluster with: kubectl get nodes
+    
+        - Install and configure the Metrics Server to collect CPU usage data.
 
     - 2. Download and Configure Metrics Server
 
-        Download the metrics server components file.
-        Edit the components file to modify arguments and enable metrics collection:
-        Add flags like /metrics-server, --kubelet-preferred-address-types=InternalIP,Hostname,InternalDNS,ExternalDNS,ExternalIP.
+        - Download the metrics server components file.
+        
+        - Edit the components file to modify arguments and enable metrics collection:
+        
+            - Add flags like /metrics-server, --kubelet-preferred-address-types=InternalIP,Hostname,InternalDNS,ExternalDNS,ExternalIP.
 
     3. Apply Metrics Server Configuration
 
