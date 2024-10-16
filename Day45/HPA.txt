@@ -29,7 +29,7 @@ Autoscaler Rules: Specify the minimum and maximum number of replicas, along with
 ==========================================================================================================================================
 
 
-Real-World Use Cases
+4. Real-World Use Cases
 E-commerce Websites: Automatically scale up during peak sales periods and scale down during off-hours.
 Streaming Services: Adjust resources based on the number of active users.
 SaaS Applications: Handle varying user activity levels with dynamic scaling.
@@ -38,58 +38,84 @@ SaaS Applications: Handle varying user activity levels with dynamic scaling.
 ==========================================================================================================================================
 
 
-Step-by-Step Commands and Tasks
-Set Up the Environment
+5. Step-by-Step Commands and Tasks
+
+    1. Set Up the Environment
 
 Start by checking the Kubernetes cluster with: kubectl get nodes
 Install and configure the Metrics Server to collect CPU usage data.
-Download and Configure Metrics Server
 
-Download the metrics server components file.
-Edit the components file to modify arguments and enable metrics collection:
-Add flags like /metrics-server, --kubelet-preferred-address-types=InternalIP,Hostname,InternalDNS,ExternalDNS,ExternalIP.
-Apply Metrics Server Configuration
+    - 2. Download and Configure Metrics Server
 
-Use: kubectl apply -f components.yaml to apply the metrics server setup.
-Verify by checking the pods: kubectl get pods -n kube-system | grep metrics-server
-Create Service and Deployment
+        Download the metrics server components file.
+        Edit the components file to modify arguments and enable metrics collection:
+        Add flags like /metrics-server, --kubelet-preferred-address-types=InternalIP,Hostname,InternalDNS,ExternalDNS,ExternalIP.
 
-Use a single YAML file (hpa.yaml) to define both service and deployment. Separate the definitions using ---.
-Apply the configuration: kubectl apply -f hpa.yaml
-Check the status: kubectl get all
-Implement Autoscaling
+    3. Apply Metrics Server Configuration
 
-Use the command: kubectl autoscale deployment hpa-deploy --cpu-percent=50 --min=1 --max=10
-Monitor the Horizontal Pod Autoscaler status with: kubectl get hpa
-Simulate Load for Testing
+        - Use: kubectl apply -f components.yaml to apply the metrics server setup.
+        
+        - Verify by checking the pods: kubectl get pods -n kube-system | grep metrics-server
 
-Create a load generator with BusyBox to simulate traffic:
-kubectl run -i --tty load-generator --rm --image=busybox:1.28 --restart=Never -- /bin/sh -c "while sleep 0.01; do wget -q -0- http:lb-service; done"
-Use watch commands to monitor the scaling:
-watch "kubectl get pods"
-watch "kubectl get hpa"
-Clean Up Resources
+    4. Create Service and Deployment
 
-Delete the autoscaler: kubectl delete hpa hpa-deploy
-Remove the service and deployment: kubectl delete -f hpa.yaml
-Delete the Kubernetes cluster: eksctl delete cluster --name eks
+        - Use a single YAML file (hpa.yaml) to define both service and deployment. Separate the definitions using ---.
+        
+        - Apply the configuration: 
+            "kubectl apply -f hpa.yaml"
+        
+        - Check the status: 
+            "kubectl get all"
+
+    5. Implement Autoscaling
+
+        - Use the command: 
+            "kubectl autoscale deployment hpa-deploy    --cpu-percent=50 --min=1 --max=10 "
+
+        - Monitor the Horizontal Pod Autoscaler status with: 
+            "kubectl get hpa"
+
+    6. Simulate Load for Testing
+
+        - Create a load generator with BusyBox to simulate traffic:
+            kubectl run -i --tty load-generator --rm --image=busybox:1.28 --restart=Never -- /bin/sh -c "while sleep 0.01; do wget -q -0- http:lb-service; done"
+            
+        - Use watch commands to monitor the scaling:
+            watch "kubectl get pods"
+            watch "kubectl get hpa"
+
+    7. Clean Up Resources
+
+        - Delete the autoscaler: 
+            "kubectl delete hpa hpa-deploy"
+        
+        - Remove the service and deployment: 
+            "kubectl delete -f hpa.yaml"
+        
+        - Delete the Kubernetes cluster: 
+            "eksctl delete cluster --name eks"
 
 
 ==========================================================================================================================================
 
 
-Key Takeaways
-HPA is essential for applications that experience varying levels of traffic.
-It enables efficient resource management, scaling up when needed and scaling down during low activity.
-Using HPA improves performance and cost optimization by adjusting resources dynamically.
+6. Key Takeaways
+
+    - HPA is essential for applications that experience varying levels of traffic.
+
+    - It enables efficient resource management, scaling up when needed and scaling down during low activity.
+
+    - Using HPA improves performance and cost optimization by adjusting resources dynamically.
 
 
 ==========================================================================================================================================
 
 
-Additional Points
-Always ensure the Metrics Server is correctly configured before setting up HPA.
-Monitor the pods and HPA continuously during the load testing to observe how scaling occurs in real-time.
+7. Additional Points
+
+    - Always ensure the Metrics Server is correctly configured before setting up HPA.
+
+    - Monitor the pods and HPA continuously during the load testing to observe how scaling occurs in real-time.
 
 
 ==========================================================================================================================================
