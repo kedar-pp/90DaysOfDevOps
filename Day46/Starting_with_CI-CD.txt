@@ -18,6 +18,9 @@ Build Automation: Automating the process of compiling and building the code.
 Reporting: Generating reports on the build status, test results, and code quality.
 Deployment Automation: Automatically deploying code to various environments (testing, staging, production).
 Monitoring and Feedback: Tracking the performance and stability of the application.
+
+========================================================================================================================================
+
 Tools & Technologies Explored
 Maven: Used for build automation in Java projects.
 JUnit: A testing framework for writing and running tests.
