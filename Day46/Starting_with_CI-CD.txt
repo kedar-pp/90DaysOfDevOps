@@ -5,6 +5,9 @@ CI/CD stands for Continuous Integration and Continuous Deployment/Delivery.
 It automates the software development process to speed up releases, improve quality, and make integration smoother.
 CI (Continuous Integration): Developers frequently merge code changes into a shared repository, where automated tests and builds are run.
 CD (Continuous Deployment/Delivery): Automates the release process, allowing code changes to be automatically deployed to production or a staging environment.
+
+========================================================================================================================================
+
 Why Use CI/CD?
 Faster releases: Code changes are delivered quickly.
 Higher quality: Automated testing ensures fewer bugs.
