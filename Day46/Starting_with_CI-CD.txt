@@ -70,5 +70,7 @@
 
 
 6. Next Steps
-Setting up a hands-on CI/CD pipeline.
-Automating tasks like building, testing, and deploying an application.
+
+    - Setting up a hands-on CI/CD pipeline.
+
+    - Automating tasks like building, testing, and deploying an application.
