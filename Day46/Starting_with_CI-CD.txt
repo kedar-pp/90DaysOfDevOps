@@ -9,6 +9,11 @@ Why Use CI/CD?
 Faster releases: Code changes are delivered quickly.
 Higher quality: Automated testing ensures fewer bugs.
 Smooth integration: Helps avoid "integration hell" by merging code regularly.
+
+
+========================================================================================================================================
+
+
 Standard Steps in a CI/CD Pipeline
 Code Integration: Merging code changes frequently.
 Unit Testing: Running tests to ensure individual pieces of code work as expected.
