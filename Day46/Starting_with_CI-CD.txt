@@ -1,6 +1,6 @@
 ///====Diving In CI/CD====\\\
 
-What is CI/CD?
+1. What is CI/CD?
 CI/CD stands for Continuous Integration and Continuous Deployment/Delivery.
 It automates the software development process to speed up releases, improve quality, and make integration smoother.
 CI (Continuous Integration): Developers frequently merge code changes into a shared repository, where automated tests and builds are run.
@@ -24,10 +24,17 @@ JUnit: A testing framework for writing and running tests.
 SonarQube: For static code analysis and tracking code quality.
 ALM Tools (Application Lifecycle Management): Used for version control, reporting, and tracking.
 Kubernetes & Docker: For containerizing applications and deploying them in various environments like EC2.
+
+========================================================================================================================================
+
 Real-Time Scenarios
 E-commerce: Ensures fast releases to handle new features or bug fixes quickly.
 Finance: Automates testing for secure code changes in banking apps.
 Healthcare: Deploys software updates while maintaining high reliability.
+
+========================================================================================================================================
+
+
 Next Steps
 Setting up a hands-on CI/CD pipeline.
 Automating tasks like building, testing, and deploying an application.
