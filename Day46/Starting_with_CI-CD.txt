@@ -12,44 +12,63 @@
 
 ========================================================================================================================================
 
-Why Use CI/CD?
-Faster releases: Code changes are delivered quickly.
-Higher quality: Automated testing ensures fewer bugs.
-Smooth integration: Helps avoid "integration hell" by merging code regularly.
+2. Why Use CI/CD?
+    
+    - Faster releases: Code changes are delivered quickly.
+    
+    - Higher quality: Automated testing ensures fewer bugs.
+    
+    - Smooth integration: Helps avoid "integration hell" by merging code regularly.
 
 
 ========================================================================================================================================
 
 
-Standard Steps in a CI/CD Pipeline
-Code Integration: Merging code changes frequently.
-Unit Testing: Running tests to ensure individual pieces of code work as expected.
-Static Code Analysis: Checking code for bugs, vulnerabilities, or style issues.
-Code Quality & Vulnerability Scanning: Ensuring the code is safe and of high quality.
-Build Automation: Automating the process of compiling and building the code.
-Reporting: Generating reports on the build status, test results, and code quality.
-Deployment Automation: Automatically deploying code to various environments (testing, staging, production).
-Monitoring and Feedback: Tracking the performance and stability of the application.
+3. Standard Steps in a CI/CD Pipeline
+    
+    - Code Integration: Merging code changes frequently.
+    
+    - Unit Testing: Running tests to ensure individual pieces of code work as expected.
+    
+    - Static Code Analysis: Checking code for bugs, vulnerabilities, or style issues.
+    
+    - Code Quality & Vulnerability Scanning: Ensuring the code is safe and of high quality.
+    
+    - Build Automation: Automating the process of compiling and building the code.
+    
+    - Reporting: Generating reports on the build status, test results, and code quality.
+    
+    - Deployment Automation: Automatically deploying code to various environments (testing, staging, production).
+    
+    - Monitoring and Feedback: Tracking the performance and stability of the application.
 
 ========================================================================================================================================
 
-Tools & Technologies Explored
-Maven: Used for build automation in Java projects.
-JUnit: A testing framework for writing and running tests.
-SonarQube: For static code analysis and tracking code quality.
-ALM Tools (Application Lifecycle Management): Used for version control, reporting, and tracking.
-Kubernetes & Docker: For containerizing applications and deploying them in various environments like EC2.
+4. Tools & Technologies Explored
+    
+    - Maven: Used for build automation in Java projects.
+    
+    - JUnit: A testing framework for writing and running tests.
+    
+    - SonarQube: For static code analysis and tracking code quality.
+    
+    - ALM Tools (Application Lifecycle Management): Used for version control, reporting, and tracking.
+    
+    - Kubernetes & Docker: For containerizing applications and deploying them in various environments like EC2.
 
 ========================================================================================================================================
 
-Real-Time Scenarios
-E-commerce: Ensures fast releases to handle new features or bug fixes quickly.
-Finance: Automates testing for secure code changes in banking apps.
-Healthcare: Deploys software updates while maintaining high reliability.
+5. Real-Time Scenarios
+    
+    - E-commerce: Ensures fast releases to handle new features or bug fixes quickly.
+    
+    - Finance: Automates testing for secure code changes in banking apps.
+    
+    - Healthcare: Deploys software updates while maintaining high reliability.
 
 ========================================================================================================================================
 
 
-Next Steps
+6. Next Steps
 Setting up a hands-on CI/CD pipeline.
 Automating tasks like building, testing, and deploying an application.
