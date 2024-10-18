@@ -49,6 +49,11 @@ GitLab CI: Built-in CI/CD in GitLab, good for version control and DevOps.
 CircleCI: Cloud-based, known for speed and scalability.
 Bamboo: Integrated with Atlassian tools, suitable for larger teams.
 TeamCity: Great for .NET projects, offers detailed build configuration.
+
+
+============================================================================================================================================
+
+
 5. Feasibility Considerations When Choosing a CI/CD Tool
 Project Size: Bigger projects may need tools that support more integrations.
 Team Expertise: Choose a tool that the team is familiar with.
