@@ -1,1 +1,48 @@
 ///====Starting with jankins====\\\
+
+1. What is SDLC (Software Development Life Cycle)?
+SDLC is a process for planning, creating, testing, and deploying software.
+Common phases include:
+Requirements Gathering: Understanding what needs to be developed.
+Design: Planning the architecture of the software.
+Development: Writing the code.
+Testing: Checking for bugs and verifying functionality.
+Deployment: Releasing the software to users.
+Maintenance: Updating and fixing issues post-release.
+Real-World Example: An e-commerce app where the SDLC ensures smooth functionality, from browsing items to making purchases.
+
+2. DevOps Culture
+A collaborative approach that unites development (Dev) and operations (Ops) teams.
+Focuses on automating processes to speed up software delivery.
+Reduces silos between teams for better communication and quicker issue resolution.
+Emphasizes continuous feedback and improvement for consistent software quality.
+Real-World Scenario: Companies using DevOps practices can push software updates multiple times a day instead of once a month.
+
+3. Jenkins for CI/CD Automation
+What is Jenkins?
+An open-source tool used to automate building, testing, and deploying code changes.
+Helps in achieving continuous integration (CI) and continuous delivery (CD).
+Why use Jenkins?
+Supports a wide range of plugins for integrating various tools.
+Automates repetitive tasks, making the development process more efficient.
+Free to use and highly customizable.
+How Jenkins Works:
+
+Developers push code changes to a version control system (e.g., Git).
+Jenkins automatically builds the new code, runs tests, and, if successful, deploys it.
+Reduces human errors and speeds up the deployment cycle.
+4. Other CI/CD Tools (Alternatives to Jenkins)
+GitLab CI: Built-in CI/CD in GitLab, good for version control and DevOps.
+CircleCI: Cloud-based, known for speed and scalability.
+Bamboo: Integrated with Atlassian tools, suitable for larger teams.
+TeamCity: Great for .NET projects, offers detailed build configuration.
+5. Feasibility Considerations When Choosing a CI/CD Tool
+Project Size: Bigger projects may need tools that support more integrations.
+Team Expertise: Choose a tool that the team is familiar with.
+Budget: Some tools are free, while others have licensing costs.
+Plugin Support: Jenkins has a large plugin ecosystem, making it versatile.
+Key Takeaways:
+
+Understanding SDLC helps streamline software development.
+DevOps culture fosters better collaboration between development and operations teams.
+Jenkins is a powerful tool for automating CI/CD but evaluating other tools is essential to find the best fit.
