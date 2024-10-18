@@ -11,12 +11,20 @@ Deployment: Releasing the software to users.
 Maintenance: Updating and fixing issues post-release.
 Real-World Example: An e-commerce app where the SDLC ensures smooth functionality, from browsing items to making purchases.
 
+
+============================================================================================================================================
+
+
 2. DevOps Culture
 A collaborative approach that unites development (Dev) and operations (Ops) teams.
 Focuses on automating processes to speed up software delivery.
 Reduces silos between teams for better communication and quicker issue resolution.
 Emphasizes continuous feedback and improvement for consistent software quality.
 Real-World Scenario: Companies using DevOps practices can push software updates multiple times a day instead of once a month.
+
+
+============================================================================================================================================
+
 
 3. Jenkins for CI/CD Automation
 What is Jenkins?
@@ -31,6 +39,11 @@ How Jenkins Works:
 Developers push code changes to a version control system (e.g., Git).
 Jenkins automatically builds the new code, runs tests, and, if successful, deploys it.
 Reduces human errors and speeds up the deployment cycle.
+
+
+============================================================================================================================================
+
+
 4. Other CI/CD Tools (Alternatives to Jenkins)
 GitLab CI: Built-in CI/CD in GitLab, good for version control and DevOps.
 CircleCI: Cloud-based, known for speed and scalability.
