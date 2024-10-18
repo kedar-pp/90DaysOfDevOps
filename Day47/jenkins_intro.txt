@@ -59,8 +59,17 @@ Project Size: Bigger projects may need tools that support more integrations.
 Team Expertise: Choose a tool that the team is familiar with.
 Budget: Some tools are free, while others have licensing costs.
 Plugin Support: Jenkins has a large plugin ecosystem, making it versatile.
+
+
+============================================================================================================================================
+
+
 Key Takeaways:
 
 Understanding SDLC helps streamline software development.
 DevOps culture fosters better collaboration between development and operations teams.
 Jenkins is a powerful tool for automating CI/CD but evaluating other tools is essential to find the best fit.
+
+
+============================================================================================================================================
+
