@@ -1,64 +1,68 @@
 ///====Installing Jenkins on ubuntu====\\\
 
 1. Why Jenkins?
-Jenkins is a Continuous Integration and Continuous Delivery (CI/CD) tool.
-Automates tasks like building, testing, and deploying code.
-Helps teams deliver code faster and with fewer errors.
+    
+    - Jenkins is a Continuous Integration and Continuous Delivery (CI/CD) tool.
+    
+    - Automates tasks like building, testing, and deploying code.
+    Helps teams deliver code faster and with fewer errors.
 
 
 ============================================================================================================================================
 
 
 2. Installation Steps:
-a. Update the Package List:
+    a. Update the Package List:
 
-Command: sudo apt update
-Ensures all packages are up-to-date.
+        - Command: sudo apt update
+        Ensures all packages are up-to-date.
 
-b. Install Java (OpenJDK):
+    b. Install Java (OpenJDK):
 
-Command: sudo apt install openjdk-17-jre
-Jenkins requires Java to run.
-Check the version with java -version.
+        - Command: sudo apt install openjdk-17-jre
+            - Jenkins requires Java to run.
+            - Check the version with java -version.
 
-c. Download Jenkins Package:
+    c. Download Jenkins Package:
 
-Command: wget https://pkg.jenkins.io/debian-stable/binary/jenkins_2.401.1_all.deb
-Downloads the Jenkins installation file.
+        - Command: wget https://pkg.jenkins.io/debian-stable/binary/jenkins_2.401.1_all.deb
+            - Downloads the Jenkins installation file.
 
-d. Install Jenkins:
+    d. Install Jenkins:
 
-Command: sudo dpkg -i jenkins_2.401.1_all.deb
-This installs Jenkins.
-If there are dependency issues, run sudo apt-get -f install.
+        - Command: sudo dpkg -i jenkins_2.401.1_all.deb
+            - This installs Jenkins.
+            - If there are dependency issues, run sudo apt-get -f install.
 
-e. Fix Package Dependencies:
+    e. Fix Package Dependencies:
 
-Command: sudo apt-get -f install
-Resolves any missing dependencies.
+        - Command: sudo apt-get -f install
+            - Resolves any missing dependencies.
 
-f. Install Jenkins Again (if needed):
+    f. Install Jenkins Again (if needed):
 
-Command: sudo apt-get install jenkins
-Ensures Jenkins is fully installed.
+        - Command: sudo apt-get install jenkins
+            - Ensures Jenkins is fully installed.
 
-g. Retrieve Initial Admin Password:
+    g. Retrieve Initial Admin Password:
 
-Command: sudo cat /var/lib/jenkins/secrets/initialAdminPassword
-Used for first-time login to Jenkins.
+        - Command: sudo cat /var/lib/jenkins/secrets/initialAdminPassword
+            - Used for first-time login to Jenkins.
 
-h. Check Jenkins Service Status:
+    h. Check Jenkins Service Status:
 
-Command: service jenkins status
-Verifies whether Jenkins is running.
+        - Command: service jenkins status
+            - Verifies whether Jenkins is running.
 
 
 ============================================================================================================================================
 
 
 3. Real-World Application:
-Automates tasks in software development, making processes faster and more efficient.
-Perfect for continuous integration and testing, reducing the chance of human error.
+    
+    - Automates tasks in software development, making processes faster and more efficient.
+    
+    - Perfect for continuous integration and testing, reducing the chance of human error.
 
 
 ============================================================================================================================================
