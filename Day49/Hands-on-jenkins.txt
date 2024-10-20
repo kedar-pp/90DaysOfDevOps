@@ -1,1 +1,35 @@
 ///====Practicing Jenkins====\\\
+
+1. Introduction to Jenkins Jobs
+Jenkins jobs are tasks or projects that Jenkins executes, used for automating different stages of the software development process.
+Two types of jobs practiced today: Freestyle Job and Pipeline Job.
+
+
+============================================================================================================================================
+
+
+2. Task 1: Creating a Freestyle Job
+Steps:
+Created a new freestyle job in Jenkins.
+Added build steps with the following commands:
+echo "Hello friends": Prints a message to the console.
+echo "Started learning Jenkins": Another print statement.
+mkdir -p devops: Creates a directory named "devops" if it doesn't exist.
+echo "DevOps folder created": Confirmation message after folder creation.
+Ran the job to check if the commands executed successfully.
+Outcome: Verified the creation of the "devops" folder to ensure the job ran correctly.
+3. Task 2: Creating a Pipeline Job
+Steps:
+Created a new pipeline job in Jenkins.
+Used a simple pipeline script with basic commands:
+echo "Hello world": Prints "Hello world" message.
+mkdir devops: Creates a "devops" directory.
+echo "Bye world": Prints "Bye world" message.
+Ran the pipeline and confirmed the script execution.
+Outcome: The pipeline ran successfully, performing the scripted tasks.
+4. Key Takeaways
+Freestyle Job: Suitable for simple tasks and custom build steps.
+Pipeline Job: More flexible, script-based, ideal for automating complex workflows.
+5. Next Steps
+Move towards more advanced Jenkins features like triggers, advanced pipeline configurations, and integrating with other tools.
+Jenkins basics are a crucial first step in mastering continuous integration and continuous delivery in DevOps! 🚀
