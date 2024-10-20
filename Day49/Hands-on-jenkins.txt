@@ -18,6 +18,11 @@ mkdir -p devops: Creates a directory named "devops" if it doesn't exist.
 echo "DevOps folder created": Confirmation message after folder creation.
 Ran the job to check if the commands executed successfully.
 Outcome: Verified the creation of the "devops" folder to ensure the job ran correctly.
+
+
+============================================================================================================================================
+
+
 3. Task 2: Creating a Pipeline Job
 Steps:
 Created a new pipeline job in Jenkins.
@@ -27,9 +32,23 @@ mkdir devops: Creates a "devops" directory.
 echo "Bye world": Prints "Bye world" message.
 Ran the pipeline and confirmed the script execution.
 Outcome: The pipeline ran successfully, performing the scripted tasks.
+
+
+============================================================================================================================================
+
+
 4. Key Takeaways
 Freestyle Job: Suitable for simple tasks and custom build steps.
 Pipeline Job: More flexible, script-based, ideal for automating complex workflows.
+
+
+============================================================================================================================================
+
+
 5. Next Steps
 Move towards more advanced Jenkins features like triggers, advanced pipeline configurations, and integrating with other tools.
 Jenkins basics are a crucial first step in mastering continuous integration and continuous delivery in DevOps! 🚀
+
+
+============================================================================================================================================
+
