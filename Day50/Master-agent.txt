@@ -1,4 +1,4 @@
-
+///====Multi-Node cluster of jenkins pipline====\\\
 private key --> Master server
 public key --> Agent node
 
@@ -6,10 +6,20 @@ public key --> Agent node
 1. What is a Multi-Node Jenkins Pipeline?
 •	A multi-node pipeline allows Jenkins to distribute tasks across multiple machines (nodes).
 •	Helps in efficient build execution, load balancing, and parallel processing.
+
+
+================================================================================================================================================================
+
+
 2. Why Use a Multi-Node Pipeline?
 •	Load Distribution: Helps distribute workload among different machines.
 •	Specialized Tasks: Different nodes can perform specific tasks (e.g., testing, deployment).
 •	Scalability: Makes it easy to add more nodes to accommodate higher workloads.
+
+
+================================================================================================================================================================
+
+
 3. Steps to Set Up a Multi-Node Jenkins Pipeline
 Step 1: Generate SSH Keys
 •	Generate SSH keys for secure communication between the master node and agent nodes.
@@ -51,6 +61,11 @@ pipeline {
     }
 }
 •	This script runs tasks on the master and then on the agent node.
+
+
+================================================================================================================================================================
+
+
 4. Real-World Scenarios for Multi-Node Pipelines
 •	Load Balancing: Spread the workload across multiple nodes for faster builds.
 •	Environment-Specific Tasks: Use different nodes for development, testing, and production.
