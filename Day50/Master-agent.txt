@@ -1,3 +1,70 @@
 
 private key --> Master server
 public key --> Agent node
+
+
+1. What is a Multi-Node Jenkins Pipeline?
+•	A multi-node pipeline allows Jenkins to distribute tasks across multiple machines (nodes).
+•	Helps in efficient build execution, load balancing, and parallel processing.
+2. Why Use a Multi-Node Pipeline?
+•	Load Distribution: Helps distribute workload among different machines.
+•	Specialized Tasks: Different nodes can perform specific tasks (e.g., testing, deployment).
+•	Scalability: Makes it easy to add more nodes to accommodate higher workloads.
+3. Steps to Set Up a Multi-Node Jenkins Pipeline
+Step 1: Generate SSH Keys
+•	Generate SSH keys for secure communication between the master node and agent nodes.
+•	Command:
+css
+Copy code
+ssh-keygen -t rsa -b 2048
+•	Add the public key to the agent node.
+•	Command:
+sql
+Copy code
+ssh-copy-id user@agent-node-ip
+Step 2: Configure Jenkins to Use the Agent Node
+•	Go to Manage Jenkins > Manage Nodes and Clouds > New Node.
+•	Configure the new node's details (name, number of executors, remote root directory).
+•	Set up Launch Method as Launch agents via SSH and enter the SSH credentials.
+Step 3: Write a Pipeline Script
+•	Example pipeline:
+groovy
+Copy code
+pipeline {
+    agent any
+    stages {
+        stage('Run on Master') {
+            steps {
+                echo 'Hello from the Master Node!'
+            }
+        }
+        stage('Run on Agent') {
+            agent {
+                label 'agent-node'
+            }
+            steps {
+                echo 'Hello from the Agent Node!'
+                sh 'mkdir -p /tmp/devops'
+                echo 'DevOps directory created on the Agent Node.'
+            }
+        }
+    }
+}
+•	This script runs tasks on the master and then on the agent node.
+4. Real-World Scenarios for Multi-Node Pipelines
+•	Load Balancing: Spread the workload across multiple nodes for faster builds.
+•	Environment-Specific Tasks: Use different nodes for development, testing, and production.
+•	Resource Utilization: Allocate specific nodes for resource-intensive tasks.
+5. Commands Used in This Setup
+•	Generate SSH keys: ssh-keygen -t rsa -b 2048
+•	Copy SSH key to the agent node: ssh-copy-id user@agent-node-ip
+•	Verify the SSH connection: ssh user@agent-node-ip
+•	Start and stop Jenkins services: service jenkins start and service jenkins stop
+6. Benefits of Using Multi-Node Pipelines
+•	Improves build speed and efficiency.
+•	Allows for the use of different environments.
+•	Enhances the ability to handle large-scale projects.
+7. Next Steps
+•	Explore more advanced Jenkins pipeline configurations.
+•	Learn to integrate Jenkins with tools like Docker and Kubernetes.
+•	Continue practicing CI/CD pipelines for different real-world scenarios
