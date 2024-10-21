@@ -70,16 +70,36 @@ pipeline {
 •	Load Balancing: Spread the workload across multiple nodes for faster builds.
 •	Environment-Specific Tasks: Use different nodes for development, testing, and production.
 •	Resource Utilization: Allocate specific nodes for resource-intensive tasks.
+
+
+================================================================================================================================================================
+
+
 5. Commands Used in This Setup
 •	Generate SSH keys: ssh-keygen -t rsa -b 2048
 •	Copy SSH key to the agent node: ssh-copy-id user@agent-node-ip
 •	Verify the SSH connection: ssh user@agent-node-ip
 •	Start and stop Jenkins services: service jenkins start and service jenkins stop
+
+
+================================================================================================================================================================
+
+
 6. Benefits of Using Multi-Node Pipelines
 •	Improves build speed and efficiency.
 •	Allows for the use of different environments.
 •	Enhances the ability to handle large-scale projects.
+
+
+================================================================================================================================================================
+
+
 7. Next Steps
 •	Explore more advanced Jenkins pipeline configurations.
 •	Learn to integrate Jenkins with tools like Docker and Kubernetes.
 •	Continue practicing CI/CD pipelines for different real-world scenarios
+
+
+================================================================================================================================================================
+
+
