@@ -30,6 +30,11 @@ Pods & Services: Managed containers with Pods and Services, ensuring smooth appl
 HPA (Horizontal Pod Autoscaler): Used HPA to scale applications based on CPU usage.
 ConfigMaps & Secrets: Managed application configuration and sensitive data securely.
 RBAC (Role-Based Access Control): Controlled who can access what in the cluster by defining Roles and RoleBindings.
+
+
+=========================================================================================================================================================================================
+
+
 5. Jenkins & CI/CD Pipelines
 Jenkins Installation: Installed Jenkins on an Ubuntu machine and configured it for automation.
 CI/CD Pipelines: Set up pipelines to automate the process of building, testing, and deploying applications. This included tasks like running unit tests, static code analysis, and automatic deployment to environments like Kubernetes.
