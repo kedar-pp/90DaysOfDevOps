@@ -38,9 +38,19 @@ RBAC (Role-Based Access Control): Controlled who can access what in the cluster 
 5. Jenkins & CI/CD Pipelines
 Jenkins Installation: Installed Jenkins on an Ubuntu machine and configured it for automation.
 CI/CD Pipelines: Set up pipelines to automate the process of building, testing, and deploying applications. This included tasks like running unit tests, static code analysis, and automatic deployment to environments like Kubernetes.
+
+
+=========================================================================================================================================================================================
+
+
 6. Git & GitHub
 Version Control: Mastered Git commands for tracking changes, managing branches, and collaborating on code.
 Branching Strategies: Implemented strategies such as Git Flow to manage feature development, bug fixes, and releases efficiently in GitHub repositories.
+
+
+=========================================================================================================================================================================================
+
+
 7. CI/CD with Jenkins
 Integration with Docker and Kubernetes: Automated deployments using Docker and Kubernetes with Jenkins pipelines, streamlining the deployment process.
 Automation Tasks: Set up automated testing, static code analysis, and deployment tasks to ensure quality and security in code delivery.
