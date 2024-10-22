@@ -11,10 +11,20 @@ Networking: Understood how to configure IP addresses, subnetting, DNS, and manag
 2. Python Automation for DevOps
 Scripts for Automation: Wrote Python scripts to automate tasks like file backups, log monitoring, and more using libraries such as shutil, os, and datetime.
 DevOps Use Case: Automated tasks that are repetitive, improving efficiency in managing servers and deployments.
+
+
+=========================================================================================================================================================================================
+
+
 3. Docker & Containerization
 Containers: Learned how to create, run, and manage Docker containers.
 Docker Compose: Worked with Docker Compose to manage multi-container applications, defining services in YAML files to run applications in a coordinated environment.
 Images: Explored Docker images, pulling from Docker Hub, and creating custom images for various applications.
+
+
+=========================================================================================================================================================================================
+
+
 4. Kubernetes
 Pods & Services: Managed containers with Pods and Services, ensuring smooth application running and networking between containers.
 HPA (Horizontal Pod Autoscaler): Used HPA to scale applications based on CPU usage.
