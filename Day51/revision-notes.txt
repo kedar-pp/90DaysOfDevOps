@@ -3,6 +3,11 @@
 1. Linux & Networking
 Basic Commands: Learned essential Linux commands like ls, pwd, chmod, chown, and file permissions.
 Networking: Understood how to configure IP addresses, subnetting, DNS, and manage networking using commands like ifconfig, ping, and netstat.
+
+
+=========================================================================================================================================================================================
+
+
 2. Python Automation for DevOps
 Scripts for Automation: Wrote Python scripts to automate tasks like file backups, log monitoring, and more using libraries such as shutil, os, and datetime.
 DevOps Use Case: Automated tasks that are repetitive, improving efficiency in managing servers and deployments.
