@@ -54,3 +54,7 @@ Branching Strategies: Implemented strategies such as Git Flow to manage feature 
 7. CI/CD with Jenkins
 Integration with Docker and Kubernetes: Automated deployments using Docker and Kubernetes with Jenkins pipelines, streamlining the deployment process.
 Automation Tasks: Set up automated testing, static code analysis, and deployment tasks to ensure quality and security in code delivery.
+
+
+=========================================================================================================================================================================================
+
