@@ -3,3 +3,24 @@
 1. Use of cronjobs
 
 2. Working with GitHub
+
+1. Cron Jobs in Jenkins
+•	What I learned: Automating repetitive tasks using cron jobs in Jenkins.
+•	Commands Used:
+o	Configured a task in Jenkins to run every minute.
+o	This is done by setting the schedule in the "Build Trigger" section using cron syntax (* * * * * for every minute).
+•	Real-World Scenario:
+o	Automatically backing up files every day at midnight.
+o	Running system health checks regularly, like disk space monitoring or log cleanups.
+2. GitHub Integration with Jenkins
+•	What I learned: Cloning code from a GitHub repository and building it automatically with Jenkins.
+•	Steps:
+o	Configured Jenkins to connect with GitHub.
+o	Cloned a simple Python code repository from GitHub.
+o	Set up Jenkins to trigger builds automatically on every code push.
+•	Real-World Scenario:
+o	Developers commit code to GitHub, Jenkins automatically builds and tests it, reducing manual testing efforts.
+o	Continuous integration becomes seamless, ensuring faster code delivery.
+Use Cases in DevOps:
+•	Automating system tasks like backups and performance checks with cron jobs.
+•	Ensuring continuous integration by automating code testing and building through Jenkins and GitHub
