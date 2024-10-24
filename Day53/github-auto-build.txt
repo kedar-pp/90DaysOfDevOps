@@ -1,2 +1,23 @@
 ///====Github Auto Build====\\\
 
+
+Today, I learned how to automate build jobs in Jenkins using Poll SCM, which allows Jenkins to automatically trigger builds when code is committed to GitHub.
+
+Key Points:
+Poll SCM in Jenkins:
+Poll SCM checks for changes in the GitHub repository at scheduled intervals.
+If a new commit is detected, it triggers an automatic build without manual intervention.
+Steps I Followed:
+Set up a job in Jenkins and link it to my GitHub repository.
+Enable Poll SCM in Jenkins under the job configuration.
+Specify the polling schedule (e.g., check for changes every minute).
+Push changes to the GitHub repository.
+Jenkins automatically detects the commit and triggers a build.
+Real-Time Scenarios:
+Continuous Integration (CI): Every time developers commit code, automated tests are run to check for errors or issues in the code.
+Automated Deployments: Once a build passes, the code can be automatically deployed to a staging or production environment.
+This process helps ensure the stability of the code by testing it automatically and reduces manual intervention for building or deploying projects.
+
+This is an essential practice in modern DevOps workflows to enhance efficiency and automation.
+
+================================================================================================================================================================
