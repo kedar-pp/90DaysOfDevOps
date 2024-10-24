@@ -35,6 +35,7 @@ Key Points:
     - Automated Deployments: Once a build passes, the code can be automatically deployed to a staging or production environment.
 
     - This process helps ensure the stability of the code by testing it automatically and reduces manual intervention for building or deploying projects.
+
 This is an essential practice in modern DevOps workflows to enhance efficiency and automation.
 
 ================================================================================================================================================================
