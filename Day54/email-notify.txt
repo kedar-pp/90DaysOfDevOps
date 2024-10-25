@@ -2,18 +2,28 @@
 
 1. What is SMTP?
 •	Simple Mail Transfer Protocol (SMTP) is a protocol used to send emails between servers.
-
-
 •	In Jenkins, we configure SMTP settings to enable automated email alerts directly from our CI/CD pipeline.
+
+============================================================================================================================================
+
+
 2. Why Use Email Notifications in Jenkins?
 •	Automates communication about build status, failures, and deployments.
 •	Reduces manual monitoring, allowing teams to respond to issues immediately.
 •	Provides essential updates on task completion, making team collaboration smoother and more efficient.
+
+============================================================================================================================================
+
+
 3. Post-Build Actions: Setting Up Email Notifications
 •	Post-Build Actions in Jenkins allow users to set up specific actions that execute after a build completes.
 •	You can configure email notifications as a post-build action:
 o	Alerts can be sent for successful builds, failures, or unstable jobs.
 o	Customize recipients based on the type of event to keep relevant team members in the loop.
+
+============================================================================================================================================
+
+
 4. Real-Time Scenarios for Email Notifications
 •	Development and Testing: Notifies developers about broken builds or errors right after a commit.
 •	Production Deployments: Keeps stakeholders updated on successful deployments, helping with tracking production status.
