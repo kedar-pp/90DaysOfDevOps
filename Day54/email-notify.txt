@@ -28,6 +28,10 @@ o	Customize recipients based on the type of event to keep relevant team members 
 •	Development and Testing: Notifies developers about broken builds or errors right after a commit.
 •	Production Deployments: Keeps stakeholders updated on successful deployments, helping with tracking production status.
 •	Alerts for Quick Response: Immediate alerts to infrastructure or DevOps teams for quick response to any deployment issues.
+
+============================================================================================================================================
+
+
 5. Steps to Configure Email Notifications
 •	Configure SMTP settings under Jenkins → Manage Jenkins → Configure System.
 •	In the Post-Build Actions section of your Jenkins job:
