@@ -18,9 +18,17 @@ Real-Time Scenarios:
 Quickly deploying updates to multiple servers
 Configuring apps consistently in complex, multi-server environments
 
+
+============================================================================================================================================
+
+
 3. Ansible vs. Terraform
 Ansible: Mainly for configuration and automation of existing servers or services (e.g., updating, installing software).
 Terraform: Primarily for provisioning infrastructure (e.g., creating servers or networks).
+
+
+============================================================================================================================================
+
 
 4. Configuration Management Types
 Push-based Mechanism (e.g., Ansible)
