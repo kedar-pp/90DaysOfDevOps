@@ -1,0 +1,67 @@
+///====Jenkins Job For Remote Server====\\\
+
+1. Overview
+
+    - Today, I learned to connect Jenkins with remote servers, set up secure communication between them, and automate tasks on a remote server directly from Jenkins. Here’s a breakdown:
+
+
+============================================================================================================================================
+
+
+2. Key Concepts
+
+    - Virtual Machines (VMs):
+
+        - Created two VMs to act as separate servers for remote automation.
+
+    - SSH Key-Based Authentication:
+
+        - Used ssh-keygen to create SSH keys, enabling password-free login between VMs for a secure connection.
+
+        - By copying the public key to the remote server’s ~/.ssh/authorized_keys, I allowed one VM to access the other without needing a password each time.
+
+    - Jenkins Jobs for Remote Commands:
+
+        - Configured Jenkins jobs to connect to the remote server via SSH and execute tasks directly.
+    
+        - Set up tasks to transfer files, run scripts, or execute commands seamlessly between servers.
+
+
+============================================================================================================================================
+
+
+3. Commands & Steps
+
+    - Generate SSH Key:
+
+        ssh-keygen (generate the key pair).
+        ssh-copy-id user@remote_host (add public key to remote host for password-free access).
+
+    - Test SSH Access:
+
+        ssh user@remote_host to confirm password-free login works.
+
+    - File Transfer:
+
+        Use scp filename user@remote_host:/path to securely transfer files between servers.
+        Configure Jenkins Job:
+
+        Set up a Jenkins job that uses SSH to log into the remote server.
+        Add post-build actions to execute scripts or commands on the remote server automatically.
+
+
+============================================================================================================================================
+
+
+4/. Real-Time Use Cases
+
+    - Deployments: Automate code deployment across multiple servers without manually logging in.
+
+    - File Backups: Schedule Jenkins jobs to transfer files to remote storage locations.
+
+    - Multi-Server Management: Execute scripts across various servers simultaneously, ideal for configurations or updates in production environments.
+
+
+
+============================================================================================================================================
+
