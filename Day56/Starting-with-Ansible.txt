@@ -40,8 +40,16 @@ Pull-based Mechanism (e.g., Chef)
 Nodes pull configurations from the server when needed.
 Example: Each node reaches out to the server to check for updates, useful when each node operates independently.
 
+
+============================================================================================================================================
+
+
 5. Ansible vs. Chef
 Ansible: Easier setup, YAML-based, great for pushing configurations quickly.
 Chef: More complex setup, uses Ruby, operates mainly in a pull-based model.
+
+
+============================================================================================================================================
+
 
 Ansible streamlines complex setups and improves DevOps efficiency, helping with rapid and reliable deployment of configurations!
