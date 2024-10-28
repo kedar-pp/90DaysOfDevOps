@@ -11,22 +11,30 @@
 
 
 2. Installing Ansible on the Master Server
-•	Update Repositories: Start by adding the Ansible repository.
-•	Command: sudo-add-repository ppa:ansible/ansible
-•	Update and Install Ansible:
-o	Run sudo apt update
-o	Install Ansible with sudo apt install ansible
-•	Verify Version: Check if Ansible is installed by typing ansible --version.
+
+    •	Update Repositories: Start by adding the Ansible repository.
+
+    •	Command: sudo-add-repository ppa:ansible/ansible
+
+    •	Update and Install Ansible:
+        o	Run sudo apt update
+        o	Install Ansible with sudo apt install ansible
+
+    •	Verify Version: Check if Ansible is installed by typing ansible --version.
 
 
 ============================================================================================================================================
 
 
 3. Configuring the Ansible Hosts File
-•	Update the Ansible hosts file, usually located at /etc/ansible/hosts.
-•	Add each server by specifying:
-o	For example, server1 ansible_host=<public_ip>
-o	Repeat for server2 and server3 with their respective IP addresses.
+
+    •	Update the Ansible hosts file, usually located at /etc/ansible/hosts.
+
+    •	Add each server by specifying:
+
+        o	For example, server1 ansible_host=<public_ip>
+
+        o	Repeat for server2 and server3 with their respective IP addresses.
 
 
 ============================================================================================================================================
