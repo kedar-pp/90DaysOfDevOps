@@ -1,8 +1,10 @@
 ///====Working on Remote Servers====\\\
 
 1. Introduction to Multi-Server Management with Ansible
-•	Ansible simplifies remote server management, especially when updating multiple servers from a central control point.
-•	For this task, the goal was to update three remote servers from one Ansible master.
+
+    •	Ansible simplifies remote server management, especially when updating multiple servers from a central control point.
+
+    •	For this task, the goal was to update three remote servers from one Ansible master.
 
 
 ============================================================================================================================================
