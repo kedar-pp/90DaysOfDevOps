@@ -41,10 +41,14 @@
 
 
 4. Setting Up SSH Keys for Secure Access
-•	Generate SSH Keys: Run mkdir keys and navigate to it with cd keys.
-•	Transfer PEM File: Use scp to securely copy the PEM (private key) file to each server.
-•	Example Command: scp -i <key.pem> <key.pem> user@<server_ip>:/path/on/server
-•	This enables Ansible to log in without repeatedly requiring passwords.
+
+    •	Generate SSH Keys: Run mkdir keys and navigate to it with cd keys.
+
+    •	Transfer PEM File: Use scp to securely copy the PEM (private key) file to each server.
+
+    •	Example Command: scp -i <key.pem> <key.pem> user@<server_ip>:/path/on/server
+
+    •	This enables Ansible to log in without repeatedly requiring passwords.
 
 
 ============================================================================================================================================
