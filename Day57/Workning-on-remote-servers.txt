@@ -79,9 +79,12 @@
 
 
 7. Conclusion and Key Takeaways
-•	Efficiency: Ansible automates repetitive tasks, freeing time for more complex work.
-•	Scalability: Ideal for managing environments with many servers.
-•	Learning Recap: Understanding multi-server updates lays a foundation for broader configuration management tasks.
+    
+    •	Efficiency: Ansible automates repetitive tasks, freeing time for more complex work.
+
+    •	Scalability: Ideal for managing environments with many servers.
+
+    •	Learning Recap: Understanding multi-server updates lays a foundation for broader configuration management tasks.
 
 
 ============================================================================================================================================
