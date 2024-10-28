@@ -55,18 +55,24 @@
 
 
 5. Running Update Commands on Remote Servers Using Ansible
-•	With Ansible installed and configured, run the update playbook to automate updates across all servers.
-•	Run the Command: ansible all -m shell -a "sudo apt update && sudo apt upgrade -y"
-•	This command uses the Ansible shell module to execute update commands on all listed servers in the hosts file.
+
+    •	With Ansible installed and configured, run the update playbook to automate updates across all servers.
+
+    •	Run the Command: ansible all -m shell -a "sudo apt update && sudo apt upgrade -y"
+
+    •	This command uses the Ansible shell module to execute update commands on all listed servers in the hosts file.
 
 
 ============================================================================================================================================
 
 
 6. Real-World Scenarios for Ansible Automation
-•	Server Maintenance: Regular updates and patches across dozens of servers.
-•	Scaling Infrastructure: Efficient management in cloud environments, ensuring all servers are up-to-date.
-•	Disaster Recovery: Quick and consistent updates for large-scale recovery scenarios.
+
+    •	Server Maintenance: Regular updates and patches across dozens of servers.
+
+    •	Scaling Infrastructure: Efficient management in cloud environments, ensuring all servers are up-to-date.
+
+    •	Disaster Recovery: Quick and consistent updates for large-scale recovery scenarios.
 
 
 ============================================================================================================================================
