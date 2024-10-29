@@ -61,18 +61,24 @@
 
 
 6. Inventory Files
-What They Are: These files list all the hosts (servers) Ansible will manage.
-Why Important: Organizes servers into groups, making it easy to target different environments.
-Example Use: Defining development and production groups to deploy configurations selectively.
+
+    - What They Are: These files list all the hosts (servers) Ansible will manage.
+
+    - Why Important: Organizes servers into groups, making it easy to target different environments.
+
+    - Example Use: Defining development and production groups to deploy configurations selectively.
 
 
 ============================================================================================================================================
 
 
 7. Ansible Vault
-What It Is: A feature for encrypting sensitive information like passwords or keys.
-Why Important: Secures data used in playbooks, especially for sensitive environments.
-Example Use: Storing database passwords securely within playbooks.
+
+    - What It Is: A feature for encrypting sensitive information like passwords or keys.
+
+    - Why Important: Secures data used in playbooks, especially for sensitive environments.
+
+    - Example Use: Storing database passwords securely within playbooks.
 
 
 ============================================================================================================================================
