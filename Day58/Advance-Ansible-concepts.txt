@@ -1,18 +1,24 @@
 ///====Advance Ansible Concepts====\\\
 
 1. Playbooks
-What They Are: Playbooks are YAML files that define a sequence of automation tasks.
-Why Important: They structure complex tasks into simple, readable steps.
-Example Use: Automating server setups or software installations across multiple servers.
+
+    - What They Are: Playbooks are YAML files that define a sequence of automation tasks.
+
+    - Why Important: They structure complex tasks into simple, readable steps.
+
+    - Example Use: Automating server setups or software installations across multiple servers.
 
 
 ============================================================================================================================================
 
 
 2. Modules
-What They Are: Modules are pre-written Ansible commands that execute specific tasks like installing software or configuring services.
-Common Modules: yum (for package installs), copy (for file transfers), and service (for managing services).
-Example Use: Managing configurations on servers without logging in manually.
+
+    - What They Are: Modules are pre-written Ansible commands that execute specific tasks like installing software or configuring services.
+
+    - Common Modules: yum (for package installs), copy (for file transfers), and service (for managing services).
+
+    - Example Use: Managing configurations on servers without logging in manually.
 
 
 ============================================================================================================================================
