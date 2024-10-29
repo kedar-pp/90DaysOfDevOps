@@ -12,10 +12,20 @@ Example Use: Managing configurations on servers without logging in manually.
 What They Are: Roles organize playbooks into reusable units, making them easy to apply across different projects.
 Why Important: They make code more modular and maintainable.
 Example Use: Separating database configuration from application setup, creating one role for each.
+
+
+============================================================================================================================================
+
+
 4. Handlers
 What They Are: Handlers are like special tasks triggered by other tasks when a change occurs.
 Why Important: They run only when required, keeping processes efficient.
 Example Use: Restarting a web server only when a configuration file is changed.
+
+
+============================================================================================================================================
+
+
 5. Templates
 What They Are: Dynamic files created using Jinja2 templating language, allowing custom variables.
 Why Important: Useful for configurations that need custom parameters.
