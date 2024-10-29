@@ -20,6 +20,11 @@ Example Use: Restarting a web server only when a configuration file is changed.
 What They Are: Dynamic files created using Jinja2 templating language, allowing custom variables.
 Why Important: Useful for configurations that need custom parameters.
 Example Use: Setting up environment-specific configurations in config files.
+
+
+============================================================================================================================================
+
+
 6. Inventory Files
 What They Are: These files list all the hosts (servers) Ansible will manage.
 Why Important: Organizes servers into groups, making it easy to target different environments.
