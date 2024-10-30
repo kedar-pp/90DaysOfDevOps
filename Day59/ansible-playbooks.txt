@@ -19,7 +19,7 @@
 ============================================================================================================================================
 
 
-How to Write a Playbook
+3. How to Write a Playbook
 1.	Define Hosts: Specify which servers the tasks should run on.
 2.	List Tasks: Each task represents an action (e.g., install software, display information).
 3.	Use Modules: Ansible has modules (like apt for package management, service for controlling services) that make it easy to write tasks.
@@ -28,7 +28,7 @@ How to Write a Playbook
 ============================================================================================================================================
 
 
-Step-by-Step Commands & Tasks
+4. Step-by-Step Commands & Tasks
 Task 1: Display Date on Remote Servers
 •	Objective: Create a playbook that outputs the date on each remote server.
 •	Commands:
@@ -50,7 +50,14 @@ o	Use tasks to add users, set permissions, or configure environment variables as
 ============================================================================================================================================
 
 
-Real-World Scenarios
-•	Application Deployment: Deploy apps across multiple servers with a single playbook.
-•	Environment Setup: Ensure each server has the same configuration and software versions.
-•	Routine Maintenance: Schedule regular updates or cleanups to keep systems consistent.
+5. Real-World Scenarios
+
+    •	Application Deployment: Deploy apps across multiple servers with a single playbook.
+
+    •	Environment Setup: Ensure each server has the same configuration and software versions.
+
+    •	Routine Maintenance: Schedule regular updates or cleanups to keep systems consistent.
+
+
+============================================================================================================================================
+
