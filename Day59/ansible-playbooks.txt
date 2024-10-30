@@ -29,22 +29,37 @@
 
 
 4. Step-by-Step Commands & Tasks
-Task 1: Display Date on Remote Servers
-•	Objective: Create a playbook that outputs the date on each remote server.
-•	Commands:
-o	Define hosts.
-o	Write a task using the command module to run date.
-Task 2: Install NGINX on a Server
-•	Objective: Automate NGINX installation for consistent setup across servers.
-•	Steps:
-o	Define the server group for NGINX.
-o	Use the apt module to install NGINX.
-o	Start and enable the service with the service module.
-Task 3: Common DevOps Task Example
-•	Objective: Automate a commonly-used setup, like creating user accounts or setting up environment variables.
-•	Approach:
-o	Define the server group.
-o	Use tasks to add users, set permissions, or configure environment variables as needed.
+
+    Task 1: Display Date on Remote Servers
+        •	Objective: Create a playbook that outputs the date on each remote server.
+        
+        •	Commands:
+            
+            o	Define hosts.
+    
+            o	Write a task using the command module to run date.
+
+    Task 2: Install NGINX on a Server
+
+        •	Objective: Automate NGINX installation for consistent setup across servers.
+
+        •	Steps:
+
+            o	Define the server group for NGINX.
+            
+            o	Use the apt module to install NGINX.
+            
+            o	Start and enable the service with the service module.
+
+    Task 3: Common DevOps Task Example
+    
+        •	Objective: Automate a commonly-used setup, like creating user accounts or setting up environment variables.
+
+        •	Approach:
+        
+            o	Define the server group.
+        
+            o	Use tasks to add users, set permissions, or configure environment variables as needed.
 
 
 ============================================================================================================================================
