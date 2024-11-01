@@ -1,26 +1,62 @@
 ///====Exploring Terraform====\\\
 
 1. Introduction to Terraform and HCL
-Terraform: A tool for Infrastructure as Code (IaC) to automate the setup of infrastructure.
-HCL (HashiCorp Configuration Language): A language used in Terraform files for defining and provisioning infrastructure.
+
+    - Terraform: A tool for Infrastructure as Code (IaC) to automate the setup of infrastructure.
+
+    - HCL (HashiCorp Configuration Language): A language used in Terraform files for defining and provisioning infrastructure.
+
+
+===================================================================================================================================================
+
+
 2. Creating a Simple Terraform File
-Created a file: vim local.tf
-Example resource in local.tf:
-Defines a local file resource to log some content:
+
+    - Created a file: vim local.tf
+
+    - Example resource in local.tf:
+        
+        - Defines a local file resource to log some content:
 
         resource "local_file" "devops" {
               filename = "/home/ubuntu/terraform-course/terraform-local/devops_automated.txt"
                 content = "I want to become a DevOps Engineer who knows Terraform"
         }
 
+
+===================================================================================================================================================
+
+
 3. Key Terraform Commands
-terraform init: Initializes the Terraform working directory.
-terraform validate: Checks the configuration for syntax errors.
-terraform plan: Shows an execution plan, detailing what Terraform will do.
-terraform apply: Applies the configurations and provisions resources.
+
+    - terraform init: Initializes the Terraform working directory.
+
+    - terraform validate: Checks the configuration for syntax errors.
+
+    - terraform plan: Shows an execution plan, detailing what Terraform will do.
+
+    - terraform apply: Applies the configurations and provisions resources.
+
+
+===================================================================================================================================================
+
+
 4. Real-World Application
-Automating infrastructure setup saves time, reduces errors, and allows version control.
-Example: Use Terraform to deploy multiple servers or manage cloud resources across platforms.
+
+    - Automating infrastructure setup saves time, reduces errors, and allows version control.
+
+    - Example: Use Terraform to deploy multiple servers or manage cloud resources across platforms.
+
+
+===================================================================================================================================================
+
+
 5. Next Steps
-Explore more complex configurations with Terraform.
-Dive into managing cloud infrastructure using Terraform’s extensive providers.
+
+    - Explore more complex configurations with Terraform.
+
+    - Dive into managing cloud infrastructure using Terraform’s extensive providers.
+
+
+===================================================================================================================================================
+
