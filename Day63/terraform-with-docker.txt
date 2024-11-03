@@ -1,10 +1,11 @@
 ///====Terraform with Docker====\\\
 
-•  Setting Up Terraform with Docker
-•	In Terraform, specifying a provider is essential; it tells Terraform what to automate.
-•	To automate Docker, we add a Docker provider in main.tf:
-hcl
-Copy code
+1. Setting Up Terraform with Docker
+
+    •	In Terraform, specifying a provider is essential; it tells Terraform what to automate.
+
+    •	To automate Docker, we add a Docker provider in main.tf:
+
 terraform {
   required_providers {
     docker = {
@@ -13,13 +14,23 @@ terraform {
     }
   }
 }
-•	kreuzwerker/docker specifies Docker as the provider for our resources.
-•  Provider Block
+
+    •	kreuzwerker/docker specifies Docker as the provider for our resources.
+
+
+============================================================================================================================================
+
+
+2.  Provider Block
 •	The provider block configures Docker as the infrastructure provider.
 
     provider "docker" {}
 
-    •  Resource Blocks for Docker Setup
+
+============================================================================================================================================
+
+
+3.  Resource Blocks for Docker Setup
 
     •	We use resource blocks to define Docker resources. Each block specifies:
 
