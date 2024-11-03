@@ -1,2 +1,52 @@
 ///====Terraform with Docker====\\\
 
+•  Setting Up Terraform with Docker
+•	In Terraform, specifying a provider is essential; it tells Terraform what to automate.
+•	To automate Docker, we add a Docker provider in main.tf:
+hcl
+Copy code
+terraform {
+  required_providers {
+    docker = {
+      source = "kreuzwerker/docker"
+      version = "> 2.21.0"
+    }
+  }
+}
+•	kreuzwerker/docker specifies Docker as the provider for our resources.
+•  Provider Block
+•	The provider block configures Docker as the infrastructure provider.
+hcl
+Copy code
+provider "docker" {}
+•  Resource Blocks for Docker Setup
+•	We use resource blocks to define Docker resources. Each block specifies:
+o	Resource type: docker_image or docker_container
+o	Resource name: A unique identifier within Terraform
+•	Example for creating an Nginx image:
+hcl
+Copy code
+resource "docker_image" "nginx" {
+  name = "nginx:latest"
+  keep_locally = false
+}
+•	Creating a Docker container:
+hcl
+Copy code
+resource "docker_container" "nginx" {
+  image = docker_image.nginx.latest
+  name  = "tutorial"
+  ports {
+    internal = 80
+    external = 80
+  }
+}
+•  Useful Terraform Commands
+•	terraform fmt: Formats configuration files to be readable.
+•	terraform validate: Validates if the configuration is correct.
+•	terraform show: Shows state or plan output.
+•	terraform state list: Lists all resources managed by Terraform.
+•  Example Real-World Scenario
+•	Using Terraform to set up and manage Docker containers, such as an Nginx server, is beneficial for:
+o	Automating web server deployment: Quick setup and scaling.
+o	Consistency across environments: Terraform ensures all servers run with the exact specifications.
