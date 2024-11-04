@@ -6,21 +6,24 @@
 
     - Types of Terraform Variables
 
-String: Used for text values.
+        - String: Used for text values.
 
-Example: Defining a specific region like "us-east-1" for an AWS deployment.
-Number: Holds numeric values, often for scaling.
+            - Example: Defining a specific region like "us-east-1" for an AWS deployment.
+        
+        - Number: Holds numeric values, often for scaling.
 
-Example: Specifying the number of instances to create (e.g., 3).
-Boolean: True/False values for toggling features.
+            - Example: Specifying the number of instances to create (e.g., 3).
+        
+        - Boolean: True/False values for toggling features.
 
-Example: Enabling or disabling monitoring (true or false).
-List: Holds a collection of values, useful for managing groups.
+            - Example: Enabling or disabling monitoring (true or false).
+        
+        - List: Holds a collection of values, useful for managing groups.
 
-Example: List of zones for deployment across regions.
-Map: Key-value pairs, making complex settings manageable.
+        Example: List of zones for deployment across regions.
+        Map: Key-value pairs, making complex settings manageable.
 
-Example: Mapping environment names to specific AMIs.
+        Example: Mapping environment names to specific AMIs.
 
 Variable Definition
 Define variables in .tf files with default values:
