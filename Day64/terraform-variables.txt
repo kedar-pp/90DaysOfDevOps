@@ -1,5 +1,6 @@
+///====Terraform Variables====\\\
 
-What are Terraform Variables?
+1. What are Terraform Variables?
 Purpose: Variables in Terraform allow flexibility and customization. They enable you to define values that can change based on the environment, making your configurations reusable and scalable.
 Types of Terraform Variables
 String: Used for text values.
