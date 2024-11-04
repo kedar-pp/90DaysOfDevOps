@@ -20,11 +20,12 @@
         
         - List: Holds a collection of values, useful for managing groups.
 
-        Example: List of zones for deployment across regions.
-        Map: Key-value pairs, making complex settings manageable.
+            - Example: List of zones for deployment across regions.
+        
+        - Map: Key-value pairs, making complex settings manageable.
 
-        Example: Mapping environment names to specific AMIs.
-
+            - Example: Mapping environment names to specific AMIs.
+============================================================================================================================================
 Variable Definition
 Define variables in .tf files with default values:
 
