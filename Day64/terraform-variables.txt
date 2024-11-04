@@ -18,3 +18,11 @@ Example: List of zones for deployment across regions.
 Map: Key-value pairs, making complex settings manageable.
 
 Example: Mapping environment names to specific AMIs.
+
+Variable Definition
+Define variables in .tf files with default values:
+
+        variable "region" {
+            type = string
+            default = "us-west-2"
+        }
