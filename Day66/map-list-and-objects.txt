@@ -3,36 +3,48 @@
 Today, I learned about managing different types of variables in Terraform, specifically maps, lists, and objects, and how they’re applied in real-world scenarios to make infrastructure setups more flexible and scalable. Here’s an overview:
 
 1. Maps
-What It Is: Maps in Terraform store data as key-value pairs, making it easy to reference multiple values based on unique keys.
-Usage: Often used to store configuration settings across environments. For example, different environment settings can be stored in a single map and accessed through keys like dev, staging, and prod.
-Real-World Scenario: Useful for selecting configurations per environment, such as defining specific content or database configurations for each environment.
+
+    - What It Is: Maps in Terraform store data as key-value pairs, making it easy to reference multiple values based on unique keys.
+
+    - Usage: Often used to store configuration settings across environments. For example, different environment settings can be stored in a single map and accessed through keys like dev, staging, and prod.
+
+    - Real-World Scenario: Useful for selecting configurations per environment, such as defining specific content or database configurations for each environment.
 
 
 ===============================================================================================================================================================================
 
 
 2. Lists
-What It Is: Lists allow storing multiple values in a single variable, perfect for creating groups of similar resources.
-Usage: Lists are commonly used when multiple resources share similar properties. Instead of creating separate variables for each item, one list can hold all the file paths, server IPs, etc.
-Real-World Scenario: Helps when setting up multiple files or directories at once, simplifying the need to specify each individually. This way, referencing files or IPs becomes more manageable.
+
+    - What It Is: Lists allow storing multiple values in a single variable, perfect for creating groups of similar resources.
+    
+    - Usage: Lists are commonly used when multiple resources share similar properties. Instead of creating separate variables for each item, one list can hold all the file paths, server IPs, etc.
+    
+    - Real-World Scenario: Helps when setting up multiple files or directories at once, simplifying the need to specify each individually. This way, referencing files or IPs becomes more manageable.
 
 
 ===============================================================================================================================================================================
 
 
 3. Objects
-What It Is: Objects in Terraform are structured variables that can store different data types within a single variable (like strings, numbers, and lists).
-Usage: Objects allow you to group different properties for resources, which can then be referenced as one structured variable.
-Real-World Scenario: Essential for complex setups where resources need multiple configurations, like configuring an EC2 instance with multiple attributes (e.g., instance count, key names, and AMI ID). It helps consolidate all these properties into a single, structured variable, making configurations more readable and centralized.
+
+    - What It Is: Objects in Terraform are structured variables that can store different data types within a single variable (like strings, numbers, and lists).
+
+    - Usage: Objects allow you to group different properties for resources, which can then be referenced as one structured variable.
+
+    - Real-World Scenario: Essential for complex setups where resources need multiple configurations, like configuring an EC2 instance with multiple attributes (e.g., instance count, key names, and AMI ID). It helps consolidate all these properties into a single, structured variable, making configurations more readable and centralized.
 
 
 ===============================================================================================================================================================================
 
 
-Benefits
-Scalability: Simplifies managing infrastructure at scale by grouping similar configurations.
-Modularity: Encourages a more organized setup, as changes can be made in a single place rather than across multiple files.
-Reusability: Makes configurations reusable across projects by storing common settings within variables.
+4. Benefits
+
+    - Scalability: Simplifies managing infrastructure at scale by grouping similar configurations.
+    
+    - Modularity: Encourages a more organized setup, as changes can be made in a single place rather than across multiple files.
+    
+    - Reusability: Makes configurations reusable across projects by storing common settings within variables.
 
 
 ===============================================================================================================================================================================
