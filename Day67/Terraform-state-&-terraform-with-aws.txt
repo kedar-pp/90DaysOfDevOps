@@ -7,6 +7,11 @@ terraform init: Initializes Terraform, setting up the necessary plugins and prep
 terraform plan: Previews changes before applying them, showing exactly what resources will be modified.
 terraform apply: Deploys changes to match the current configuration, as outlined in your .tf files.
 .tfstate file: Holds metadata about resources, allowing Terraform to understand which resources exist, how they’re configured, and which provider manages them.
+
+
+===============================================================================================================================================================================
+
+
 2. Starting Terraform with AWS
 AWS CLI Setup: The AWS CLI allows Terraform to interact with AWS resources programmatically.
 
