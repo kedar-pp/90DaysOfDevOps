@@ -52,7 +52,8 @@
 
 
 4. Summary
-Using Terraform with AWS not only speeds up resource management but also brings predictability and version control to cloud infrastructure. This makes deployments more secure, consistent, and manageable across environments!
+
+    - Using Terraform with AWS not only speeds up resource management but also brings predictability and version control to cloud infrastructure. This makes deployments more secure, consistent, and manageable across environments!
 
 
 ===============================================================================================================================================================================
