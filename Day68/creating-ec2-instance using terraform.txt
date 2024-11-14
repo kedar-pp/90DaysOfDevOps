@@ -50,8 +50,12 @@ Step-by-Step Guide
     4.	Output Public IP of EC2:
 
         o	Objective: Automatically display the EC2 instance's public IP after deployment.
-o	How: Adding an output block in main.tf to fetch and display the public IP.
+
+        o	How: Adding an output block in main.tf to fetch and display the public IP.
 ________________________________________________________________________________
+
 Real-World Scenarios
-•	Scaling Infrastructure: Automate multiple resource deployments in a consistent and repeatable way, helpful for scaling environments or setting up test labs.
-•	Simplifying Repetitive Tasks: Defining infrastructure in code avoids the repetitive setup of resources, saving time and reducing human error.
+    
+    •	Scaling Infrastructure: Automate multiple resource deployments in a consistent and repeatable way, helpful for scaling environments or setting up test labs.
+
+    •	Simplifying Repetitive Tasks: Defining infrastructure in code avoids the repetitive setup of resources, saving time and reducing human error.
