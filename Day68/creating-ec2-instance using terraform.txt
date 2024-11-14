@@ -1,20 +1,33 @@
 ///====Creating EC2 instance using Terraform====\\\
 
 Key Topics Covered:
-1.	AWS CLI Setup
-2.	Terraform and AWS Configuration
-3.	Creating main.tf to Define Resources
-4.	Essential Terraform Commands: init, plan, apply
-5.	Outputting Public IP of the EC2 Instance
-________________________________________
+
+    1.	AWS CLI Setup
+    
+    2.	Terraform and AWS Configuration
+
+    3.	Creating main.tf to Define Resources
+
+    4.	Essential Terraform Commands: init, plan, apply
+
+    5.	Outputting Public IP of the EC2 Instance
+________________________________________________________________________________
+
 Step-by-Step Guide
-1.	AWS CLI Setup:
-o	Goal: Connect AWS and Terraform for seamless infrastructure automation.
-o	Steps:
-	Install AWS CLI, configure it, and verify access to AWS.
-	Configure environment variables for AWS credentials securely using:
-	AWS_ACCESS_KEY_ID
-	AWS_SECRET_ACCESS_KEY
+    
+    1.	AWS CLI Setup:
+
+    o	Goal: Connect AWS and Terraform for seamless infrastructure automation.
+
+    o	Steps:
+
+        	Install AWS CLI, configure it, and verify access to AWS.
+    
+        	Configure environment variables for AWS credentials securely using:
+
+            	AWS_ACCESS_KEY_ID
+    
+            	AWS_SECRET_ACCESS_KEY
 2.	Creating main.tf File:
 o	Purpose: This file contains the infrastructure code (IaC) for launching an EC2 instance.
 o	Structure:
@@ -27,7 +40,7 @@ o	terraform apply: Deploys the instance on AWS.
 4.	Output Public IP of EC2:
 o	Objective: Automatically display the EC2 instance's public IP after deployment.
 o	How: Adding an output block in main.tf to fetch and display the public IP.
-________________________________________
+________________________________________________________________________________
 Real-World Scenarios
 •	Scaling Infrastructure: Automate multiple resource deployments in a consistent and repeatable way, helpful for scaling environments or setting up test labs.
 •	Simplifying Repetitive Tasks: Defining infrastructure in code avoids the repetitive setup of resources, saving time and reducing human error.
