@@ -1,2 +1,63 @@
 ///====Day 2:- django Project====\\\
- 
+
+ Key Tasks Performed:
+1.	Cloned GitHub Repository to EC2 Instance
+    
+    o	Brought the Django To-Do List project code into the AWS environment.
+
+2.	Set Up Python and Django Project:
+    
+    o	Installed Python 3 on the EC2 instance.
+    
+    o	Ran manage.py commands like runserver to verify the project.
+    
+    o	Applied migrations using manage.py migrate.
+
+3.	Configured AWS Security:
+
+    o	Updated inbound rules in the AWS Security Group to allow access via port 8001.
+
+4.	Installed and Configured Docker:
+
+    o	Installed Docker for containerizing the application.
+
+    o	Created a Dockerfile to define the Docker image and application setup.
+
+5.	Installed Java and Jenkins:
+
+    o	Installed Java to support Jenkins.
+
+    o	Verified the installation with java -version.
+
+6.	Integrated Jenkins with Docker:
+
+    o	Set up Jenkins to automate the build and deployment process for the Dockerized Django project.
+
+Key Commands Used:
+
+    •	Python Setup:
+        o	sudo apt install python3
+        o	python3 manage.py runserver 0.0.0.0:8001
+        o	python3 manage.py migrate
+        o	pip install -r requirements.txt
+
+    •	Docker Installation and Configuration:
+        o	sudo apt install docker.io
+        o	Created and saved a Dockerfile for the project.
+
+
+    •	Jenkins Installation and Setup:
+        o	sudo apt install openjdk-11-jdk
+        o	java -version
+        o	Installed Jenkins for CI/CD automation.
+
+Next Steps:
+    
+    1.	Build the Jenkins pipeline to automate Docker image creation and deployment.
+
+    2.	Run tests to validate the setup.
+    
+    3.	Optimize for scalability and performance.
+
+Summary:
+Today's focus was on integrating the Django project with Docker and Jenkins to set up the foundation for a CI/CD pipeline. The journey continues with automating and scaling deployments. 🚀
